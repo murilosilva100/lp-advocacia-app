@@ -1,9 +1,14 @@
-import React from "react";
-import LandingPage from "./pages/LandingPage";
-import "../src/styles/global.css";
+import Home from "../src/components/home";
+import About from "../src/components/About";
+import "../src/styles/App.css";
 
 function App() {
-  return <LandingPage />;
+  return (
+    <div className="App">
+      <Home />
+      <About />
+    </div>
+  );
 }
 
 export default App;
