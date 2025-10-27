@@ -1,12 +1,16 @@
+import "../src/styles/App.css";
+import NavBar from "../src/components/NavBar";
 import Home from "../src/components/home";
 import About from "../src/components/About";
-import "../src/styles/App.css";
+import Services from "../src/components/Services";
 
 function App() {
   return (
-    <div className="App">
+    <div>
+      <NavBar />
       <Home />
       <About />
+      <Services />
     </div>
   );
 }

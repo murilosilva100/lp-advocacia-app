@@ -1,13 +1,12 @@
 import React from "react";
-import aboutImage from "../assets/aboutImage.jpg";
 import { RiMedalLine } from "react-icons/ri";
-import "../styles/About.css";
+import "../styles/Services.css";
 
-export default function About() {
+export default function Services() {
   return (
-    <div id="about">
-      <section id="about-container">
-        <div id="about-text">
+    <div id="services">
+      <section id="services-container">
+        <div id="services-text">
           <h2 id="sections-title">
             Sobre <span id="sections-title-span">o Advogado</span>
           </h2>
@@ -15,21 +14,17 @@ export default function About() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
             turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
             nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
-            tellus elit sed risus. Maecenas eget condimentum velit, sit amet
-            feugiat lectus. Class aptent taciti sociosqu ad litora torquent per
-            conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus
-            enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex.
-            Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum
-            lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in
-            elementum tellus.
+            tellus elit sed risus.
           </p>
         </div>
-        <div className="about-grid-container">
-          <div className="item-about card-about">
+        <div className="services-grid-container">
+          <div className="item-services card-item1">
             <div className="icone">
               <RiMedalLine />
             </div>
-            <h2>Experiência</h2>
+            <div id="card-name">
+              <h2>Card</h2>
+            </div>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
               turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
@@ -37,15 +32,30 @@ export default function About() {
               tellus elit sed risus.
             </p>
           </div>
-          <div className="item-about box-imagem-central">
-            <img src={aboutImage} alt="Pessoa de terno" />
-            <div className="info-adicional">OAB/DF: 0000/00</div>
-          </div>
-          <div className="item-about card-about">
+          <div className="item-services card-item2">
             <div className="icone">
               <RiMedalLine />
             </div>
-            <h2>Resultados</h2>
+            <div id="card-name">
+              <h2>Card</h2>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+              turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+              nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+              tellus elit sed risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+              turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+              nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+              tellus elit sed risus.
+            </p>
+          </div>
+          <div className="item-services card-item3">
+            <div className="icone">
+              <RiMedalLine />
+            </div>
+            <div id="card-name">
+              <h2>Card</h2>
+            </div>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
               turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
@@ -53,11 +63,13 @@ export default function About() {
               tellus elit sed risus.
             </p>
           </div>
-          <div className="item-about card-about">
+          <div className="item-services card-item4">
             <div className="icone">
               <RiMedalLine />
             </div>
-            <h2>Experiência</h2>
+            <div id="card-name">
+              <h2>Card</h2>
+            </div>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
               turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
@@ -65,32 +77,25 @@ export default function About() {
               tellus elit sed risus.
             </p>
           </div>
-          <div className="item-about card-about">
-            <div className="icone">
-              <RiMedalLine />
+          <div className="item-services card-item5">
+            <div className="card-header">
+              <div className="icone">
+                <RiMedalLine />
+              </div>
+              <div id="card-name">
+                <h2>Card</h2>
+              </div>
             </div>
-            <h2>Resultados</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+              turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+              nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+              tellus elit sed risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
               turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
               nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
               tellus elit sed risus.
             </p>
           </div>
-        </div>
-        <div id="about-text">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-            turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-            nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
-            tellus elit sed risus. Maecenas eget condimentum velit, sit amet
-            feugiat lectus. Class aptent taciti sociosqu ad litora torquent per
-            conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus
-            enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex.
-            Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum
-            lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in
-            elementum tellus.
-          </p>
         </div>
       </section>
     </div>
