@@ -53,30 +53,6 @@ export default function About() {
               tellus elit sed risus.
             </p>
           </div>
-          <div className="item-about card-about">
-            <div className="icone">
-              <RiMedalLine />
-            </div>
-            <h2>Experiência</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-              turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-              nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
-              tellus elit sed risus.
-            </p>
-          </div>
-          <div className="item-about card-about">
-            <div className="icone">
-              <RiMedalLine />
-            </div>
-            <h2>Resultados</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-              turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-              nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
-              tellus elit sed risus.
-            </p>
-          </div>
         </div>
         <div id="about-text">
           <p>

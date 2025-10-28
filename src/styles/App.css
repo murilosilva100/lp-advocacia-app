@@ -12,6 +12,7 @@
 .btn-default {
   padding: 0.8rem 1.5rem;
   background: #001a3a;
+  display: flex;
   color: #f0f4f8;
   outline: none;
   border: none;
@@ -45,4 +46,25 @@
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
+}
+
+.floating-btn {
+  position: fixed;
+  display: flex;
+  bottom: 30px;
+  right: 25px;
+  background-color: #0f7743;
+  color: white;
+  border: none;
+  border-radius: 3rem;
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.floating-btn:hover {
+  background-color: #056641;
 }

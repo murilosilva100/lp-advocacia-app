@@ -1,6 +1,7 @@
 import React from "react";
 import homeImage from "../assets/homeImage.jpg";
-import { FaArrowRight } from "react-icons/fa";
+import businessImage from "../assets/businessImage.jpg"
+import { BsFillTelephoneFill } from "react-icons/bs";
 import "../styles/home.css";
 
 export default function Home() {
@@ -20,7 +21,7 @@ export default function Home() {
           <div id="cta_buttons">
             <button className="btn-default">Entrar em Contato agora!</button>
             <a href="tel:+5561996172502" id="phone_button">
-              <button className="btn-default">(55) 9988776655</button>
+              <button className="btn-default"><BsFillTelephoneFill size="25px" style={{marginRight: 12}}/>(55) 9988776655</button>
             </a>
           </div>
         </div>
