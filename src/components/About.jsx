@@ -26,9 +26,9 @@ export default function About() {
         </div>
         <div className="about-grid-container">
           <div className="item-about card-about">
-            <div className="icone">
+            {/* <div className="icone">
               <RiMedalLine />
-            </div>
+            </div> */}
             <h2>Experiência</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
@@ -42,9 +42,9 @@ export default function About() {
             <div className="info-adicional">OAB/DF: 0000/00</div>
           </div>
           <div className="item-about card-about">
-            <div className="icone">
+            {/* <div className="icone">
               <RiMedalLine />
-            </div>
+            </div> */}
             <h2>Resultados</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu

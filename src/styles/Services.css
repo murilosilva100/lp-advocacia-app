@@ -10,40 +10,107 @@
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
-  padding-top: 2rem;
   padding-bottom: 2rem;
+  text-align: center;
 }
 
 .services-grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
+  justify-items: center;
+  padding-bottom: 2rem;
 }
 
 .item-services {
-  background-color: #0b1a3d;
-  color: white;
-  padding: 20px;
-  border-radius: 5px;
+  background: linear-gradient(180deg, #fffdf7 0%, #fff9ea 100%);
+  color: #1a2c42;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  line-height: 1.6;
+  font-weight: 300;
+  width: 100%;
+  max-width: 420px;
+  border: 1px solid rgba(179, 139, 89, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease,
+    background 0.3s ease;
+  cursor: default;
+}
+
+.item-services:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 24px rgba(179, 139, 89, 0.45);
+  border-color: #b38b59;
+  background: linear-gradient(180deg, #fffaf0 0%, #fff4de 100%);
+}
+
+.item-services p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #4a5568;
+  text-align: justify;
+  word-break: break-word;
+  hyphens: auto;
   line-height: 160%;
-  font-weight: 200;
+}
+
+#about-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+#card-name h2 {
+  font-family: "Playfair Display";
+  color: #1a2c42;
+  font-weight: 600;
+  font-size: 1.3rem;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.item-services:hover #card-name h2 {
+  color: #b38b59;
+}
+
+.item-services p {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  word-break: break-word;
+  hyphens: auto;
+  text-align: justify;
 }
 
 .icone {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  background-color: white;
-  color: #0b1a3d;
-  padding: 10px;
-  border-radius: 5px;
-  width: min-content;
+  font-size: 2.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #b38b59;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(179, 139, 89, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.item-services:hover .icone {
+  transform: scale(1.08);
+  background-color: #b38b59;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(179, 139, 89, 0.5);
 }
 
 @media (max-width: 480px) {
   #services-container {
-    padding-left: 8%;
-    padding-right: 8%;
+    padding: 0px 8%;
   }
 
   .services-grid-container {

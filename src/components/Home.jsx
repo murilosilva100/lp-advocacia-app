@@ -26,7 +26,7 @@ export default function Home() {
           </div>
         </div>
         <div id="banner">
-          <img src={homeImage} alt="" />
+          {/* <img src={homeImage} alt="" /> */}
         </div>
       </section>
     </div>

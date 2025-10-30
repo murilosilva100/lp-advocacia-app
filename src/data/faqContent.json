@@ -1,0 +1,42 @@
+[
+  {
+    "category": "Pedidos e Entregas",
+    "questions": [
+      {
+        "id": 1,
+        "q": "Qual o prazo de entrega padrão?",
+        "a": "O prazo de entrega varia de 5 a 10 dias úteis, dependendo da sua localização. Você pode verificar o prazo exato no carrinho."
+      },
+      {
+        "id": 2,
+        "q": "Como posso rastrear meu pedido?",
+        "a": "Após a postagem, enviaremos o código de rastreio por e-mail em até 48h. Você poderá acompanhar o status diretamente na página 'Rastrear Pedido'."
+      }
+    ]
+  },
+  {
+    "category": "Pagamento e Faturamento",
+    "questions": [
+      {
+        "id": 3,
+        "q": "Quais formas de pagamento são aceitas?",
+        "a": "Aceitamos Pix, cartões de crédito (Visa, Mastercard, Elo) em até 3x sem juros e boleto bancário (com prazo de compensação de 1 a 3 dias úteis)."
+      },
+      {
+        "id": 4,
+        "q": "Posso parcelar minha compra?",
+        "a": "Sim! Oferecemos parcelamento em até 3x sem juros ou em até 12x com acréscimo de taxas."
+      }
+    ]
+  },
+  {
+    "category": "Trocas e Devoluções",
+    "questions": [
+      {
+        "id": 5,
+        "q": "Qual o prazo para solicitar uma troca ou devolução?",
+        "a": "Você tem até 7 dias corridos após o recebimento do produto para solicitar a troca ou devolução, conforme o Código de Defesa do Consumidor."
+      }
+    ]
+  }
+]

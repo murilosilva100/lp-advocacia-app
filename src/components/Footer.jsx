@@ -1,5 +1,4 @@
 import React from "react";
-import aboutImage from "../assets/aboutImage.jpg";
 import { RiMedalLine } from "react-icons/ri";
 import "../styles/Footer.css";
 
