@@ -4,12 +4,12 @@
 }
 
 #services-text {
-  color: #4a5568;
+  color: #2d3748;
   font-family: Inter;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 160%;
+  line-height: 180%;
   padding-bottom: 2rem;
   text-align: center;
 }
@@ -24,7 +24,7 @@
 
 .item-services {
   background: linear-gradient(180deg, #fffdf7 0%, #fff9ea 100%);
-  color: #1a2c42;
+  color: #2d3748;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
   padding: 2rem 1.5rem;
   border-radius: 12px;
@@ -87,6 +87,27 @@
   text-align: justify;
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.item-services {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s, transform 0.6s;
+}
+
+.item-services.animate {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
 .icone {
   font-size: 2.3rem;
   display: flex;
@@ -102,7 +123,6 @@
 }
 
 .item-services:hover .icone {
-  transform: scale(1.08);
   background-color: #b38b59;
   color: #fff;
   box-shadow: 0 4px 10px rgba(179, 139, 89, 0.5);

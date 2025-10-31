@@ -1,14 +1,15 @@
 import React from "react";
-import homeImage from "../assets/homeImage.jpg";
 import businessImage from "../assets/businessImage.jpg"
 import { BsFillTelephoneFill } from "react-icons/bs";
+import useScrollAnimation from "../hooks/useScrollAnimation";
 import "../styles/home.css";
 
 export default function Home() {
+  useScrollAnimation(".cta");
   return (
     <div id="content">
       <section id="home-container">
-        <div id="cta">
+        <div id="cta" className="cta">
           <h1 className="title">
             Sua liberdade e dignidade <span>merecem a melhor defesa</span>
           </h1>

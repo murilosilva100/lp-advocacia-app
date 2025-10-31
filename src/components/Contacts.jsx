@@ -2,9 +2,12 @@ import React from "react";
 import { MdOutlineMail } from "react-icons/md";
 import { FiInstagram } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
+import useScrollAnimation from "../hooks/useScrollAnimation";
 import "../styles/Contacts.css";
 
 export default function Contacts() {
+
+  useScrollAnimation(".contact-item");
   return (
     <div id="contacts">
       <section id="contacts-container">

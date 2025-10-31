@@ -17,16 +17,16 @@
   width: 100%;
   max-width: 1200px;
   text-align: center;
-  color: white;
+  color: #F0F4F8;
 }
 
 #contacts-text {
   color: #F0F4F8;
   font-family: Inter;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 160%;
+  line-height: 180%;
   padding-bottom: 2rem;
   text-align: center;
 }
@@ -56,6 +56,27 @@
   max-width: 250px;
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s, transform 0.6s;
+}
+
+.contact-item.animate {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
 .contact-item p {
   font-family: "Playfair Display";
   font-size: 1.4rem;
@@ -68,7 +89,7 @@
 }
 
 .contact-icon-box {
-  background: linear-gradient(103deg, #001a3a 0%, #103863 49.52%);
+  border: 2px solid #f0f4f8;
   border-radius: 4px;
   width: 80px;
   height: 80px;
@@ -77,7 +98,17 @@
   justify-content: center;
   margin-bottom: 10px;
   font-size: 35px;
-  color: white;
+  color: #F0F4F8;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.contact-icon-box:hover {
+  transform: scale(1.04);
+  background-color: #b38b59;
+  color: #F0F4F8;
+  box-shadow: 0 4px 10px rgba(179, 139, 89, 0.5);
+  border: none;
 }
 
 .contact-label {
@@ -88,16 +119,12 @@
 
 .contact-info {
   font-size: 1rem;
-  color: white;
+  color: #F0F4F8;
   text-decoration: none;
   transition: color 0.3s;
 }
 
-.contact-info:hover {
-  color: #c7a974;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   #contacts-container {
     padding: 0px 8%;
   }
@@ -108,3 +135,16 @@
     gap: 30px;
   }
 }
+
+@media (min-width: 480px) and (max-width: 768px) {
+  #contacts-container {
+    padding: 0px 8%;
+  }
+
+  #contacts-grid-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
+}
+ 

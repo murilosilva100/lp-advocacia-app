@@ -1,41 +1,46 @@
 [
   {
-    "category": "Pedidos e Entregas",
+    "category": "Primeiro Direito",
     "questions": [
       {
         "id": 1,
-        "q": "Qual o prazo de entrega padrão?",
-        "a": "O prazo de entrega varia de 5 a 10 dias úteis, dependendo da sua localização. Você pode verificar o prazo exato no carrinho."
+        "q": "Lorem ipsum dolor sit amet?",
+        "a": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus."
       },
       {
         "id": 2,
-        "q": "Como posso rastrear meu pedido?",
-        "a": "Após a postagem, enviaremos o código de rastreio por e-mail em até 48h. Você poderá acompanhar o status diretamente na página 'Rastrear Pedido'."
+        "q": "Lorem ipsum dolor sit amet?",
+        "a": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus."
       }
     ]
   },
   {
-    "category": "Pagamento e Faturamento",
+    "category": "Segundo Direito",
     "questions": [
       {
         "id": 3,
-        "q": "Quais formas de pagamento são aceitas?",
-        "a": "Aceitamos Pix, cartões de crédito (Visa, Mastercard, Elo) em até 3x sem juros e boleto bancário (com prazo de compensação de 1 a 3 dias úteis)."
+        "q": "Lorem ipsum dolor sit amet?",
+        "a": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus."
       },
       {
         "id": 4,
-        "q": "Posso parcelar minha compra?",
-        "a": "Sim! Oferecemos parcelamento em até 3x sem juros ou em até 12x com acréscimo de taxas."
+        "q": "Lorem ipsum dolor sit amet?",
+        "a": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus."
+      },
+      {
+        "id": 5,
+        "q": "Lorem ipsum dolor sit amet?",
+        "a": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus."
       }
     ]
   },
   {
-    "category": "Trocas e Devoluções",
+    "category": "Terceiro Direito",
     "questions": [
       {
-        "id": 5,
-        "q": "Qual o prazo para solicitar uma troca ou devolução?",
-        "a": "Você tem até 7 dias corridos após o recebimento do produto para solicitar a troca ou devolução, conforme o Código de Defesa do Consumidor."
+        "id": 6,
+        "q": "Lorem ipsum dolor sit amet?",
+        "a": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus."
       }
     ]
   }

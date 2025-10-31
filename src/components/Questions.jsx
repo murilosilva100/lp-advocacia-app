@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import faqContent from "../data/faqContent.json";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import useScrollAnimation from "../hooks/useScrollAnimation";
 import "../styles/Questions.css";
 
 const FaqItem = ({ question, answer }) => {
@@ -28,6 +29,7 @@ const FaqItem = ({ question, answer }) => {
 };
 
 export default function Questions() {
+  useScrollAnimation(".faq-category-section");
   return (
     <div id="questions">
       <section id="questions-container">

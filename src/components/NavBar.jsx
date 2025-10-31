@@ -21,12 +21,12 @@ export default function NavBar() {
         <i id="nav_logo">
           <HiScale /> Advocacia
         </i>
-        <div className="navbar-list-container">
-          <a href="#inicio">Início</a>
-          <a href="#sobre">Sobre</a>
-          <a href="#serviços">Serviços</a>
-          <a href="#contato">Perguntas</a>
-          <button className="btn-contatos">Contatos</button>
+        <div className="navbar-list-container" aria-label="Links de navegação">
+          <a href="#home">Início</a>
+          <a href="#about">Sobre</a>
+          <a href="#services">Serviços</a>
+          <a href="#questions">Perguntas</a>
+          <a href="#contacts"><button className="btn-contatos">Contatos</button></a>
         </div>
 
         <div className="navbar-menu-container">

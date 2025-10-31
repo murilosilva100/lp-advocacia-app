@@ -1,8 +1,10 @@
 import React from "react";
 import { RiMedalLine } from "react-icons/ri";
+import useScrollAnimation from "../hooks/useScrollAnimation";
 import "../styles/Services.css";
 
 export default function Services() {
+  useScrollAnimation(".item-services");
   return (
     <div id="services">
       <section id="services-container">
