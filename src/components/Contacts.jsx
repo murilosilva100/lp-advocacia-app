@@ -6,8 +6,20 @@ import useScrollAnimation from "../hooks/useScrollAnimation";
 import "../styles/Contacts.css";
 
 export default function Contacts() {
-
   useScrollAnimation(".contact-item");
+
+  const EMAIL_CONTATO = "thiago.silva04082000@gmail.com";
+  const USER_INSTAGRAM = "thiago.silva04";
+  const NUMERO_WHATSAPP = "5561999777736";
+  const MENSAGEM_WHATSAPP = "Olá! Tenho interesse em uma consulta jurídica.";
+
+  const linkEmail = `mailto:${EMAIL_CONTATO}`;
+  
+  const linkInstagram = `https://www.instagram.com/${USER_INSTAGRAM}`;
+  
+  const mensagemCodificada = encodeURIComponent(MENSAGEM_WHATSAPP);
+  const linkWhatsApp = `https://wa.me/${NUMERO_WHATSAPP}?text=${mensagemCodificada}`;
+
   return (
     <div id="contacts">
       <section id="contacts-container">
@@ -19,41 +31,44 @@ export default function Contacts() {
           </p>
         </div>
         <div id="contacts-grid-container">
+          
           <div className="contact-item">
             <div className="contact-icon-box">
               <MdOutlineMail />
             </div>
             <p className="contact-label">Email</p>
-            <a href="" className="contact-info">
-              advogado@contato.com
+            <a href={linkEmail} className="contact-info">
+              {EMAIL_CONTATO}
             </a>
           </div>
+
           <div className="contact-item">
             <div className="contact-icon-box">
               <FiInstagram />
             </div>
             <p className="contact-label">Instagram</p>
             <a
-              href=""
+              href={linkInstagram}
               target="_blank"
               rel="noopener noreferrer"
               className="contact-info"
             >
-              @advogadoinsta
+              @{USER_INSTAGRAM}
             </a>
           </div>
+
           <div className="contact-item">
             <div className="contact-icon-box">
               <FaWhatsapp />
             </div>
             <p className="contact-label">WhatsApp</p>
             <a
-              href=""
+              href={linkWhatsApp}
               target="_blank"
               rel="noopener noreferrer"
               className="contact-info"
             >
-              +55 61 98888-8888
+              +55 61 999777736 
             </a>
           </div>
         </div>
