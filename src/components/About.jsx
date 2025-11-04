@@ -1,5 +1,5 @@
 import React from "react";
-import imageAbout from "../assets/imageabout.jpg";
+import imageabout from "../assets/imageabout.jpg";
 import useScrollAnimation from "../hooks/useScrollAnimation";
 import "../styles/About.css";
 
@@ -37,7 +37,7 @@ export default function About() {
             </p>
           </div>
           <div className="item-about box-imagem-central">
-            <img src={imageAbout} alt="Pessoa de terno" />
+            <img src={imageabout} alt="Pessoa de terno" />
             <div className="info-adicional">OAB/DF: 0000/00</div>
           </div>
           <div className="item-about card-about">
