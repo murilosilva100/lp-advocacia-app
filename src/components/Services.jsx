@@ -20,149 +20,90 @@ export default function Services() {
           </p>
         </div>
         <div className="services-grid-container">
-          <div className="item-services card-item1">
-            <div id="about-card-header">
-              <div className="icone">
-                <RiMedalLine />
-              </div>
-              <div id="card-name">
-                <h2>Card</h2>
-              </div>
+          <div className="item-services">
+            <div className="card-top">
+              <RiMedalLine className="card-icon" />
             </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-              turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-              nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
-              tellus elit sed risus.
-            </p>
-          </div>
-          <div className="item-services card-item2">
-            <div id="about-card-header">
-              <div className="icone">
-                <RiMedalLine />
-              </div>
-              <div id="card-name">
-                <h2>Card</h2>
-              </div>
+            <div className="card-body">
+              <h3 className="card-title">Experiência</h3>
+              <p className="card-text">
+                Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                vulputate libero et velit interdum, ac aliquet odio mattis.
+                <br />
+                <br />
+                Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                vulputate libero et velit interdum, ac aliquet odio mattis.
+                <br />
+                <br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                vulputate libero et velit interdum, ac aliquet odio mattis.
+              </p>
             </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-              turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-              nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
-              tellus elit sed risus.Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis
-              tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
-              sollicitudin lacus, ut interdum tellus elit sed risus.
-            </p>
           </div>
-          <div className="item-services card-item2">
-            <div id="about-card-header">
-              <div className="icone">
-                <RiMedalLine />
-              </div>
-              <div id="card-name">
-                <h2>Card</h2>
-              </div>
+
+          <div className="item-services">
+            <div className="card-top">
+              <RiMedalLine className="card-icon" />
             </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-              turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-              nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
-              tellus elit sed risus.Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis
-              tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
-              sollicitudin lacus, ut interdum tellus elit sed risus.
-            </p>
-          </div>
-          <div className="item-services card-item2">
-            <div id="about-card-header">
-              <div className="icone">
-                <RiMedalLine />
-              </div>
-              <div id="card-name">
-                <h2>Card</h2>
-              </div>
+            <div className="card-body">
+              <h3 className="card-title">Experiência</h3>
+              <p className="card-text">
+                Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                vulputate libero et velit interdum, ac aliquet odio mattis.
+                <br />
+                <br />
+                Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                vulputate libero et velit interdum, ac aliquet odio mattis.
+                <br />
+                <br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                vulputate libero et velit interdum, ac aliquet odio mattis.
+              </p>
             </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-              turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-              nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
-              tellus elit sed risus.Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis
-              tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
-              sollicitudin lacus, ut interdum tellus elit sed risus.
-            </p>
           </div>
-          <div className="item-services card-item2">
-            <div id="about-card-header">
-              <div className="icone">
-                <RiMedalLine />
-              </div>
-              <div id="card-name">
-                <h2>Card</h2>
-              </div>
+
+          <div className="item-services">
+            <div className="card-top">
+              <RiMedalLine className="card-icon" />
             </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-              turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-              nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
-              tellus elit sed risus.Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis
-              tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
-              sollicitudin lacus, ut interdum tellus elit sed risus.
-            </p>
-          </div>
-          <div className="item-services card-item2">
-            <div id="about-card-header">
-              <div className="icone">
-                <RiMedalLine />
-              </div>
-              <div id="card-name">
-                <h2>Card</h2>
-              </div>
+            <div className="card-body">
+              <h3 className="card-title">Experiência</h3>
+              <p className="card-text">
+                Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                vulputate libero et velit interdum, ac aliquet odio mattis.
+                <br />
+                <br />
+                Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                vulputate libero et velit interdum, ac aliquet odio mattis.
+                <br />
+                <br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                vulputate libero et velit interdum, ac aliquet odio mattis.
+              </p>
             </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-              turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-              nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
-              tellus elit sed risus.Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis
-              tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
-              sollicitudin lacus, ut interdum tellus elit sed risus.
-            </p>
           </div>
-          <div className="item-services card-item3">
-            <div id="about-card-header">
-              <div className="icone">
-                <RiMedalLine />
-              </div>
-              <div id="card-name">
-                <h2>Card</h2>
-              </div>
+
+          <div className="item-services">
+            <div className="card-top">
+              <RiMedalLine className="card-icon" />
             </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-              turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-              nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
-              tellus elit sed risus.
-            </p>
-          </div>
-          <div className="item-services card-item4">
-            <div id="about-card-header">
-              <div className="icone">
-                <RiMedalLine />
-              </div>
-              <div id="card-name">
-                <h2>Card</h2>
-              </div>
+            <div className="card-body">
+              <h3 className="card-title">Experiência</h3>
+              <p className="card-text">
+                Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                vulputate libero et velit interdum, ac aliquet odio mattis.
+                <br />
+                <br />
+                Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                vulputate libero et velit interdum, ac aliquet odio mattis.
+                <br />
+                <br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                vulputate libero et velit interdum, ac aliquet odio mattis.
+              </p>
             </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-              turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-              nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
-              tellus elit sed risus.
-            </p>
           </div>
+
         </div>
       </section>
     </div>

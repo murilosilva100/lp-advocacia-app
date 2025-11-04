@@ -12,8 +12,8 @@ export default function Footer() {
               <FaBalanceScale className="footer-icon" /> Email
             </h3>
             <p>
-              (Seção em duas frases). Soluções legais personalizadas com foco em resultados e
-              na sua tranquilidade. Defendemos seus direitos com ética.
+              Soluções legais personalizadas com foco em resultados e
+              na sua tranquilidade.
             </p>
           </div>
 

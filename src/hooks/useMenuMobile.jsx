@@ -12,11 +12,11 @@ export function useMenuMobile() {
   const handleCloseMenu = () => setOpenMenu(false);
 
   const menuOptions = [
-    { text: "Início", icon: <HomeWorkIcon /> },
-    { text: "Sobre", icon: <InfoIcon /> },
-    { text: "Serviços", icon: <AssignmentIcon /> },
-    { text: "Perguntas", icon: <QuestionAnswerIcon /> },
-    { text: "Contatos", icon: <ContactsIcon /> },
+    { text: "Início", icon: <HomeWorkIcon />, path: "#home" },
+    { text: "Sobre", icon: <InfoIcon />, path: "#about" },
+    { text: "Serviços", icon: <AssignmentIcon />, path: "#services"},
+    { text: "Perguntas", icon: <QuestionAnswerIcon />, path: "#questions"},
+    { text: "Contatos", icon: <ContactsIcon />, path: "#contacts"},
   ];
 
   return {

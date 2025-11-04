@@ -1,5 +1,5 @@
 import React from "react";
-import aboutImage from "../assets/aboutImage.jpg";
+import aboutImage from "../assets/imageAbout.jpg";
 import useScrollAnimation from "../hooks/useScrollAnimation";
 import "../styles/About.css";
 

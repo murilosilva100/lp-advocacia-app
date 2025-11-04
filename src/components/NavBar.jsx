@@ -26,7 +26,9 @@ export default function NavBar() {
           <a href="#about">Sobre</a>
           <a href="#services">Serviços</a>
           <a href="#questions">Perguntas</a>
-          <a href="#contacts"><button className="btn-contatos">Contatos</button></a>
+          <a href="#contacts">
+            <button className="btn-contatos">Contatos</button>
+          </a>
         </div>
 
         <div className="navbar-menu-container">
@@ -58,7 +60,15 @@ export default function NavBar() {
           <List>
             {menuOptions.map((item) => (
               <ListItem key={item.text} disablePadding>
-                <ListItemButton>
+                <ListItemButton
+                  onClick={() => {
+                    handleCloseMenu();
+                    const section = document.querySelector(item.path);
+                    if (section) {
+                      section.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
+                >
                   <ListItemIcon
                     sx={{
                       color: "#B38B59",

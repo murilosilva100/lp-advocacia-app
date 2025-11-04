@@ -2,12 +2,13 @@ import React from "react";
 import businessImage from "../assets/businessImage.jpg"
 import { BsFillTelephoneFill } from "react-icons/bs";
 import useScrollAnimation from "../hooks/useScrollAnimation";
+import bannerImage1 from "../assets/imageBanner.png"
 import "../styles/home.css";
 
 export default function Home() {
   useScrollAnimation(".cta");
   return (
-    <div id="content">
+    <div id="home">
       <section id="home-container">
         <div id="cta" className="cta">
           <h1 className="title">
@@ -27,7 +28,7 @@ export default function Home() {
           </div>
         </div>
         <div id="banner">
-          {/* <img src={homeImage} alt="" /> */}
+          <img src={bannerImage1} alt="" />
         </div>
       </section>
     </div>

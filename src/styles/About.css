@@ -6,7 +6,7 @@
 #about-text {
   color: #2d3748;
   font-family: Inter;
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: 180%;
@@ -23,15 +23,14 @@
 }
 
 .item-about {
-  background-color: #0b1a3d;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  background: linear-gradient(103deg, #001a3a 0%, #103863 49.82%, #001a3a 100%);
+  background: linear-gradient(180deg, #1a2c42 30%, #263a52 100%);
   color: #fff9ea;
   border-top: 3px solid #b38b59;
   text-align: center;
   padding: 20px;
   border-radius: 5px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 160%;
   z-index: 5;
 }
@@ -61,8 +60,8 @@
   font-family: "Playfair Display";
   color: #b38b59;
   font-weight: 600;
-  font-size: 1.2rem;
-  padding-bottom: 1.4rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .box-imagem-central {
@@ -89,6 +88,8 @@
 
 .box-imagem-central img {
   filter: brightness(90%);
+  max-height: auto;
+  max-width: auto;
   transition: transform 0.5s ease, filter 0.5s ease;
 }
 
@@ -103,17 +104,25 @@
   padding: 10px 0;
   width: 100%;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 @media (max-width: 480px) {
   #about-container {
-    padding: 0px 10%;
+    padding: 0px 8%;
   }
 
   .about-grid-container {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+
+  .item-about h2 {
+    font-size: 1.25rem;
+  }
+
+  #about-text {
+    font-size: 1rem;
   }
 
   .box-imagem-central {
@@ -128,12 +137,48 @@
 
 @media (min-width: 481px) and (max-width: 768px) {
   #about-container {
-    padding: 0px 8%;
+    padding: 0px 10%;
   }
 
   .about-grid-container {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+
+  .item-about h2 {
+    font-size: 1.25rem;
+  }
+
+  #about-text {
+    font-size: 1rem;
+  }
+
+  .box-imagem-central {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  .item-about {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1170px) {
+  #about-container {
+    padding: 0px 12%;
+  }
+
+  .about-grid-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .item-about h2 {
+    font-size: 1.25rem;
+  }
+
+  #about-text {
+    font-size: 1rem;
   }
 
   .box-imagem-central {
