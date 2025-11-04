@@ -7,7 +7,7 @@
 
   background-image: 
     linear-gradient(103deg, rgba(0, 26, 58, 0.9), rgba(16, 56, 99, 0.9)), 
-    url("../assets/imageBackground.JPG"); /* <-- caminho correto da imagem */
+    url("../assets/imageBackground.jpg"); /* <-- caminho correto da imagem */
 
   background-repeat: no-repeat;
   background-size: cover;
