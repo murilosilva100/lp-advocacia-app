@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import faqContent from "../data/faqContent.json";
+import faqContent from "../../data/faqContent.json";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
-import useScrollAnimation from "../hooks/useScrollAnimation";
-import "../styles/Questions.css";
+import useScrollAnimation from "../../hooks/useScrollAnimation";
+import "../../styles/Questions.css";
 
 const FaqItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);

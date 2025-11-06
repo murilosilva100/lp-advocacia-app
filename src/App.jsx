@@ -1,25 +1,16 @@
+import HomePage from "../src/pages/HomePage";
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import "../src/styles/App.css";
-import NavBar from "../src/components/NavBar";
-import ButtonFloatingContato from "../src/components/ButtonFloatingContato";
-import Home from "../src/components/Home";
-import About from "../src/components/About";
-import Services from "../src/components/Services";
-import Questions from "../src/components/Questions"
-import Footer from "../src/components/Footer"
-import Contacts from "../src/components/Contacts"
+import AdvogadoDeFamilia from "./pages/AdvogadoDeFamilia";
 
 function App() {
   return (
-    <div>
-      <NavBar />
-      <ButtonFloatingContato />
-      <Home />
-      <About />
-      <Services />
-      <Questions />
-      <Contacts />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/servico1" element={<AdvogadoDeFamilia />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

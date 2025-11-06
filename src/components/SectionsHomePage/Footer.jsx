@@ -1,6 +1,6 @@
 import React from "react";
 import { FaBalanceScale } from "react-icons/fa";
-import "../styles/Footer.css";
+import "../../styles/Footer.css";
 
 export default function Footer() {
   return (

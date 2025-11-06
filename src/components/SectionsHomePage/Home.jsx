@@ -1,12 +1,11 @@
-import React from "react";
-import businessImage from "../assets/businessImage.jpg"
 import { BsFillTelephoneFill } from "react-icons/bs";
-import useScrollAnimation from "../hooks/useScrollAnimation";
-import bannerImage1 from "../assets/imageBanner.png"
-import "../styles/home.css";
+import useScrollAnimation from "../../hooks/useScrollAnimation";
+import bannerImage1 from "../../assets/imageBanner.png";
+import "../../styles/home.css";
 
 export default function Home() {
   useScrollAnimation(".cta");
+
   return (
     <div id="home">
       <section id="home-container">
@@ -23,7 +22,10 @@ export default function Home() {
           <div id="cta_buttons">
             <button className="btn-default">Entrar em Contato agora!</button>
             <a href="tel:+5561996172502" id="phone_button">
-              <button className="btn-default"><BsFillTelephoneFill size="25px" style={{marginRight: 12}}/>(55) 9988776655</button>
+              <button className="btn-default">
+                <BsFillTelephoneFill size="25px" style={{ marginRight: 12 }} />
+                (55) 9988776655
+              </button>
             </a>
           </div>
         </div>

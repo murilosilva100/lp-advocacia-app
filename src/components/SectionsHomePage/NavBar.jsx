@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/header.css";
+import "../../styles/header.css";
 import { HiScale } from "react-icons/hi2";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import Drawer from "@mui/material/Drawer";
@@ -9,11 +9,18 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import { useMenuMobile } from "../hooks/useMenuMobile";
+import { useMenuMobile } from "../../hooks/useMenuMobile";
+import { useServicesMenu } from "../../hooks/useServicesMenu";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function NavBar() {
   const { openMenu, handleOpenMenu, handleCloseMenu, menuOptions } =
     useMenuMobile();
+
+  const { showServices, isClosing, handleToggleServices, handleCloseServices } =
+    useServicesMenu();
+
+  const navigate = useNavigate();
 
   return (
     <div id="header">
@@ -21,13 +28,25 @@ export default function NavBar() {
         <i id="nav_logo">
           <HiScale /> Advocacia
         </i>
+
         <div className="navbar-list-container" aria-label="Links de navegação">
           <a href="#home">Início</a>
           <a href="#about">Sobre</a>
-          <a href="#services">Serviços</a>
+
+          <Link
+            to="/servicos"
+            onClick={(e) => {
+              e.preventDefault();
+              handleToggleServices();
+            }}
+          >
+            Serviços
+          </Link>
+
           <a href="#questions">Perguntas</a>
+
           <a href="#contacts">
-            <button className="btn-contatos">Contatos</button>
+            <button className="btn-contatos">Contatos</button>{" "}
           </a>
         </div>
 
@@ -35,6 +54,18 @@ export default function NavBar() {
           <HiOutlineBars3 onClick={handleOpenMenu} />
         </div>
       </nav>
+
+      {showServices && (
+        <div
+          className={`services-menu-bar ${isClosing ? "closing" : "open"}`}
+          onMouseLeave={handleCloseServices}
+        >
+          <Link to="/servico1">Serviço 1</Link>
+          <Link to="/servico2">Serviço 2</Link>
+          <Link to="/servico3">Serviço 3</Link>
+        </div>
+      )}
+
       <Drawer
         open={openMenu}
         onClose={handleCloseMenu}

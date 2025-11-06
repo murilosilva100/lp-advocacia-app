@@ -2,8 +2,8 @@ import React from "react";
 import { MdOutlineMail } from "react-icons/md";
 import { FiInstagram } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
-import useScrollAnimation from "../hooks/useScrollAnimation";
-import "../styles/Contacts.css";
+import useScrollAnimation from "../../hooks/useScrollAnimation";
+import "../../styles/Contacts.css";
 
 export default function Contacts() {
   useScrollAnimation(".contact-item");
@@ -14,9 +14,9 @@ export default function Contacts() {
   const MENSAGEM_WHATSAPP = "Olá! Tenho interesse em uma consulta jurídica.";
 
   const linkEmail = `mailto:${EMAIL_CONTATO}`;
-  
+
   const linkInstagram = `https://www.instagram.com/${USER_INSTAGRAM}`;
-  
+
   const mensagemCodificada = encodeURIComponent(MENSAGEM_WHATSAPP);
   const linkWhatsApp = `https://wa.me/${NUMERO_WHATSAPP}?text=${mensagemCodificada}`;
 
@@ -31,7 +31,6 @@ export default function Contacts() {
           </p>
         </div>
         <div id="contacts-grid-container">
-          
           <div className="contact-item">
             <div className="contact-icon-box">
               <MdOutlineMail />
@@ -68,7 +67,7 @@ export default function Contacts() {
               rel="noopener noreferrer"
               className="contact-info"
             >
-              +55 61 999777736 
+              +55 61 999777736
             </a>
           </div>
         </div>

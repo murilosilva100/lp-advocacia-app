@@ -61,6 +61,59 @@
   background: #917047;
 }
 
+.services-menu-bar {
+  width: 100%;
+  background: rgba(0, 26, 58, 0.95);
+  display: flex;
+  justify-content: end;
+  gap: 2.5rem;
+  padding: 0.4rem 12%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 9;
+  animation: fadeInServices 0.4s ease forwards;
+}
+
+.services-menu-bar.closing {
+  animation: fadeOutServices 0.4s ease forwards;
+}
+
+.services-menu-bar span {
+  text-decoration: none;
+  color: #f0f4f8;
+  font-weight: 400;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.services-menu-bar span:hover {
+  color: #b38b59;
+}
+
+@keyframes fadeInServices {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOutServices {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+}
+
 @media (max-width: 480px) {
   #header {
     padding: 16px 8%;
@@ -94,7 +147,7 @@
 @media (min-width: 769px) and (max-width: 920px) {
   #header {
     padding: 16px 12%;
-    max-height: 60px;
+    max-height: 80px;
   }
 
   .navbar-list-container a {
