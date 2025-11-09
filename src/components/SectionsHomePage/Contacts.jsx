@@ -32,42 +32,39 @@ export default function Contacts() {
         </div>
         <div id="contacts-grid-container">
           <div className="contact-item">
-            <div className="contact-icon-box">
-              <MdOutlineMail />
-            </div>
-            <p className="contact-label">Email</p>
             <a href={linkEmail} className="contact-info">
-              {EMAIL_CONTATO}
+              <div className="contact-icon-box">
+                <MdOutlineMail />
+              </div>
+              <p className="contact-label">Email</p>
             </a>
           </div>
 
           <div className="contact-item">
-            <div className="contact-icon-box">
-              <FiInstagram />
-            </div>
-            <p className="contact-label">Instagram</p>
             <a
               href={linkInstagram}
               target="_blank"
               rel="noopener noreferrer"
               className="contact-info"
             >
-              @{USER_INSTAGRAM}
+              <div className="contact-icon-box">
+                <FiInstagram />
+              </div>
+              <p className="contact-label">Instagram</p>
             </a>
           </div>
 
           <div className="contact-item">
-            <div className="contact-icon-box">
-              <FaWhatsapp />
-            </div>
-            <p className="contact-label">WhatsApp</p>
             <a
               href={linkWhatsApp}
               target="_blank"
               rel="noopener noreferrer"
               className="contact-info"
             >
-              +55 61 999777736
+              <div className="contact-icon-box">
+                <FaWhatsapp />
+              </div>
+              <p className="contact-label">WhatsApp</p>
             </a>
           </div>
         </div>

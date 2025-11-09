@@ -14,39 +14,31 @@ export default function About() {
             Sobre <span id="sections-title-span">o Advogado</span>
           </h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-            turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-            nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
-            tellus elit sed risus. Maecenas eget condimentum velit, sit amet
-            feugiat lectus. Class aptent taciti sociosqu ad litora torquent per
-            conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus
-            enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex.
-            Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum
-            lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in
-            elementum tellus.
+            Sou Thiago Farias da Silva, advogado inscrito na OAB/DF 76.106.
+            Minha trajetória no Direito nasceu de um propósito claro: defender
+            pessoas e causas com verdade, coragem e empatia.
           </p>
         </div>
         <div className="about-grid-container">
           <div className="item-about card-about">
             <h2>Experiência</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-              turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-              nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
-              tellus elit sed risus.
+              Acredito que cada caso é único e que o papel do advogado vai muito
+              além dos processos — é sobre restaurar a dignidade, trazer
+              segurança e entregar soluções reais.
             </p>
           </div>
           <div className="item-about box-imagem-central">
-            <img src={imageabout} alt="Pessoa de terno" />
+            {/* <img src={imageabout} alt="Pessoa de terno" /> */}
             <div className="info-adicional">OAB/DF: 0000/00</div>
           </div>
           <div className="item-about card-about">
-            <h2>Resultados</h2>
+            <h2>Experiência</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-              turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-              nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
-              tellus elit sed risus.
+              O que me levou a escolher a advocacia foi o desejo de fazer a
+              diferença na vida das pessoas, principalmente nas áreas em que as
+              dores humanas são mais sensíveis: Família, Direito Criminal e
+              Direito do Trabalho.
             </p>
           </div>
         </div>

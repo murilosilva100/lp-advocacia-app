@@ -2,6 +2,7 @@ import React from "react";
 import "../../styles/header.css";
 import { HiScale } from "react-icons/hi2";
 import { HiOutlineBars3 } from "react-icons/hi2";
+import { IoIosArrowDown } from "react-icons/io";
 import Drawer from "@mui/material/Drawer";
 import Box from "@mui/material/Box";
 import List from "@mui/material/List";
@@ -25,9 +26,11 @@ export default function NavBar() {
   return (
     <div id="header">
       <nav id="navbar">
-        <i id="nav_logo">
-          <HiScale /> Advocacia
-        </i>
+        <a href="#home">
+          <i id="nav_logo">
+            <HiScale /> Advocacia
+          </i>
+        </a>
 
         <div className="navbar-list-container" aria-label="Links de navegação">
           <a href="#home">Início</a>
@@ -60,9 +63,15 @@ export default function NavBar() {
           className={`services-menu-bar ${isClosing ? "closing" : "open"}`}
           onMouseLeave={handleCloseServices}
         >
-          <Link to="/servico1">Serviço 1</Link>
-          <Link to="/servico2">Serviço 2</Link>
-          <Link to="/servico3">Serviço 3</Link>
+          <span>
+            <Link to="/advogadodefamilia">Advogado de Família</Link>
+          </span>
+          <span>
+            <Link to="/advogadocriminalista">Advogado Criminalista</Link>
+          </span>
+          <span>
+            <Link to="/advogadotrabalhista">Advogado Trabalhista</Link>
+          </span>
         </div>
       )}
 

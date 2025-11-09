@@ -1,0 +1,104 @@
+/* header da área de família */
+
+#tpfamilia-header {
+  width: 100%;
+  padding: 20px 12%;
+  max-height: 80px;
+  background: rgba(0, 26, 58, 0.95);
+  box-shadow: 0 4px 8px -2px rgba(9, 30, 66, 0.25);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+#tpfamilia-navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#tpfamilia-navbar a {
+  text-decoration: none;
+  color: #1b1111;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #f0f4f8;
+}
+
+#tpfamilia-navbar a:hover {
+  color: #b38b59;
+}
+
+#tpfamilia-nav_logo {
+  font-weight: 700;
+  font-size: 1rem;
+  display: flex;
+  color: #f0f4f8;
+}
+
+#tpfamilia-nav_logo:hover {
+  color: #b38b59;
+}
+
+/* home da área de família */
+
+#tpfamilia-home {
+  display: flex;
+  padding: 80px 12%;
+  padding-bottom: 0;
+  height: 400px;
+  background-color: rgba(0, 26, 58, 0.9);
+  justify-content: center;
+}
+
+#tpfamilia-container-home {
+  height: 320px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#tpfamilia-title {
+  margin-top: 5%;
+  font-size: 3rem;
+  color: #f0f4f8;
+  font-family: "Playfair Display";
+}
+
+#tpfamilia-title span{
+  color: #b38b59;
+  font-family: "Playfair Display";
+}
+
+#tpfamilia-description {
+  font-size: 1.15rem;
+  font-weight: 400;
+  line-height: 160%;
+  color: #f0f4f8;
+}
+
+/* conteudo da área de família */
+
+#tpfamilia-conteudo {
+  padding: 20px 12%;
+  background: #f0f4f8;
+}
+
+#tpfamilia-text {
+  color: #2d3748;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  text-align: center;
+}
+
+#tpfamilia-text p {
+  padding-bottom: 1.5rem;
+}
+
+/* perguntas da área de família */

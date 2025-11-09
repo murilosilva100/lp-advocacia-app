@@ -22,7 +22,6 @@
   padding-bottom: 2rem;
 }
 
-/* Card */
 .item-services {
   background: #ffffff;
   border-radius: 8px;
@@ -42,7 +41,6 @@
   box-shadow: 0 10px 24px rgba(179, 139, 89, 0.35);
 }
 
-/* Parte superior escura */
 .card-top {
   background: linear-gradient(180deg, #1a2c42 0%, #263a52 100%);
   border-top: 3px solid #b38b59;
@@ -54,10 +52,9 @@
 
 .card-icon {
   font-size: 2rem;
-  color: #d4b074;
+  color: #b38b59;
 }
 
-/* Corpo do card */
 .card-body {
   padding: 1.5rem 1.5rem;
   text-align: left;
