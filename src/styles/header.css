@@ -57,12 +57,11 @@
   font-weight: 400;
   cursor: pointer;
   color: #f0f4f8;
-  transition: background-color 0.3s ease, transform 0.3s ease,
+  transition: background-color 0.3s ease,
     box-shadow 0.3s ease;
 }
 
 .btn-contatos:hover {
-  transform: scale(1.03);
   box-shadow: 0 3px 8px rgba(179, 139, 89, 0.5);
   color: #f0f4f8;
   background-color: #b38b59;

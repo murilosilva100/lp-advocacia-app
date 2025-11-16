@@ -26,22 +26,12 @@
         "id": 4,
         "q": "Lorem ipsum dolor sit amet?",
         "a": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus."
-      },
-      {
-        "id": 5,
-        "q": "Lorem ipsum dolor sit amet?",
-        "a": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus."
       }
     ]
   },
   {
     "category": "Terceiro Direito",
     "questions": [
-      {
-        "id": 6,
-        "q": "Lorem ipsum dolor sit amet?",
-        "a": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus."
-      },
       {
         "id": 6,
         "q": "Lorem ipsum dolor sit amet?",

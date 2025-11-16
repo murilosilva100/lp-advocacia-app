@@ -2,7 +2,6 @@ import React from "react";
 import "../../styles/header.css";
 import { HiScale } from "react-icons/hi2";
 import { HiOutlineBars3 } from "react-icons/hi2";
-import { IoIosArrowDown } from "react-icons/io";
 import Drawer from "@mui/material/Drawer";
 import Box from "@mui/material/Box";
 import List from "@mui/material/List";
@@ -34,7 +33,7 @@ export default function NavBar() {
 
         <div className="navbar-list-container" aria-label="Links de navegação">
           <a href="#home">Início</a>
-          <a href="#about">Sobre</a>
+          
 
           <Link
             to="/servicos"
@@ -48,6 +47,8 @@ export default function NavBar() {
 
           <a href="#questions">Perguntas</a>
 
+          <a href="#about">Sobre</a>
+          
           <a href="#contacts">
             <button className="btn-contatos">Contatos</button>{" "}
           </a>

@@ -6,10 +6,10 @@ import Footer from "../components/SectionsHomePage/Footer"
 export default function AdvogadoDeFamilia() {
   return (
     <>
-      <HeaderAdvFamilia />
+      {/* <HeaderAdvFamilia />
       <HomeAdvFamilia />
       <ConteudoAdvFamilia />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }

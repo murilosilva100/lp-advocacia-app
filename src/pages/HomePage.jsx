@@ -13,9 +13,9 @@ function HomePage() {
       <NavBar />
       <ButtonFloatingContato />
       <Home />
-      <About />
       <Services />
       <Questions />
+      <About />
       <Contacts />
       <Footer />
     </>

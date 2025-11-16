@@ -17,7 +17,7 @@ export default function Home() {
             Advogado criminalista experiente, pronto para proteger você em
             processos criminais com estratégia jurídica sólida e atendimento
             humanizado.
-            <span>Sua tranquilidade começa com a defesa certa.</span>
+            <span><br />Sua tranquilidade começa com a defesa certa.</span>
           </p>
           <div id="cta_buttons">
             <button className="btn-default">Entrar em Contato agora!</button>

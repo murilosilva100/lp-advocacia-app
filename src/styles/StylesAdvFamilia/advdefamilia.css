@@ -51,6 +51,14 @@
   height: 400px;
   background-color: rgba(0, 26, 58, 0.9);
   justify-content: center;
+
+  background-image: 
+    linear-gradient(103deg, rgba(0, 26, 58, 0.9), rgba(16, 56, 99, 0.9)), 
+    url("");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #tpfamilia-container-home {
@@ -64,6 +72,7 @@
 #tpfamilia-title {
   margin-top: 5%;
   font-size: 3rem;
+  font-weight: 500;
   color: #f0f4f8;
   font-family: "Playfair Display";
 }
