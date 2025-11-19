@@ -1,5 +1,6 @@
 import { RiMedalLine } from "react-icons/ri";
 import useScrollAnimation from "../../hooks/useScrollAnimation";
+import { Link, useNavigate } from "react-router-dom";
 import "../../styles/Services.css";
 
 export default function Services() {
@@ -24,7 +25,7 @@ export default function Services() {
               <RiMedalLine className="card-icon" />
             </div>
             <div className="card-body">
-              <h3 className="card-title">Experiência</h3>
+              <h3 className="card-title">Direito de Família e Sucessões</h3>
               <p className="card-text">
                 Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                 vulputate libero et velit interdum, ac aliquet odio mattis.
@@ -37,6 +38,11 @@ export default function Services() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                 vulputate libero et velit interdum, ac aliquet odio mattis.
               </p>
+              <br />
+
+              <Link to="/advogadotrabalhista" className="btn-services-card">
+                Clique para saber mais!
+              </Link>
             </div>
           </div>
 
@@ -45,7 +51,7 @@ export default function Services() {
               <RiMedalLine className="card-icon" />
             </div>
             <div className="card-body">
-              <h3 className="card-title">Experiência</h3>
+              <h3 className="card-title">Direito Criminal</h3>
               <p className="card-text">
                 Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                 vulputate libero et velit interdum, ac aliquet odio mattis.
@@ -58,6 +64,11 @@ export default function Services() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                 vulputate libero et velit interdum, ac aliquet odio mattis.
               </p>
+              <br />
+
+              <Link to="/advogadotrabalhista" className="btn-services-card">
+                Clique para saber mais!
+              </Link>
             </div>
           </div>
 
@@ -66,7 +77,7 @@ export default function Services() {
               <RiMedalLine className="card-icon" />
             </div>
             <div className="card-body">
-              <h3 className="card-title">Experiência</h3>
+              <h3 className="card-title">Direito Trabalhista</h3>
               <p className="card-text">
                 Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                 vulputate libero et velit interdum, ac aliquet odio mattis.
@@ -79,27 +90,11 @@ export default function Services() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                 vulputate libero et velit interdum, ac aliquet odio mattis.
               </p>
-            </div>
-          </div>
+              <br />
 
-          <div className="item-services">
-            <div className="card-top">
-              <RiMedalLine className="card-icon" />
-            </div>
-            <div className="card-body">
-              <h3 className="card-title">Experiência</h3>
-              <p className="card-text">
-                Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet odio mattis.
-                <br />
-                <br />
-                Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet odio mattis.
-                <br />
-                <br />
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet odio mattis.
-              </p>
+              <Link to="/advogadotrabalhista" className="btn-services-card">
+                Clique para saber mais!
+              </Link>
             </div>
           </div>
         </div>

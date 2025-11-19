@@ -6,10 +6,10 @@ import Footer from "../components/SectionsHomePage/Footer";
 export default function AdvogadoTrabalhista() {
   return (
     <>
-    {/* <HeaderAdvTrabalhista />
+    <HeaderAdvTrabalhista />
     <HomeAdvTrabalhista />
     <ConteudoAdvTrabalhista />
-    <Footer /> */}
+    <Footer />
     </>
   );
 }

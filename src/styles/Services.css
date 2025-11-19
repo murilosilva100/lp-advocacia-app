@@ -28,7 +28,6 @@
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
   overflow: hidden;
   width: 100%;
-  max-width: 420px;
   cursor: default;
   transition: box-shadow 0.3s ease;
   transition: border-color 0.3s ease;
@@ -59,6 +58,8 @@
   padding: 1.5rem 1.5rem;
   text-align: left;
   background: #ffffff;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-title {
@@ -75,6 +76,50 @@
   font-size: 1rem;
   line-height: 1.6;
   text-align: justify;
+}
+
+.btn-services-card {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding: 0 10%;
+  width: 100%;
+  padding: 0.8rem 1.5rem;
+  background: #001a3a;
+  outline: none;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #f0f4f8;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+}
+
+.btn-services-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-20deg);
+  animation: shine 5s infinite;
+}
+
+@keyframes shine {
+  0% {
+    left: -150%;
+  }
+  100% {
+    left: 150%;
+  }
 }
 
 @keyframes fadeInUp {
@@ -116,7 +161,7 @@
   }
 }
 
-@media (min-width: 481px) and (max-width: 768px){
+@media (min-width: 481px) and (max-width: 768px) {
   #services-container {
     padding: 0px 10%;
   }
