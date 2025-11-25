@@ -12,11 +12,10 @@ export default function Services() {
           <h2 id="sections-title">
             Serviços <span id="sections-title-span">e Áreas de atuação</span>
           </h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-            turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-            nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
-            tellus elit sed risus.
+          <p id="sections-subtitle">
+            Defesa jurídica completa nas áreas de família e sucessões, criminal
+            e trabalhista, combinando expertise e atendimento personalizado. Seu
+            problema merece uma solução profissional e eficiente.
           </p>
         </div>
         <div className="services-grid-container">
@@ -27,20 +26,23 @@ export default function Services() {
             <div className="card-body">
               <h3 className="card-title">Direito de Família e Sucessões</h3>
               <p className="card-text">
-                Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet odio mattis.
+                Defesa dos seus direitos em processos de divórcio, união
+                estável, guarda e visitação. Acompanhamento próximo e
+                estratégico para proteger você e sua família em todas as etapas
+                do processo.
                 <br />
                 <br />
-                Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet odio mattis.
+                Planejamento e execução de inventários, testamentos e doações
+                com segurança jurídica. Soluções eficientes para organizar e
+                proteger o patrimônio familiar de forma planejada.
                 <br />
                 <br />
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet odio mattis.
+                Advocacia que compreende a sensibilidade dos momentos
+                familiares. Compromisso com resultados justos e atendimento
+                acolhedor quando você mais precisa de apoio jurídico.
               </p>
-              <br />
 
-              <Link to="/advogadotrabalhista" className="btn-services-card">
+              <Link to="/advogadodefamilia" className="btn-services-card">
                 Clique para saber mais!
               </Link>
             </div>
@@ -53,20 +55,24 @@ export default function Services() {
             <div className="card-body">
               <h3 className="card-title">Direito Criminal</h3>
               <p className="card-text">
-                Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet odio mattis.
+                Advocacia criminal completa desde a fase investigatória até
+                recursos em tribunais superiores. Defesa técnica qualificada em
+                casos de todas as naturezas, garantindo proteção aos seus
+                direitos fundamentais.
                 <br />
                 <br />
-                Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet odio mattis.
+                Atuação em júri popular, habeas corpus, revisão criminal e
+                liberdade provisória. Estratégia personalizada para cada
+                situação, buscando sempre o melhor resultado jurídico possível
+                para você.
                 <br />
                 <br />
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet odio mattis.
+                Defesa que une experiência, ética e comprometimento com sua
+                tranquilidade. Estamos preparados para proteger você com
+                seriedade e discrição em todos os momentos do processo.
               </p>
-              <br />
 
-              <Link to="/advogadotrabalhista" className="btn-services-card">
+              <Link to="/advogadocriminalista" className="btn-services-card">
                 Clique para saber mais!
               </Link>
             </div>
@@ -79,18 +85,21 @@ export default function Services() {
             <div className="card-body">
               <h3 className="card-title">Direito Trabalhista</h3>
               <p className="card-text">
-                Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet odio mattis.
+                Defesa dos seus direitos trabalhistas em ações contra
+                empregadores. Atuamos em casos de rescisão indevida, horas
+                extras, assédio moral, FGTS e demais verbas trabalhistas com
+                estratégia focada em resultados.
                 <br />
                 <br />
-                Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet odio mattis.
+                Assessoria completa para trabalhadores em negociações, acordos e
+                processos judiciais. Análise detalhada do seu caso e busca
+                incansável pela reparação justa dos seus direitos violados.
                 <br />
                 <br />
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet odio mattis.
+                Advocacia comprometida com a dignidade do trabalhador.
+                Atendimento acessível e transparente, lutando para que você
+                receba tudo aquilo que lhe é devido por lei.
               </p>
-              <br />
 
               <Link to="/advogadotrabalhista" className="btn-services-card">
                 Clique para saber mais!

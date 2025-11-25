@@ -1,17 +1,6 @@
 #about-container {
   padding: 20px 12%;
-  background: #dedbd4;
-}
-
-#about-text {
-  color: #2d3748;
-  font-family: Inter;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 180%;
-  padding-bottom: 2rem;
-  text-align: center;
+  background: #eeeeee;
 }
 
 .about-grid-container {
@@ -65,6 +54,10 @@
   margin-bottom: 1rem;
 }
 
+.item-about.card-about.animate{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .box-imagem-central {
   grid-row: 1;
   grid-column: 2;
@@ -99,7 +92,6 @@
 }
 
 .box-imagem-central img:hover {
-  transform: scale(1.05);
   filter: brightness(100%);
 }
 

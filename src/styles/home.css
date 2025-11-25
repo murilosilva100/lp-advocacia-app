@@ -59,7 +59,7 @@
 
 #cta .description {
   font-size: 1.15rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 160%;
   color: #f0f4f8;
 }
@@ -69,7 +69,7 @@
 }
 
 #cta_buttons {
-  padding-top: 90px;
+  margin-top: 90px;
   display: flex;
   gap: 28px;
 }
@@ -127,7 +127,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 5rem;
     gap: 1rem;
   }
 }
@@ -169,7 +168,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 5rem;
     gap: 1rem;
   }
 }
@@ -211,7 +209,6 @@
     padding: 30px;
     display: flex;
     justify-content: space-between;
-    padding-top: 5rem;
     gap: 1rem;
   }
 }

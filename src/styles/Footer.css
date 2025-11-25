@@ -1,6 +1,6 @@
 #footer {
   background: linear-gradient(to bottom, #021831, #001226);
-  color: #d0d8e0;
+  color: #f0f4f8;
   font-family: "Inter", sans-serif;
   border-top: 2px solid #c7a35e30;
 }
@@ -21,7 +21,7 @@
 .footer-title {
   color: #b38b59;
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 700;
   font-family: "Playfair Display";
   display: flex;
   align-items: center;
@@ -43,7 +43,7 @@
 
 .item-footer a {
   font-size: 1rem;
-  color: #d0d8e0;
+  color: #f0f4f8;
   text-decoration: none;
   transition: all 0.3s ease;
 }
@@ -64,7 +64,8 @@
 }
 
 .footer-links a {
-  color: #f5f5f5;
+  font-weight: 500;
+  color: #f0f4f8;
   text-decoration: none;
   transition: all 0.3s ease;
 }
@@ -89,9 +90,9 @@
 }
 
 .footer-bottom {
-  font-weight: 500;
+  font-weight: 400;
   text-align: center;
-  color: #dcdcdc;
+  color: #f0f4f8;
   font-size: 1rem;
 }
 
@@ -108,11 +109,26 @@
 
   .footer-title {
     justify-content: center;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
+    font-weight: 750;
   }
 
-  .footer-links {
-    font-weight: 300;
+  .item-footer p {
+    margin-bottom: 4px;
+  }
+
+  .footer-links li {
+    margin: 4px 0;
+  }
+
+  .footer-links a {
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .item-footer a {
+    font-weight: 400;
+    font-size: 14px;
   }
 
   .footer-icon {
@@ -120,7 +136,7 @@
   }
 
   .footer-divider {
-  margin: 30px auto 20px;
+    margin: 20px auto 20px;
   }
 }
 
@@ -149,7 +165,7 @@
   }
 
   .footer-divider {
-  margin: 30px auto 20px;
+    margin: 30px auto 20px;
   }
 }
 

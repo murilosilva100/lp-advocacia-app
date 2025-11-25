@@ -18,10 +18,12 @@
 }
 
 #nav_logo {
+  align-items: center;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.05rem;
   display: flex;
   color: #f0f4f8;
+  gap: 10px;
 }
 
 #nav_logo:hover {

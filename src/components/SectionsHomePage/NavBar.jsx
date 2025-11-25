@@ -27,7 +27,7 @@ export default function NavBar() {
       <nav id="navbar">
         <a href="#home">
           <i id="nav_logo">
-            <HiScale /> Advocacia
+            <HiScale size="22px"/>Adv Thiago F. S.
           </i>
         </a>
 

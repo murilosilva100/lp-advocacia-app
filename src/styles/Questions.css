@@ -1,19 +1,8 @@
 #questions-container {
-  padding: 20px 12%;
-  background: #f0f4f8;
+  padding: 0px 12%;
+  background: #f0f4f8 ;
   text-align: center;
   border-radius: 1rem;
-}
-
-.questions-subtitle {
-  color: #2d3748;
-  font-family: Inter;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 180%;
-  padding-bottom: 2rem;
-  text-align: center;
 }
 
 #questions-grid-container {
@@ -143,7 +132,7 @@
 
 @media (min-width: 481px) and (max-width: 768px) {
   #questions-container {
-    padding: 0px 10%;
+    padding: 0px 10% !important;
   }
 
   .faq-category-title {
@@ -152,11 +141,5 @@
 
   .faq-question-button {
     font-size: 1rem;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1170px) {
-  #questions-container {
-    padding: 0px 12%;
   }
 }

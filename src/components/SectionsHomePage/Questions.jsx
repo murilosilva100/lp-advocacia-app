@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import faqContent from "../../data/faqContent.json";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import useScrollAnimation from "../../hooks/useScrollAnimation";
-import "../../styles/Questions.css";
+import "../../styles/questions.css";
 
 const FaqItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,9 +37,9 @@ export default function Questions() {
           <h2 id="sections-title">
             Perguntas <span id="sections-title-span">Frequentes</span>
           </h2>
-          <p className="questions-subtitle">
+          <p id="sections-subtitle">
             Encontre rapidamente as respostas para as dúvidas mais comuns sobre
-            nossos produtos e serviços.
+            nossos serviços e áreas de atuação!
           </p>
         </div>
         <div id="questions-grid-container">

@@ -13,7 +13,7 @@ export default function About() {
           <h2 id="sections-title">
             Sobre <span id="sections-title-span">o Advogado</span>
           </h2>
-          <p>
+          <p id="sections-subtitle">
             Sou Thiago Farias da Silva, advogado inscrito na OAB/DF 76.106.
             Minha trajetória no Direito nasceu de um propósito claro: defender
             pessoas e causas com verdade, coragem e empatia.
@@ -29,7 +29,7 @@ export default function About() {
             </p>
           </div>
           <div className="item-about box-imagem-central">
-            {/* <img src={imageabout} alt="Pessoa de terno" /> */} 
+            <img src={imageabout} alt="Pessoa de terno" />
             <div className="info-adicional">OAB/DF: 0000/00</div>
           </div>
           <div className="item-about card-about">

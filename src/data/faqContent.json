@@ -1,46 +1,91 @@
 [
   {
-    "category": "Primeiro Direito",
+    "category": "Direito de Família e Sucessões",
     "questions": [
       {
         "id": 1,
-        "q": "Lorem ipsum dolor sit amet?",
-        "a": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus."
+        "q": "Quanto tempo demora um processo de divórcio?",
+        "a": "O tempo varia conforme o tipo de divórcio. O divórcio consensual extrajudicial (em cartório) pode ser concluído em poucos dias, desde que não haja filhos menores e o casal tenha acordo sobre partilha de bens. Já o divórcio litigioso (judicial) pode levar de 6 meses a 2 anos, dependendo da complexidade da partilha e das questões envolvendo guarda e pensão alimentícia."
       },
       {
         "id": 2,
-        "q": "Lorem ipsum dolor sit amet?",
-        "a": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus."
-      }
-    ]
-  },
-  {
-    "category": "Segundo Direito",
-    "questions": [
+        "q": "Como funciona a guarda compartilhada?",
+        "a": "Na guarda compartilhada, ambos os pais dividem as responsabilidades e decisões sobre a vida dos filhos, mesmo que a criança resida principalmente com um deles. É o modelo preferencial no Brasil, pois mantém a presença ativa de ambos os genitores na criação. A convivência e rotina são definidas em acordo ou por decisão judicial, sempre priorizando o melhor interesse da criança."
+      },
       {
         "id": 3,
-        "q": "Lorem ipsum dolor sit amet?",
-        "a": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus."
+        "q": "Preciso fazer inventário mesmo se não houver bens?",
+        "a": "Sim, o inventário é obrigatório por lei quando há falecimento, independentemente da existência de bens. Mesmo sem patrimônio, o processo formaliza a transmissão de eventuais direitos e encerra pendências. Caso contrário, os herdeiros podem enfrentar dificuldades futuras para comprovar a sucessão, como ao receber heranças inesperadas ou benefícios previdenciários."
       },
       {
         "id": 4,
-        "q": "Lorem ipsum dolor sit amet?",
-        "a": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus."
+        "q": "Posso pedir pensão alimentícia após o divórcio?",
+        "a": "Sim, é possível solicitar pensão alimentícia para o ex-cônjuge se houver necessidade comprovada e o outro tiver condições de pagar. Diferente da pensão para filhos, a pensão entre ex-cônjuges costuma ser temporária, destinada a auxiliar na readaptação financeira após o fim do casamento, especialmente quando há grande disparidade de renda."
+      },
+      {
+        "id": 5,
+        "q": "Como funciona a partilha de bens na união estável?",
+        "a": "A partilha na união estável segue regras similares ao casamento. Se não houver contrato estabelecendo regime diferente, aplica-se o regime da comunhão parcial de bens: dividem-se os bens adquiridos durante a união, enquanto bens anteriores e heranças permanecem individuais. É fundamental comprovar a existência e o período da união estável para garantir os direitos patrimoniais."
       }
     ]
   },
   {
-    "category": "Terceiro Direito",
+    "category": "Direito Criminal",
     "questions": [
       {
         "id": 6,
-        "q": "Lorem ipsum dolor sit amet?",
-        "a": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus."
+        "q": "Quando devo contratar um advogado criminalista?",
+        "a": "O ideal é contratar um advogado assim que tiver conhecimento de qualquer investigação, intimação ou inquérito policial em seu nome. A defesa técnica desde o início pode evitar prisões desnecessárias, proteger seus direitos durante depoimentos e construir uma estratégia sólida. Mesmo antes de qualquer acusação formal, a orientação jurídica é fundamental para não prejudicar sua situação."
       },
       {
-        "id": 6,
-        "q": "Lorem ipsum dolor sit amet?",
-        "a": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus."
+        "id": 7,
+        "q": "Posso responder a um processo criminal em liberdade?",
+        "a": "Sim, na maioria dos casos é possível responder ao processo em liberdade. A prisão preventiva só deve ocorrer em situações excepcionais, quando houver risco à ordem pública, à investigação ou quando o acusado não comparecer aos atos processuais. Um advogado pode requerer liberdade provisória ou medidas cautelares alternativas à prisão, demonstrando que você não representa perigo."
+      },
+      {
+        "id": 8,
+        "q": "O que é flagrante e quais são meus direitos?",
+        "a": "Flagrante ocorre quando alguém é surpreendido cometendo um crime ou logo após sua prática. Mesmo em flagrante, você tem direito a permanecer em silêncio, não produzir provas contra si mesmo, comunicar-se com familiares e ter assistência de advogado. É fundamental exercer o direito ao silêncio e aguardar orientação jurídica antes de prestar qualquer declaração."
+      },
+      {
+        "id": 9,
+        "q": "Ficha criminal pode ser limpa? Como funciona?",
+        "a": "Sim, é possível obter a reabilitação criminal após cumprir integralmente a pena e passar determinado período sem cometer novos crimes (geralmente 2 anos). A reabilitação não apaga a condenação dos registros, mas impede sua divulgação em certidões. Além disso, após 5 anos do cumprimento da pena (para crimes sem violência), os antecedentes não podem mais ser considerados para agravar futuras penas."
+      },
+      {
+        "id": 10,
+        "q": "Posso recusar fazer teste do bafômetro?",
+        "a": "Sim, você pode recusar, mas a recusa pode configurar infração de trânsito gravíssima com multa, suspensão da carteira e apreensão do veículo. A autoridade pode utilizar outros meios de prova, como vídeos, testemunhas e exame clínico para caracterizar embriaguez. Do ponto de vista criminal, a recusa não elimina a possibilidade de processo, mas pode dificultar a produção de provas pela acusação."
+      }
+    ]
+  },
+  {
+    "category": "Direito Trabalhista",
+    "questions": [
+      {
+        "id": 11,
+        "q": "Fui demitido sem justa causa. Quais são meus direitos?",
+        "a": "Na demissão sem justa causa, você tem direito a: saldo de salário, aviso prévio (trabalhado ou indenizado), férias vencidas e proporcionais com adicional de 1/3, 13º salário proporcional, saque do FGTS com multa de 40%, e seguro-desemprego (se preencher os requisitos). O empregador deve pagar todas as verbas até 10 dias após o término do contrato, sob pena de multa."
+      },
+      {
+        "id": 12,
+        "q": "Meu empregador não registrou minha carteira. O que fazer?",
+        "a": "Você pode buscar o reconhecimento do vínculo empregatício através de ação trabalhista, apresentando provas como mensagens, testemunhas, comprovantes de pagamento, crachá ou registros de ponto. Uma vez reconhecido o vínculo, o empregador será condenado a pagar todas as verbas devidas (FGTS, férias, 13º) além de realizar as anotações na carteira retroativamente."
+      },
+      {
+        "id": 13,
+        "q": "Tenho direito a horas extras? Como calcular?",
+        "a": "Sim, todo trabalho além da jornada contratual (geralmente 8 horas diárias ou 44 semanais) gera direito a horas extras com adicional mínimo de 50% nos dias úteis e 100% em domingos e feriados. Para calcular, multiplique o valor da hora normal pelo adicional correspondente. Guarde comprovantes de horários (mensagens, e-mails, prints) para comprovar a jornada real trabalhada."
+      },
+      {
+        "id": 14,
+        "q": "Sofri acidente de trabalho. Quais são meus direitos?",
+        "a": "Você tem direito à estabilidade de 12 meses após o retorno ao trabalho, auxílio-doença acidentário pelo INSS, tratamento médico, e pode pleitear indenização por danos morais e materiais se houver culpa do empregador. É fundamental comunicar imediatamente o acidente à empresa para emissão da CAT (Comunicação de Acidente de Trabalho) e buscar atendimento médico com documentação adequada."
+      },
+      {
+        "id": 15,
+        "q": "Posso ser demitido durante a gravidez?",
+        "a": "Não. A gestante tem estabilidade desde a confirmação da gravidez até 5 meses após o parto, mesmo que a empresa desconheça a gestação no momento da demissão. Se demitida nesse período, você pode buscar a reintegração ao emprego ou receber indenização correspondente ao período de estabilidade, além de todas as verbas rescisórias devidas."
       }
     ]
   }
