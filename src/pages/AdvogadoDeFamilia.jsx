@@ -1,6 +1,7 @@
 import ConteudoAdvFamilia from "../components/SectionsAdvogadoDeFamilia/ConteudoAdvFamilia";
 import HeaderAdvFamilia from "../components/SectionsAdvogadoDeFamilia/HeaderAdvFamilia";
 import HomeAdvFamilia from "../components/SectionsAdvogadoDeFamilia/HomeAdvFamilia";
+import Contacts from "../components/SectionsHomePage/Contacts";
 import Footer from "../components/SectionsHomePage/Footer"
 
 export default function AdvogadoDeFamilia() {
@@ -9,6 +10,7 @@ export default function AdvogadoDeFamilia() {
       <HeaderAdvFamilia />
       <HomeAdvFamilia />
       <ConteudoAdvFamilia />
+      <Contacts />
       <Footer />
     </>
   );

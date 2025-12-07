@@ -1,7 +1,8 @@
-import { BsFillTelephoneFill } from "react-icons/bs";
 import useScrollAnimation from "../../hooks/useScrollAnimation";
 import bannerImage1 from "../../assets/imageBanner.png";
-import "../../styles/home.css";
+import { MdPhoneEnabled } from "react-icons/md";
+import { MdPhoneIphone } from "react-icons/md";
+import "../../styles/Home.css";
 
 export default function Home() {
   useScrollAnimation(".cta");
@@ -19,11 +20,14 @@ export default function Home() {
             <span> Sua tranquilidade começa com a defesa certa.</span>
           </p>
           <div id="cta_buttons">
-            <button className="btn-default"><a href="https://wa.me/5561999777736?text=Olá! Gostaria de saber mais sobre os serviços...">Entrar em Contato agora!</a></button>
+            <a href="https://wa.me/5561999777736?text=Olá! Gostaria de saber mais sobre os serviços...">
+              <button className="btn-default">
+                Entrar em Contato! <MdPhoneIphone size="25px" />
+              </button>
+            </a>
             <a href="tel:+5561996172502" id="phone_button">
               <button className="btn-default">
-                <BsFillTelephoneFill size="25px" style={{ marginRight: 12 }} />
-                (55) 9988776655
+                +55 (61) 99977-7736 <MdPhoneEnabled size="25px" />
               </button>
             </a>
           </div>

@@ -1,5 +1,4 @@
 import React from "react";
-import "../../styles/header.css";
 import { HiScale } from "react-icons/hi2";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import Drawer from "@mui/material/Drawer";
@@ -12,6 +11,7 @@ import ListItemText from "@mui/material/ListItemText";
 import { useMenuMobile } from "../../hooks/useMenuMobile";
 import { useServicesMenu } from "../../hooks/useServicesMenu";
 import { Link, useNavigate } from "react-router-dom";
+import "../../styles/Header.css";
 
 export default function NavBar() {
   const { openMenu, handleOpenMenu, handleCloseMenu, menuOptions } =

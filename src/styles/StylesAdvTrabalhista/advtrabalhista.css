@@ -96,6 +96,17 @@
   background: #f0f4f8;
 }
 
+#tptrabalhista-section-title {
+  color: #1A2C42;
+  font-family: "Playfair Display";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  opacity: 0.9;
+  padding-bottom: 2rem;
+}
+
 #tptrabalhista-text {
   color: #2d3748;
   font-family: Inter;

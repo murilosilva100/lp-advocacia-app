@@ -5,8 +5,8 @@ export default function ConteudoAdvTrabalhista() {
     <div id="tptrabalhista-conteudo">
       <section id="tptrabalhista-container-conteudo">
         <div id="tptrabalhista-text">
-          <h2 id="sections-title">
-            Sobre <span id="sections-title-span">o Advogado</span>
+          <h2 id="tptrabalhista-section-title">
+            Atuamos nas seguintes áreas do Direito Trabalhista
           </h2>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui

@@ -11,6 +11,9 @@
 }
 
 .btn-default {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 250px;
   padding: 1rem 1.5rem;
   background-color: transparent;
