@@ -20,7 +20,7 @@
 #nav_logo {
   align-items: center;
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   display: flex;
   color: #f0f4f8;
   gap: 10px;
@@ -59,8 +59,7 @@
   font-weight: 400;
   cursor: pointer;
   color: #f0f4f8;
-  transition: background-color 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn-contatos:hover {
@@ -83,6 +82,8 @@
   z-index: 9;
   animation: fadeInServices 0.4s ease forwards;
 }
+
+/* verificar estes animations e transitions */
 
 .services-menu-bar.closing {
   animation: fadeOutServices 0.4s ease forwards;

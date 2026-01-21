@@ -11,7 +11,7 @@ import ListItemText from "@mui/material/ListItemText";
 import { useMenuMobile } from "../../hooks/useMenuMobile";
 import { useServicesMenu } from "../../hooks/useServicesMenu";
 import { Link, useNavigate } from "react-router-dom";
-import "../../styles/Header.css";
+import "../../styles/StylesAdvHomePage/Header.css";
 
 export default function NavBar() {
   const { openMenu, handleOpenMenu, handleCloseMenu, menuOptions } =

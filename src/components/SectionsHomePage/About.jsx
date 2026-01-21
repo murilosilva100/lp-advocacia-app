@@ -1,7 +1,7 @@
 import React from "react";
 import imageabout from "../../assets/imageabout.jpg";
 import useScrollAnimation from "../../hooks/useScrollAnimation";
-import "../../styles/About.css";
+import "../../styles/StylesAdvHomePage/About.css";
 
 export default function About() {
   useScrollAnimation(".item-about");

@@ -2,7 +2,7 @@ import useScrollAnimation from "../../hooks/useScrollAnimation";
 import bannerImage1 from "../../assets/imageBanner.png";
 import { MdPhoneEnabled } from "react-icons/md";
 import { MdPhoneIphone } from "react-icons/md";
-import "../../styles/Home.css";
+import "../../styles/StylesAdvHomePage/Home.css";
 
 export default function Home() {
   useScrollAnimation(".cta");

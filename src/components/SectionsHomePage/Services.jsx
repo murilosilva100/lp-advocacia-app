@@ -1,7 +1,7 @@
 import { RiMedalLine } from "react-icons/ri";
 import useScrollAnimation from "../../hooks/useScrollAnimation";
 import { Link, useNavigate } from "react-router-dom";
-import "../../styles/Services.css";
+import "../../styles/StylesAdvHomePage/Services.css";
 
 export default function Services() {
   useScrollAnimation(".item-services");

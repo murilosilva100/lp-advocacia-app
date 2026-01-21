@@ -3,7 +3,7 @@
       rgba(37, 37, 37, 0.7),
       rgba(37, 37, 37, 0.7)
     ),
-    url("../assets/businessImage.jpg");
+    url("../../assets/businessImage.jpg");
   background-size: cover;
   background-position: center;
   display: flex;

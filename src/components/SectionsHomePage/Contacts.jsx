@@ -3,7 +3,7 @@ import { MdOutlineMail } from "react-icons/md";
 import { FiInstagram } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
 import useScrollAnimation from "../../hooks/useScrollAnimation";
-import "../../styles/Contacts.css";
+import "../../styles/StylesAdvHomePage/Contacts.css";
 
 export default function Contacts() {
   useScrollAnimation(".contact-item");
