@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import HomePage from "../src/pages/HomePage";
 import AdvogadoDeFamilia from "./pages/AdvogadoDeFamilia";
 import AdvogadoCriminalista from "./pages/AdvogadoCriminalista";
-import AdvogadoTrabalhista from "./pages/AdvogadoTrabalhista";
+import AdvogadoCivel from "./pages/AdvogadoCivel";
 import "../src/styles/App.css";
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/advogadodefamilia" element={<AdvogadoDeFamilia />} />
         <Route path="/advogadocriminalista" element={<AdvogadoCriminalista />} />
-        <Route path="/advogadotrabalhista" element={<AdvogadoTrabalhista/>} />
+        <Route path="/advogadocivel" element={<AdvogadoCivel/>} />
       </Routes>
     </BrowserRouter>
   );

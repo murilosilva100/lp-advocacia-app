@@ -2,13 +2,13 @@
   display: flex;
   padding: 80px 12%;
   padding-bottom: 0;
-  max-height: 880px;
-  gap: 3rem;
+  max-height: auto;
+  gap: 3%;
 
   background-image: linear-gradient(
       103deg,
-      rgba(0, 26, 58, 0.9),
-      rgba(16, 56, 99, 0.9)
+      #001125e6,
+      #103863e6
     ),
     url("../../assets/imageBackground.jpg");
 
@@ -18,7 +18,7 @@
 }
 
 #cta {
-  height: 800px;
+  height: auto;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -50,29 +50,32 @@
 #cta .title {
   margin-top: 22%;
   font-weight: 500;
-  font-size: 3rem;
-  color: #f0f4f8;
+  font-size: clamp(2rem, 4.5vw, 3.5rem);
+  color: #e8f0ff;
   font-family: "Playfair Display";
 }
 
 #cta .title span {
-  color: #b38b59;
+  color: #d4a24c;
   font-family: "Playfair Display";
 }
 
 #cta .description {
-  font-size: 1.15rem;
-  font-weight: 300;
+  font-size: clamp(1rem, 2vw, 1.250rem);
+  font-weight: 400;
   line-height: 160%;
-  color: #f0f4f8;
+  color: #ffffff;
+  opacity: 0.9;
 }
 
 #cta .description span {
-  color: #b38b59;
+  color: #d4a24c;
+  opacity: 0.9;
 }
 
 #cta_buttons {
-  margin-top: 90px;
+  margin-top: 80px;
+  margin-bottom: 120px;
   display: flex;
   gap: 28px;
 }
@@ -88,14 +91,15 @@
 #banner img {
   width: 100%;
   height: 100%;
-  max-height: 800px;
+  max-height: auto;
   object-fit: cover;
   object-position: bottom;
 }
 
 @media (max-width: 480px) {
   #home-container {
-    padding: 60px 8%;
+    padding: 60px 5%;
+    padding-bottom: 0;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -107,11 +111,10 @@
     flex-direction: column;
     gap: 30px;
     z-index: 2;
-    max-height: 700px;
+    max-height: auto;
   }
 
   #cta .title {
-    font-size: 2rem;
     color: #f0f4f8;
     font-family: "Playfair Display";
   }
@@ -121,7 +124,6 @@
   }
 
   #cta .description {
-    font-size: 1rem;
     line-height: 160%;
     color: #f0f4f8;
     font-weight: 350;
@@ -138,6 +140,7 @@
 @media (min-width: 481px) and (max-width: 768px) {
   #home-container {
     padding: 60px 10%;
+    padding-bottom: 0;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -153,7 +156,6 @@
   }
 
   #cta .title {
-    font-size: 2rem;
     color: #f0f4f8;
     font-family: "Playfair Display";
   }
@@ -164,7 +166,6 @@
 
   #cta .description {
     font-weight: 350;
-    font-size: 1rem;
     line-height: 160%;
     color: #f0f4f8;
   }
@@ -180,6 +181,7 @@
 @media (min-width: 769px) and (max-width: 1170px) {
   #home-container {
     padding: 60px 12%;
+    padding-bottom: 0;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -191,11 +193,10 @@
     flex-direction: column;
     gap: 30px;
     z-index: 2;
-    max-height: 700px;
+    max-height: auto;
   }
 
   #cta .title {
-    font-size: 2.5rem;
     color: #f0f4f8;
     font-family: "Playfair Display";
   }
@@ -206,15 +207,13 @@
 
   #cta .description {
     font-weight: 350;
-    font-size: 1rem;
     line-height: 160%;
     color: #f0f4f8;
   }
 
   #cta_buttons {
-    padding: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 1rem;
   }
 }

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import faqContent from "../../data/faqContent.json";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { FaChevronDown } from "react-icons/fa";
 import useScrollAnimation from "../../hooks/useScrollAnimation";
 import "../../styles/StylesAdvHomePage/Questions.css";
 
@@ -14,11 +14,7 @@ const FaqItem = ({ question, answer }) => {
         onClick={() => setIsOpen(!isOpen)}
       >
         <span className="faq-question-text">{question}</span>
-        {isOpen ? (
-          <FaChevronUp className="faq-icon" />
-        ) : (
-          <FaChevronDown className="faq-icon" />
-        )}
+        <FaChevronDown className="faq-icon" />
       </button>
 
       <div className="faq-answer-container">

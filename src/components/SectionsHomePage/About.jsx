@@ -26,15 +26,26 @@ export default function About() {
               Acredito que cada caso é único e que o papel do advogado vai muito
               além dos processos — é sobre restaurar a dignidade, trazer
               segurança e entregar soluções reais.
+              <br/>
+              <br/>
+              Acredito que cada caso é único e que o papel do advogado vai muito
+              além dos processos — é sobre restaurar a dignidade, trazer
+              segurança e entregar soluções reais.
             </p>
           </div>
           <div className="item-about box-imagem-central">
-            <img src={imageabout} alt="Pessoa de terno" />
+            
             <div className="info-adicional">OAB/DF: 0000/00</div>
           </div>
           <div className="item-about card-about">
             <h2>Experiência</h2>
             <p>
+              O que me levou a escolher a advocacia foi o desejo de fazer a
+              diferença na vida das pessoas, principalmente nas áreas em que as
+              dores humanas são mais sensíveis: Família, Direito Criminal e
+              Direito do Trabalho.
+              <br/>
+              <br/>
               O que me levou a escolher a advocacia foi o desejo de fazer a
               diferença na vida das pessoas, principalmente nas áreas em que as
               dores humanas são mais sensíveis: Família, Direito Criminal e

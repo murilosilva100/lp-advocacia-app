@@ -1,11 +1,11 @@
 #services-container {
   padding: 20px 12%;
-  background: #ffffff;
+  background: #2a3645;
 }
 
 .services-grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
   gap: 20px;
   justify-items: center;
   padding-bottom: 2rem;
@@ -43,9 +43,9 @@
 }
 
 .card-body {
-  padding: 1.5rem 1.5rem;
+  padding: 1.5rem 2rem;
   text-align: left;
-  background: #eeeeee;
+  background: #d7dbe0;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -53,25 +53,29 @@
 
 .card-title {
   font-family: "Playfair Display", serif;
-  color: #1A2C42;
+  color: #333333;
   opacity: 0.9;
-  font-size: 1.5rem;
+  font-size: clamp(1.250rem, 3vw, 1.5rem);
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   text-align: center;
 }
 
 .card-text {
-  color: #1A2C42;
+  color: #333333;
+  font-weight: 450;
   opacity: 0.8;
-  font-size: 1rem;
+  font-size: clamp(1rem, 2vw, 1.125rem);
   line-height: 1.6;
   text-align: justify;
   margin-bottom: 1.5rem;
 }
 
 .btn-services-card {
-  display: inline-block;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   text-align: center;
   padding: 0 10%;
@@ -137,7 +141,7 @@
 
 @media (max-width: 480px) {
   #services-container {
-    padding: 0px 8%;
+    padding: 0px 5%;
   }
 
   .services-grid-container {
@@ -146,16 +150,12 @@
     gap: 20px;
   }
 
-  #services-text {
-    font-size: 1rem;
-  }
-
-  .card-title {
-    font-size: 1.25rem;
-  }
-
   .item-services {
     grid-column: 1;
+  }
+
+  .card-body {
+    padding: 1rem 1.5rem;
   }
 }
 
@@ -173,10 +173,18 @@
   .item-services {
     grid-column: 1;
   }
+
+  .card-body {
+    padding: 1.5rem 1.5rem;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1170px) {
   #services-container {
     padding: 0px 12%;
+  }
+
+  .card-body {
+    padding: 1.5rem 1.5rem;
   }
 }

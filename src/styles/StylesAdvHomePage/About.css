@@ -1,6 +1,6 @@
 #about-container {
   padding: 20px 12%;
-  background: #eeeeee;
+  background: #0b1624;
 }
 
 .about-grid-container {
@@ -12,17 +12,13 @@
 }
 
 .item-about {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  background: linear-gradient(180deg, #1a2c42 30%, #263a52 100%);
-  color: #fff9ea;
-  border-top: 3px solid #b38b59;
-  text-align: center;
-  max-height: 320px;
-  padding: 20px;
-  border-radius: 5px;
-  font-weight: 400;
+  color: #f1f5f9;
+  text-align: justify;
+  height: auto;
+  font-weight: 450;
   line-height: 160%;
   z-index: 5;
+  opacity: 0.9;
 }
 
 @keyframes fadeInUp {
@@ -39,7 +35,9 @@
 .item-about {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.6s, transform 0.6s;
+  transition:
+    opacity 0.6s,
+    transform 0.6s;
 }
 
 .item-about.animate {
@@ -48,50 +46,33 @@
 
 .item-about h2 {
   font-family: "Playfair Display";
-  color: #b38b59;
-  font-weight: 600;
+  color: #d4a24c;
   font-size: 1.5rem;
   margin-bottom: 1rem;
-}
-
-.item-about.card-about.animate {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
 .box-imagem-central {
-  grid-row: 1;
-  grid-column: 2;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
   border-radius: 5px;
-  overflow: hidden;
-}
+  background-image:
+    
+    url("../../assets/imageabout.jpg");
 
-.card-about {
-  box-shadow: 0 4px 10px rgba(199, 163, 94, 0.2);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.card-about:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(199, 163, 94, 0.3);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 10%;
 }
 
 .box-imagem-central img {
-
-  /* verificar esse filter */
-  filter: brightness(90%);
-
   width: 100%;
   height: 100%;
   max-width: 100%;
   max-height: 250px;
   object-fit: cover;
   object-position: top;
-  transition: transform 0.5s ease, filter 0.5s ease;
+  transition:
+    transform 0.5s ease,
+    filter 0.5s ease;
 }
 
 .box-imagem-central img:hover {
@@ -109,7 +90,7 @@
 
 @media (max-width: 480px) {
   #about-container {
-    padding: 0px 8%;
+    padding: 0px 5%;
   }
 
   .about-grid-container {
@@ -149,13 +130,10 @@
     font-size: 1.25rem;
   }
 
-  #about-text {
-    font-size: 1rem;
-  }
-
   .box-imagem-central {
     grid-column: 1 / -1;
     grid-row: 1;
+    background-size: cover;
   }
 
   .item-about {
@@ -173,17 +151,11 @@
     gap: 20px;
   }
 
-  .item-about h2 {
-    font-size: 1.25rem;
-  }
-
-  #about-text {
-    font-size: 1rem;
-  }
-
   .box-imagem-central {
     grid-column: 1 / -1;
-    grid-row: 1;
+    grid-row: 3;
+    background-size: cover;
+    max-width: 400px;
   }
 
   .item-about {

@@ -1,8 +1,7 @@
 #questions-container {
-  padding: 0px 12%;
-  background: #f0f4f8 ;
+  padding: 20px 12%;
+  background: #1a2636;
   text-align: center;
-  border-radius: 1rem;
 }
 
 #questions-grid-container {
@@ -16,9 +15,9 @@
   font-family: "Playfair Display";
   font-weight: 600;
   text-align: left;
-  font-size: 1.5rem;
-  color: #0b1a3d;
-  border-left: 4px solid #b38b59;
+  font-size: clamp(1.250rem, 3vw, 1.5rem);
+  color: #f1f5f9;
+  border-left: 4px solid #d4a24c;
   padding-left: 12px;
   margin-bottom: 15px;
 }
@@ -47,7 +46,7 @@
 .faq-item {
   border: 1px solid #ddd;
   border-radius: 10px;
-  background-color: #ffffff;
+  background-color: #d7dbe0;
   box-shadow: 0 2px 4px rgba(11, 26, 61, 0.05);
   transition: all 0.3s ease;
   overflow: hidden;
@@ -56,8 +55,7 @@
 
 .faq-item:hover {
   box-shadow: 0 6px 16px rgba(179, 139, 89, 0.3);
-  border-color: #b38b59;
-  background-color: #f6f6f6;
+  border-color: #d4a24c;
 }
 
 .faq-question-button {
@@ -70,46 +68,50 @@
   justify-content: space-between;
   align-items: center;
   font-family: "Inter", sans-serif;
-  font-size: 1.05rem;
   font-weight: 500;
-  color: #1a2c42;
+  color: #333333;
+  gap: 10px;
+  opacity: 0.9;
   text-align: left;
   transition: color 0.3s ease;
 }
 
-.faq-item:hover .faq-question-text {
-  color: #b38b59;
+.faq-question-text {
+  font-size: clamp(1rem, 2vw, 1.125rem);
 }
 
 .faq-icon {
   font-size: 0.9rem;
-  color: #b38b59;
+  color: #d4a24c;
+  flex-shrink: 0;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .faq-item:hover .faq-icon {
-  color: #a27a4f;
+  color: #d4a24c;
 }
 
 .faq-answer-container {
   padding: 0 24px;
   max-height: 0;
   overflow: hidden;
-  background-color: #fffdf8;
+  background-color: #ccd0d4;
   transition: max-height 0.4s ease, padding 0.4s ease;
 }
 
 .faq-answer-container p {
   margin: 0;
   font-size: 1rem;
-  color: #444;
+  color: #333;
+  font-weight: 450;
+  opacity: 0.8;
   line-height: 160%;
+  text-align: justify;
 }
 
 .faq-item.open .faq-answer-container {
   max-height: 400px;
   padding: 20px 24px;
-  border-top: 1px solid #eee;
 }
 
 .faq-item.open .faq-icon {
@@ -118,28 +120,12 @@
 
 @media (max-width: 480px) {
   #questions-container {
-    padding: 0px 8%;
-  }
-
-  .faq-category-title {
-    font-size: 1.25rem;
-  }
-
-  .faq-question-button {
-    font-size: 1rem;
+    padding: 0px 5%;
   }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
   #questions-container {
     padding: 0px 10% !important;
-  }
-
-  .faq-category-title {
-    font-size: 1.25rem;
-  }
-
-  .faq-question-button {
-    font-size: 1rem;
   }
 }

@@ -17,7 +17,7 @@
   width: 250px;
   padding: 1rem 1.5rem;
   background-color: transparent;
-  box-shadow: inset 0 0 0 2px #b38b59;
+  box-shadow: inset 0 0 0 2px #d4a24c;
   display: flex;
   color: #f0f4f8;
   outline: none;
@@ -32,7 +32,7 @@
 }
 
 .btn-default::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -150%;
@@ -41,8 +41,8 @@
   background: linear-gradient(
     to right,
     rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.1) 50%, 
-    rgba(255, 255, 255, 0) 100% 
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0) 100%
   );
   transform: skewX(-20deg);
   animation: shine 5s infinite;
@@ -60,55 +60,70 @@
 .btn-default:hover {
   box-shadow: 0 3px 8px rgba(179, 139, 89, 0.5);
   color: #f0f4f8;
-  background-color: #b38b59;
+  background-color: #d4a24c;
 }
 
 #sections-title {
-  color: #b38b59;
+  color: #d4a24c;
   font-family: "Playfair Display";
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   text-align: center;
   line-height: 130%;
   padding-bottom: 2rem;
   padding-top: 1rem;
-  
 }
 
 #sections-title-span {
-  color: #1A2C42;
+  color: #e8f0ff;
   font-family: "Playfair Display";
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 130%;
-  opacity: 0.9;
+}
+
+#cta_services_buttons {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 28px;
 }
 
 #sections-subtitle {
-  color: #1A2C42;
+  color: #f1f5f9;
   font-family: Inter;
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 2vw, 1.25rem);
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 180%;
-  padding-bottom: 2rem;
+  padding-bottom: 3.5rem;
   text-align: center;
-  opacity: 0.8;
+  opacity: 0.9;
+}
+
+#sections-texts {
+  color: #f1f5f9;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  text-align: justify;
+  font-weight: 300;
+  line-height: 150%;
+  padding-bottom: 1.5rem;
 }
 
 .floating-btn {
   position: fixed;
   display: flex;
-  bottom: 30px;
-  right: 25px;
+  bottom: 1.5rem;
+  right: 1.5rem;
   background-color: #0f7743;
   color: white;
   border: none;
   border-radius: 3rem;
   padding: 1rem 1.5rem;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 1000;
@@ -133,19 +148,11 @@
 .floating-btn {
   opacity: 0;
   transform: translateX(-20px);
-  transition: opacity 0.6s, transform 0.6s;
+  transition:
+    opacity 0.6s,
+    transform 0.6s;
 }
 
 .floating-btn.animate {
   animation: fadeInRight 0.8s ease forwards;
-}
-
-@media (max-width: 480px) {
-  #sections-title {
-    font-size: 1.75rem;
-  }
-
-  #sections-title-span {
-    font-size: 1.75rem;
-  }
 }

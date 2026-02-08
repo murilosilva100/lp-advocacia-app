@@ -1,6 +1,7 @@
 import React from "react";
 import { HiScale } from "react-icons/hi2";
 import { HiOutlineBars3 } from "react-icons/hi2";
+import { RiArrowDownDoubleLine } from "react-icons/ri";
 import Drawer from "@mui/material/Drawer";
 import Box from "@mui/material/Box";
 import List from "@mui/material/List";
@@ -42,7 +43,7 @@ export default function NavBar() {
               handleToggleServices();
             }}
           >
-            Serviços
+            Serviços 
           </Link>
 
           <a href="#questions">Perguntas</a>
@@ -65,13 +66,13 @@ export default function NavBar() {
           onMouseLeave={handleCloseServices}
         >
           <span>
-            <Link to="/advogadodefamilia">Advogado de Família</Link>
+            <Link to="/advogadodefamilia">Área de (Família)</Link>
           </span>
           <span>
-            <Link to="/advogadocriminalista">Advogado Criminalista</Link>
+            <Link to="/advogadocriminalista">Área (Criminalista)</Link>
           </span>
           <span>
-            <Link to="/advogadotrabalhista">Advogado Trabalhista</Link>
+            <Link to="/advogadocivel">Área (Cível)</Link>
           </span>
         </div>
       )}

@@ -25,7 +25,7 @@ export default function Contacts() {
       <section id="contacts-container">
         <div id="contacts-text">
           <h2 id="sections-title">Contatos</h2>
-          <p className="contacts-subtitle">
+          <p id="sections-subtitle">
             Está pronto para entrar em contato com um Advogado Especialista?
             Fique à vontade!
           </p>
