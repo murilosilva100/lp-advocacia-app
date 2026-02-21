@@ -7,7 +7,7 @@
 #footer-container {
   padding: 0px 12%;
   padding-top: 2.250rem;
-  padding-bottom: 3.250rem;
+  padding-bottom: 2rem;
 }
 
 #footer-grid-container {
@@ -77,10 +77,8 @@
   margin: 25px auto 15px;
   border: none;
   height: 1px;
-  background-color: #d4a24c;
-  opacity: 0.6;
+  background-color: #b38b59;
   width: 100%;
-  transition: width 0.5s ease;
 }
 
 .footer-bottom {

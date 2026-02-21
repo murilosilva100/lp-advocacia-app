@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import HomePage from "../src/pages/HomePage";
-import AdvogadoDeFamilia from "./pages/AdvogadoDeFamilia";
+import AdvogadoTrabalhista from "./pages/AdvogadoTrabalhista";
 import AdvogadoCriminalista from "./pages/AdvogadoCriminalista";
 import AdvogadoCivel from "./pages/AdvogadoCivel";
 import "../src/styles/App.css";
@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/advogadodefamilia" element={<AdvogadoDeFamilia />} />
+        <Route path="/advogadotrabalhista" element={<AdvogadoTrabalhista />} />
         <Route path="/advogadocriminalista" element={<AdvogadoCriminalista />} />
         <Route path="/advogadocivel" element={<AdvogadoCivel/>} />
       </Routes>

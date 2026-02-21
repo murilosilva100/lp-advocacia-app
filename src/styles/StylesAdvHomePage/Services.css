@@ -38,12 +38,12 @@
 }
 
 .card-icon {
-  font-size: 2rem;
-  color: #b38b59;
+  font-size: 2.5rem;
+  color: #d4a24c;
 }
 
 .card-body {
-  padding: 1.5rem 2rem;
+  padding: 1rem 1.5rem;
   text-align: left;
   background: #d7dbe0;
   display: flex;
@@ -63,7 +63,7 @@
 
 .card-text {
   color: #333333;
-  font-weight: 450;
+  font-weight: 500;
   opacity: 0.8;
   font-size: clamp(1rem, 2vw, 1.125rem);
   line-height: 1.6;

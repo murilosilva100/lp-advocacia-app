@@ -84,9 +84,9 @@
   line-height: 130%;
 }
 
-#cta_services_buttons {
-  margin-top: 50px;
-  margin-bottom: 100px;
+#cta-services-buttons {
+  margin-top: 40px;
+  margin-bottom: 80px;
   display: flex;
   justify-content: center;
   gap: 28px;
@@ -99,7 +99,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 180%;
-  padding-bottom: 3.5rem;
+  padding-bottom: 3rem;
   text-align: center;
   opacity: 0.9;
 }
@@ -108,16 +108,20 @@
   color: #f1f5f9;
   font-size: clamp(1rem, 2vw, 1.125rem);
   text-align: justify;
-  font-weight: 300;
-  line-height: 150%;
-  padding-bottom: 1.5rem;
+  font-weight: 350;
+  line-height: 160%;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  
+  border: 2px solid #2a3645;
+  border-radius: 12px;
+  padding: 16px;
 }
 
 .floating-btn {
   position: fixed;
   display: flex;
-  bottom: 1.5rem;
-  right: 1.5rem;
+  bottom: 1rem;
+  right: 1rem;
   background-color: #0f7743;
   color: white;
   border: none;

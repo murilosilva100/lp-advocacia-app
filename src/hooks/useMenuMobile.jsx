@@ -13,9 +13,9 @@ export function useMenuMobile() {
 
   const menuOptions = [
     { text: "Início", icon: <HomeWorkIcon />, path: "#home" },
-    { text: "Sobre", icon: <InfoIcon />, path: "#about" },
     { text: "Serviços", icon: <AssignmentIcon />, path: "#services"},
     { text: "Perguntas", icon: <QuestionAnswerIcon />, path: "#questions"},
+    { text: "Sobre", icon: <InfoIcon />, path: "#about" },
     { text: "Contatos", icon: <ContactsIcon />, path: "#contacts"},
   ];
 

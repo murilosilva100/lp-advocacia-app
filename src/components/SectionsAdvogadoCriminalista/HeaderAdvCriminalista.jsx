@@ -2,20 +2,26 @@ import { HiScale } from "react-icons/hi2";
 import { Link, useNavigate } from "react-router-dom";
 import "../../styles/StylesAdvCriminalista/advcriminalista.css";
 
-export default function HeaderAdvCriminalista() {
+export default function HeaderAdvTrabalhista() {
   const navigate = useNavigate();
   return (
-    <div id="tpcriminal-header">
-      <nav id="tpcriminal-navbar">
+    <div id="tpcriminalista-header">
+      <nav id="tpcriminalista-navbar">
         <Link to="/">
-          <i id="tpcriminal-nav_logo">
-            <HiScale /> Advocacia
+          <i id="tpcriminalista-nav_logo">
+            <HiScale size="22px" />
+            Adv Thiago F. S.
           </i>
         </Link>
-        <a href="">Área Criminalista</a>
-        <a href="#contacts">
-          <button className="btn-contatos">Contatos</button>{" "}
-        </a>
+        
+        <div
+          className="tpcriminalista-navbar-container"
+          aria-label="Links de navegação"
+        >
+          <a href="#contacts">
+            <button className="btn-contatos">Contatos</button>{" "}
+          </a>
+        </div>
       </nav>
     </div>
   );

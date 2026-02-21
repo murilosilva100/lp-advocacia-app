@@ -1,6 +1,9 @@
 import { RiMedalLine } from "react-icons/ri";
 import useScrollAnimation from "../../hooks/useScrollAnimation";
-import { Link, useNavigate } from "react-router-dom";
+import { Link} from "react-router-dom";
+import { FaGavel } from "react-icons/fa";
+import { FaBriefcase } from "react-icons/fa";
+import { FaFileAlt } from "react-icons/fa";
 import "../../styles/StylesAdvHomePage/Services.css";
 
 export default function Services() {
@@ -21,36 +24,38 @@ export default function Services() {
         <div className="services-grid-container">
           <div className="item-services">
             <div className="card-top">
-              <RiMedalLine className="card-icon" />
+              <FaBriefcase className="card-icon" />
             </div>
             <div className="card-body">
-              <h3 className="card-title">Direito de Família e Sucessões</h3>
+              <h3 className="card-title">Direito Trabalhista</h3>
               <p className="card-text">
-                Defesa dos seus direitos em processos de divórcio, união
-                estável, guarda e visitação. Acompanhamento próximo e
-                estratégico para proteger você e sua família em todas as etapas
-                do processo.
+                Proteção dos seus direitos nas relações de trabalho, desde a
+                contratação até o desligamento. Atuação em rescisões
+                contratuais, verbas trabalhistas, horas extras e demais direitos
+                garantidos pela CLT e legislação vigente.
                 <br />
                 <br />
-                Planejamento e execução de inventários, testamentos e doações
-                com segurança jurídica. Soluções eficientes para organizar e
-                proteger o patrimônio familiar de forma planejada.
+                Acompanhamento em ações judiciais trabalhistas, negociações de
+                acordos e defesa em reclamações. Análise técnica de contratos,
+                convenções coletivas e assessoria preventiva para evitar
+                litígios e garantir seus direitos.
                 <br />
                 <br />
-                Advocacia que compreende a sensibilidade dos momentos
-                familiares. Compromisso com resultados justos e atendimento
-                acolhedor quando você mais precisa de apoio jurídico.
+                Advocacia comprometida com a dignidade do trabalhador e a
+                justiça nas relações de trabalho. Atendimento personalizado para
+                defender seus interesses com competência e dedicação em todas as
+                fases do processo.
               </p>
-            
-              <Link to="/advogadodefamilia" className="btn-services-card">
-                Clique para saber mais!
+
+              <Link to="/advogadotrabalhista" className="btn-services-card">
+                Ir para a página -{">"} Trabalhista
               </Link>
             </div>
           </div>
 
           <div className="item-services">
             <div className="card-top">
-              <RiMedalLine className="card-icon" />
+              <FaGavel className="card-icon" />
             </div>
             <div className="card-body">
               <h3 className="card-title">Direito Criminal</h3>
@@ -73,36 +78,37 @@ export default function Services() {
               </p>
 
               <Link to="/advogadocriminalista" className="btn-services-card">
-                Clique para saber mais!
+                Ir para a página -{">"} Criminalista
               </Link>
             </div>
           </div>
 
           <div className="item-services">
             <div className="card-top">
-              <RiMedalLine className="card-icon" />
+              <FaFileAlt className="card-icon" />
             </div>
             <div className="card-body">
-              <h3 className="card-title">Direito Trabalhista</h3>
+              <h3 className="card-title">Direito Cível</h3>
               <p className="card-text">
-                Defesa dos seus direitos trabalhistas em ações contra
-                empregadores. Atuamos em casos de rescisão indevida, horas
-                extras, assédio moral, FGTS e demais verbas trabalhistas com
-                estratégia focada em resultados.
+                Defesa dos seus direitos em ações de cobrança, indenizações,
+                contratos e responsabilidade civil. Atuamos em disputas
+                patrimoniais, danos morais e materiais, com estratégia jurídica
+                focada na proteção dos seus interesses.
                 <br />
                 <br />
-                Assessoria completa para trabalhadores em negociações, acordos e
-                processos judiciais. Análise detalhada do seu caso e busca
-                incansável pela reparação justa dos seus direitos violados.
+                Assessoria completa em questões contratuais, reparação de danos
+                e resolução de conflitos entre particulares. Análise criteriosa
+                do seu caso e busca por soluções eficientes, seja por acordo ou
+                via judicial.
                 <br />
                 <br />
-                Advocacia comprometida com a dignidade do trabalhador.
-                Atendimento acessível e transparente, lutando para que você
-                receba tudo aquilo que lhe é devido por lei.
+                Advocacia comprometida com a justiça e a reparação de prejuízos.
+                Atendimento dedicado e transparente para garantir que seus
+                direitos civis sejam respeitados e defendidos com competência.
               </p>
 
-              <Link to="/advogadotrabalhista" className="btn-services-card">
-                Clique para saber mais!
+              <Link to="/advogadocivel" className="btn-services-card">
+                Ir para a página -{">"} Cível
               </Link>
             </div>
           </div>

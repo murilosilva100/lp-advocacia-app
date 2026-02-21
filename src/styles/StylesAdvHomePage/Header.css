@@ -37,6 +37,7 @@
   font-size: 1rem;
   font-weight: 400;
   color: #f0f4f8;
+  transition: color 0.3s ease;
 }
 
 .navbar-list-container a:hover {

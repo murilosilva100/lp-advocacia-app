@@ -23,6 +23,7 @@ export default function Contacts() {
   return (
     <div id="contacts">
       <section id="contacts-container">
+        <div id="contacts-contorno">
         <div id="contacts-text">
           <h2 id="sections-title">Contatos</h2>
           <p id="sections-subtitle">
@@ -67,6 +68,7 @@ export default function Contacts() {
               <p className="contact-label">WhatsApp</p>
             </a>
           </div>
+        </div>
         </div>
       </section>
     </div>

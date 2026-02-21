@@ -1,38 +1,160 @@
+import React, { useState } from "react";
+import { FaChevronDown } from "react-icons/fa";
+import CivelImg1 from "../../assets/imgCiveln1.jpg";
+import CivelImg2 from "../../assets/imgCiveln2.jpg";
 import "../../styles/StylesAdvCriminalista/advcriminalista.css";
-import PerguntasAdvCriminalista from "./PerguntasAdvCriminalista";
+
+const CriminalistaItem = ({ title, description }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className={`criminalista-item ${isOpen ? "open" : ""}`}>
+      <button
+        className="criminalista-question-button"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <span className="criminalista-question-text">{title}</span>
+        <FaChevronDown className="criminalista-icon" />
+      </button>
+
+      <div className="criminalista-answer-container">
+        <p className="criminalista-answer-text">{description}</p>
+      </div>
+    </div>
+  );
+};
 
 export default function ConteudoAdvCriminalista() {
+  const criminalistaContent = [
+    {
+      id: 1,
+      title: "Inventário, Partilha e Sucessões",
+      description:
+        "Apoio jurídico na organização, condução e formalização da transmissão de bens, sempre buscando segurança e regularidade no processo sucessório.",
+    },
+    {
+      id: 2,
+      title: "Direito de Família: Divórcio, Guarda e Alimentos",
+      description:
+        "Atuação em questões familiares envolvendo dissolução do vínculo, definição de guarda, visitas e obrigações alimentares.",
+    },
+    {
+      id: 3,
+      title: "Responsabilidade Civil: Danos Contratuais e Extracontratuais",
+      description:
+        "Assessoria em conflitos decorrentes do descumprimento de contratos ou de danos causados fora de relações contratuais.",
+    },
+    {
+      id: 4,
+      title: "Ações Indenizatórias",
+      description:
+        "Atuação em demandas relacionadas a dano moral, material ou lucros cessantes, com foco na adequada apuração e defesa dos direitos.",
+    },
+    {
+      id: 5,
+      title: "Consultoria e Contratos",
+      description:
+        "Elaboração, revisão e orientação jurídica na celebração de contratos, prevenindo riscos e assegurando clareza nas obrigações.",
+    },
+    {
+      id: 6,
+      title: "Responsabilidade Civil do Estado",
+      description:
+        "Atuação em casos envolvendo danos causados por agentes públicos ou pela Administração, conforme as regras da responsabilidade estatal.",
+    },
+  ];
+
   return (
-    <div id="tpcriminal-conteudo">
-      <section id="tpcriminal-container-conteudo">
-        <div id="tpcriminal-text">
-          <h2 id="sections-title">
-            Sobre <span id="sections-title-span">o Advogado</span>
+    <div id="tpcriminalista-conteudo">
+      <section id="tpcriminalista-container-conteudo">
+        <div id="tpcriminalista-text">
+          <h2 id="tpcriminalista-section-title">
+            Atuamos nos seguintes segmentos do{" "}
+            <span id="tpcriminalista-section-title-span">Direito Cível</span>
           </h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui
-            dolorem asperiores dolorum soluta itaque fuga ullam harum maxime
-            omnis? Dignissimos consequatur doloribus totam neque voluptate
-            quaerat quam omnis, voluptatibus odit?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui
-            dolorem asperiores dolorum soluta itaque fuga ullam harum maxime
-            omnis? Dignissimos consequatur doloribus totam neque voluptate
-            quaerat quam omnis, voluptatibus odit?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui
-            dolorem asperiores dolorum soluta itaque fuga ullam harum maxime
-            omnis? Dignissimos consequatur doloribus totam neque voluptate
-            quaerat quam omnis, voluptatibus odit?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui
-            dolorem asperiores dolorum soluta itaque fuga ullam harum maxime
-            omnis? Dignissimos consequatur doloribus totam neque voluptate
-            quaerat quam omnis, voluptatibus odit?
-          </p>
+          {criminalistaContent.map((item) => (
+            <CriminalistaItem
+              key={item.id}
+              title={item.title}
+              description={item.description}
+            />
+          ))}
+
+          <h2 id="tpcriminalista-section-title">
+            O que faz um advogado cível?
+          </h2>
+
+          <div className="tpcriminalista-group-objects bg-criminalista-1">
+            <div id="tpcriminalista-group-item1">
+              <p id="sections-texts">
+                Um advogado cível é o profissional que resolve conflitos do dia
+                a dia entre pessoas, empresas ou instituições, sem envolver
+                questões criminais. Ele atua em situações como cobranças de
+                dívidas, contratos descumpridos, disputas entre vizinhos,
+                problemas condominiais, direito do consumidor, indenizações por
+                danos materiais ou morais, inventários e partilha de bens.
+                <br />
+                <br />
+                Também cuida de questões imobiliárias como despejo e discussões
+                sobre propriedade, além de diversos outros casos onde há
+                desacordos que precisam ser resolvidos. O trabalho começa
+                analisando o caso, reunindo documentos e provas, tentando
+                acordos extrajudiciais quando possível e, se necessário,
+                ingressando com ação judicial.
+                <br />
+                <br />
+                No dia a dia, esse profissional elabora petições, comparece a
+                audiências, negocia acordos e acompanha processos. Diferente do
+                criminalista que lida com crimes e prisões, o advogado cível
+                busca principalmente reparação financeira, cumprimento de
+                obrigações ou reconhecimento de direitos.
+                <br />
+                <br />É o profissional que você procura quando tem problemas
+                relacionados ao seu patrimônio, contratos, relações comerciais
+                ou familiares, ou quando alguém lhe causou prejuízo e você quer
+                ser ressarcido através de uma sentença judicial.
+              </p>
+            </div>
+
+            <div id="tpcriminalista-group-item2">
+              <img src={CivelImg1} alt="" />
+            </div>
+          </div>
+
+          <h2 id="tpcriminalista-section-title">
+            Quando devo buscar um advogado cível?
+          </h2>
+
+          <div className="tpcriminalista-group-objects bg-criminalista-2">
+            <div id="tpcriminalista-group-item2">
+              <img src={CivelImg2} alt="" />
+            </div>
+
+            <div id="tpcriminalista-group-item1">
+              <p id="sections-texts">
+                Uma pessoa deve buscar um advogado cível quando se sentir lesada
+                em seus direitos ou patrimônio e não conseguir resolver a
+                situação amigavelmente. Isso inclui casos como produtos ou
+                serviços defeituosos não resolvidos pela empresa, acidentes que
+                causaram prejuízos por culpa de terceiros, nome negativado
+                indevidamente, cobranças injustas ou contratos não cumpridos.
+                <br />
+                <br />
+                Questões familiares e patrimoniais também demandam esse
+                profissional. Divórcio com partilha de bens, inventário,
+                disputas de herança, pensão alimentícia, problemas com imóveis,
+                disputas de vizinhança ou cobranças condominiais abusivas são
+                exemplos comuns que requerem assistência jurídica especializada.
+                <br />
+                <br />O ideal é procurar um advogado cível assim que perceber um
+                conflito que pode se agravar ou quando tentativas de resolver
+                sozinho falharam. Quanto mais cedo buscar orientação, maiores as
+                chances de proteger seus direitos, reunir provas adequadas e
+                encontrar a melhor solução, seja por negociação ou ação
+                judicial.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </div>

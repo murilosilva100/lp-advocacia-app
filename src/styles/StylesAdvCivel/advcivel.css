@@ -28,7 +28,7 @@
 }
 
 #tpcivel-navbar a:hover {
-  color: #b38b59;
+  color: #d4a24c;
 }
 
 #tpcivel-nav_logo {
@@ -41,7 +41,7 @@
 }
 
 #tpcivel-nav_logo:hover {
-  color: #b38b59;
+  color: #d4a24c;
 }
 
 /* home da área civel */
@@ -80,12 +80,12 @@
 }
 
 #tpcivel-title span {
-  color: #b38b59;
+  color: #d4a24c;
   font-family: "Playfair Display";
 }
 
 #tpcivel-description {
-  font-size: clamp(1rem, 2vw, 1.250rem);
+  font-size: clamp(1rem, 2vw, 1.25rem);
   font-weight: 400;
   line-height: 160%;
   color: #f0f4f8;
@@ -103,9 +103,9 @@
 /* conteudo da área civel */
 
 #tpcivel-conteudo {
-  padding: 20px 12%;
+  padding: 0px 12%;
   background: #1a2636;
-  padding-bottom: 52px;
+  padding-bottom: 3.5rem;
 }
 
 #tpcivel-section-title {
@@ -116,8 +116,8 @@
   font-weight: 500;
   text-align: center;
   line-height: 130%;
-  padding-bottom: 3.5rem;
-  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
+  padding-top: 3rem;
 }
 
 #tpcivel-section-title-span {
@@ -129,12 +129,39 @@
   line-height: 130%;
 }
 
+.tpcivel-group-objects {
+  display: flex;
+  max-height: auto;
+  gap: 30px;
 
+}
+
+#tpcivel-group-item1 {
+  height: auto;
+  width: 50%;
+  z-index: 2;
+}
+
+#tpcivel-group-item2 {
+  justify-content: end;
+  width: 50%;
+  overflow: hidden;
+}
+
+#tpcivel-group-item2 img {
+  border: 2px solid #b38b59;
+  width: 100%;
+  height: 100%;
+  max-height: auto;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 12px;
+}
 
 .civel-item {
-  border: 1px solid #ddd;
+  border: 2px solid #2a3645;
   border-radius: 10px;
-  background-color: #d7dbe0;
+  background-color: #0b1624;
   box-shadow: 0 2px 4px rgba(11, 26, 61, 0.05);
   transition: all 0.3s ease;
   overflow: hidden;
@@ -156,23 +183,34 @@
   justify-content: space-between;
   align-items: center;
   font-family: "Inter", sans-serif;
-  font-weight: 500;
-  color: #333333;
-  gap: 10px;
+  font-weight: 600;
+  color: #f1f5f9;
   opacity: 0.9;
+  gap: 10px;
   text-align: left;
   transition: color 0.3s ease;
 }
 
 .civel-question-text {
   font-size: clamp(1rem, 2vw, 1.125rem);
+  display: flex;
+  align-items: center;
+}
+
+.icones-civel {
+  color: #d4a24c;
+  font-size: 40px;
+  margin-right: 16px;
+  flex-shrink: 0;
+  align-items: center;
+  display: flex;
 }
 
 .civel-answer-container {
   padding: 0 24px;
   max-height: 0;
   overflow: hidden;
-  background-color: #ccd0d4;
+  background-color: #1a2636;
   transition:
     max-height 0.4s ease,
     padding 0.4s ease;
@@ -181,8 +219,8 @@
 .civel-answer-container p {
   margin: 0;
   font-size: 1rem;
-  color: #333;
-  font-weight: 450;
+  color: #f1f5f9;
+  font-weight: 500;
   opacity: 0.8;
   line-height: 160%;
   text-align: justify;
@@ -217,6 +255,11 @@
 
   #tpcivel-home {
     padding: 60px 5%;
+    padding-bottom: 0px;
+  }
+
+  .icones-civel {
+  font-size: 28px;
   }
 }
 
@@ -233,5 +276,63 @@
 
   #tpcivel-home {
     padding: 60px 10%;
+  }
+}
+
+@media (max-width: 1170px) {
+  #cta-services-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  #tpcivel-title {
+    margin-top: 60px;
+  }
+
+  .tpcivel-group-objects {
+    display: block;
+  }
+
+  #tpcivel-group-item2 {
+    display: none;
+  }
+
+  #tpcivel-section-title {
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+  }
+
+  #tpcivel-group-item1 {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+
+  .bg-civel-1 #tpcivel-group-item1 {
+    border: 2px solid #b38b59;
+    background-image: linear-gradient(
+      103deg,
+      hsla(0, 0%, 0%, 0.8)
+    ),
+      url("../../assets/imgCiveln1.jpg");
+  }
+
+  .bg-civel-2 #tpcivel-group-item1 {
+    border: 2px solid #b38b59;
+    background-image: linear-gradient(
+      103deg,
+      hsla(0, 0%, 0%, 0.8)
+    ),
+      url("../../assets/imgCiveln2.jpg");
+  }
+
+  #sections-texts {
+    border: none;
+    padding: 0px;
   }
 }

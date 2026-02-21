@@ -13,7 +13,7 @@ export default function HomeAdvTrabalhista() {
           Quando seus interesses estão em jogo, você precisa de orientação
           segura. Estamos ao seu lado em cada etapa do processo.
         </p>
-        <div id="cta_services_buttons">
+        <div id="cta-services-buttons">
           <a href="https://wa.me/5561999777736?text=Olá! Gostaria de saber mais sobre os serviços...">
             <button className="btn-default">
               Entrar em Contato! <MdPhoneIphone size="25px" />

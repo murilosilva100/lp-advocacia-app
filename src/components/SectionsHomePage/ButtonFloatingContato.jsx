@@ -18,8 +18,8 @@ const ButtonFloatingContato = () => {
       target="_blank"
       rel="noopener noreferrer"
     >
-      Contatar
-      <FaWhatsapp size="25px" style={{ marginLeft: "12px" }} />{" "}
+      WhatsApp
+      <FaWhatsapp size="28px" style={{ marginLeft: "12px" }} />{" "}
     </a>
   );
 };

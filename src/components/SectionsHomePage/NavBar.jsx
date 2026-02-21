@@ -66,13 +66,13 @@ export default function NavBar() {
           onMouseLeave={handleCloseServices}
         >
           <span>
-            <Link to="/advogadodefamilia">Área de (Família)</Link>
+            <Link to="/advogadotrabalhista">Área - Trabalhista</Link>
           </span>
           <span>
-            <Link to="/advogadocriminalista">Área (Criminalista)</Link>
+            <Link to="/advogadocriminalista">Área - Criminalista</Link>
           </span>
           <span>
-            <Link to="/advogadocivel">Área (Cível)</Link>
+            <Link to="/advogadocivel">Área - Cível</Link>
           </span>
         </div>
       )}
