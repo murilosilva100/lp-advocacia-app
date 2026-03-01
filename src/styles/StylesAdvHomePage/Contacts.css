@@ -5,7 +5,7 @@
 }
 
 #contacts-container {
-  padding: 20px 12%;
+  padding: 20px 10%;
   width: 100%;
   text-align: center;
 
@@ -127,7 +127,7 @@
 
 @media (max-width: 480px) {
   #contacts-container {
-    padding: 16px 5%;
+    padding: 16px 16px;
     background-size: cover;
   }
 
@@ -145,7 +145,7 @@
 
 @media (min-width: 481px) and (max-width: 768px) {
   #contacts-container {
-    padding: 16px 10%;
+    padding: 16px 5%;
     background-size: cover;
   }
 
@@ -158,7 +158,7 @@
 
 @media (min-width: 769px) and (max-width: 1170px) {
   #contacts-container {
-    padding: 16px 12%;
+    padding: 16px 10%;
     background-size: cover;
   }
 

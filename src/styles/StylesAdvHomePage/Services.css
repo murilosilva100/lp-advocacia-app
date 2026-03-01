@@ -1,5 +1,5 @@
 #services-container {
-  padding: 20px 12%;
+  padding: 20px 10%;
   background: #2a3645;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .card-body {
-  padding: 1rem 1.5rem;
+  padding: 16px 24px;
   text-align: left;
   background: #d7dbe0;
   display: flex;
@@ -141,7 +141,7 @@
 
 @media (max-width: 480px) {
   #services-container {
-    padding: 0px 5%;
+    padding: 0px 16px;
   }
 
   .services-grid-container {
@@ -155,13 +155,13 @@
   }
 
   .card-body {
-    padding: 1rem 1.5rem;
+    padding: 16px 20px;
   }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
   #services-container {
-    padding: 0px 10%;
+    padding: 0px 5%;
   }
 
   .services-grid-container {
@@ -181,7 +181,7 @@
 
 @media (min-width: 769px) and (max-width: 1170px) {
   #services-container {
-    padding: 0px 12%;
+    padding: 0px 10%;
   }
 
   .card-body {

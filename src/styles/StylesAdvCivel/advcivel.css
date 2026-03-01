@@ -2,7 +2,7 @@
 
 #tpcivel-header {
   width: 100%;
-  padding: 20px 12%;
+  padding: 20px 10%;
   max-height: 80px;
   background: rgba(0, 26, 58, 0.95);
   box-shadow: 0 4px 8px -2px rgba(9, 30, 66, 0.25);
@@ -48,7 +48,7 @@
 
 #tpcivel-home {
   display: flex;
-  padding: 80px 12%;
+  padding: 80px 10%;
   padding-bottom: 0;
   height: auto;
   background-color: rgba(0, 26, 58, 0.9);
@@ -103,7 +103,7 @@
 /* conteudo da área civel */
 
 #tpcivel-conteudo {
-  padding: 0px 12%;
+  padding: 0px 10%;
   background: #1a2636;
   padding-bottom: 3.5rem;
 }
@@ -175,7 +175,7 @@
 
 .civel-question-button {
   width: 100%;
-  padding: 18px 24px;
+  padding: 20px 24px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -244,10 +244,43 @@
 
 @media (max-width: 480px) {
   #tpcivel-conteudo {
+    padding: 0px 16px;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  
+   #tpcivel-header {
+    padding: 20px 16px;
+   }
+
+  .tpcivel-navbar-container {
+    display: none;
+  }
+
+  #tpcivel-home {
+    padding: 60px 16px;
+    padding-bottom: 0px;
+  }
+
+  .icones-civel {
+  font-size: 28px;
+  }
+
+  .civel-question-button {
+    padding: 20px 20px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  #tpcivel-conteudo {
     padding: 0px 5%;
     padding-top: 1rem;
     padding-bottom: 2rem;
   }
+
+  #tpcivel-header {
+    padding: 20px 5%;
+   }
 
   .tpcivel-navbar-container {
     display: none;
@@ -255,27 +288,6 @@
 
   #tpcivel-home {
     padding: 60px 5%;
-    padding-bottom: 0px;
-  }
-
-  .icones-civel {
-  font-size: 28px;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
-  #tpcivel-conteudo {
-    padding: 0px 10%;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-  }
-
-  .tpcivel-navbar-container {
-    display: none;
-  }
-
-  #tpcivel-home {
-    padding: 60px 10%;
   }
 }
 
@@ -306,7 +318,7 @@
 
   #tpcivel-group-item1 {
     width: 100%;
-    padding: 1rem;
+    padding: 20px;
     border-radius: 12px;
     background-size: cover;
     background-position: top;

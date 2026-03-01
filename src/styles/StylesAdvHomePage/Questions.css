@@ -1,5 +1,5 @@
 #questions-container {
-  padding: 20px 12%;
+  padding: 20px 10%;
   background: #1a2636;
   text-align: center;
 }
@@ -60,7 +60,7 @@
 
 .faq-question-button {
   width: 100%;
-  padding: 18px 24px;
+  padding: 16px 24px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -120,12 +120,16 @@
 
 @media (max-width: 480px) {
   #questions-container {
-    padding: 0px 5%;
+    padding: 0px 16px;
+  }
+
+  .faq-question-button {
+    padding: 16px 20px;
   }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
   #questions-container {
-    padding: 0px 10% !important;
+    padding: 0px 5% !important;
   }
 }
