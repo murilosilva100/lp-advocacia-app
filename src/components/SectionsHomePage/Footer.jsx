@@ -36,13 +36,13 @@ export default function Footer() {
           <div className="item-footer">
             <h3 className="footer-title">Contatos</h3>
             <p>
-              <a>+55 61 98888-8888</a>
+              <a>+55 61999777736</a>
             </p>
             <p>
-              <a>Advogado@contato.com</a>
+              <a>advogadothiagofs@gmail.com</a>
             </p>
             <p>
-              <a>@advogadoinsta</a>
+              <a>@thiago.silva04</a>
             </p>
           </div>
         </div>

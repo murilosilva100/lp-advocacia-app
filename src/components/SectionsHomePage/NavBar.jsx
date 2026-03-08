@@ -11,7 +11,7 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import { useMenuMobile } from "../../hooks/useMenuMobile";
 import { useServicesMenu } from "../../hooks/useServicesMenu";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../../styles/StylesAdvHomePage/Header.css";
 
 export default function NavBar() {
@@ -20,8 +20,6 @@ export default function NavBar() {
 
   const { showServices, isClosing, handleToggleServices, handleCloseServices } =
     useServicesMenu();
-
-  const navigate = useNavigate();
 
   return (
     <div id="header">
@@ -35,7 +33,7 @@ export default function NavBar() {
         <div className="navbar-list-container" aria-label="Links de navegação">
           <a href="#home">Início</a>
           
-
+          
           <Link
             to="/servicos"
             onClick={(e) => {

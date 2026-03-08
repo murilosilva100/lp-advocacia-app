@@ -8,7 +8,7 @@ import "../../styles/StylesAdvHomePage/Contacts.css";
 export default function Contacts() {
   useScrollAnimation(".contact-item");
 
-  const EMAIL_CONTATO = "thiago.silva04082000@gmail.com";
+  const EMAIL_CONTATO = "advogadothiagofs@gmail.com";
   const USER_INSTAGRAM = "thiago.silva04";
   const NUMERO_WHATSAPP = "5561999777736";
   const MENSAGEM_WHATSAPP = "Olá! Tenho interesse em uma consulta jurídica.";

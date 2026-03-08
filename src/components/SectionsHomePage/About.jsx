@@ -1,5 +1,4 @@
 import React from "react";
-import imageabout from "../../assets/imageabout.jpg";
 import useScrollAnimation from "../../hooks/useScrollAnimation";
 import "../../styles/StylesAdvHomePage/About.css";
 
@@ -14,42 +13,34 @@ export default function About() {
             Sobre <span id="sections-title-span">o Advogado</span>
           </h2>
           <p id="sections-subtitle">
-            Sou Thiago Farias da Silva, advogado inscrito na OAB/DF 76.106.
-            Minha trajetória no Direito nasceu de um propósito claro: defender
-            pessoas e causas com verdade, coragem e empatia.
+            Minha atuação na Advocacia é guiada por um propósito objetivo:
+            resolver problemas jurídicos com técnica, estratégia e
+            responsabilidade.
           </p>
         </div>
         <div className="about-grid-container">
           <div className="item-about card-about">
-            <h2>Experiência</h2>
+            <h2>Princípios</h2>
             <p>
-              Acredito que cada caso é único e que o papel do advogado vai muito
-              além dos processos — é sobre restaurar a dignidade, trazer
-              segurança e entregar soluções reais.
-              <br/>
-              <br/>
-              Acredito que cada caso é único e que o papel do advogado vai muito
-              além dos processos — é sobre restaurar a dignidade, trazer
-              segurança e entregar soluções reais.
+              Minha escolha pela advocacia foi orientada pelo compromisso de
+              atuar em áreas que impactam diretamente a vida das pessoas:
+              Direito de Família, Direito Penal e Direito do Trabalho. São
+              campos em que estão em jogo liberdade, patrimônio, estabilidade
+              profissional e estrutura familiar, o que exige precisão,
+              equilíbrio e postura firme.
             </p>
           </div>
           <div className="item-about box-imagem-central">
-            
-            <div className="info-adicional">OAB/DF: 0000/00</div>
+            <div className="info-adicional">OAB/DF 76.106</div>
           </div>
           <div className="item-about card-about">
-            <h2>Experiência</h2>
+            <h2>Propósito</h2>
             <p>
-              O que me levou a escolher a advocacia foi o desejo de fazer a
-              diferença na vida das pessoas, principalmente nas áreas em que as
-              dores humanas são mais sensíveis: Família, Direito Criminal e
-              Direito do Trabalho.
-              <br/>
-              <br/>
-              O que me levou a escolher a advocacia foi o desejo de fazer a
-              diferença na vida das pessoas, principalmente nas áreas em que as
-              dores humanas são mais sensíveis: Família, Direito Criminal e
-              Direito do Trabalho.
+              Cada demanda é tratada com estudo criterioso dos fatos, definição
+              de estratégia adequada e acompanhamento próximo do cliente. O
+              objetivo é oferecer direção clara, atuação consistente e segurança
+              na tomada de decisões, sempre com ética e responsabilidade
+              profissional.
             </p>
           </div>
         </div>
