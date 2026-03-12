@@ -5,11 +5,11 @@
   gap: 3%;
 
   background-image: linear-gradient(
-      103deg,
-      #001125e6,
-      #103863e6
+      
+      rgba(0, 17, 37, 0.75),
+      rgba(0, 26, 58, 0.9)
     ),
-    url("../../assets/imageBackground.jpg");
+    url("../../assets/imgBannerHome.webp");
 
   background-repeat: no-repeat;
   background-size: cover;

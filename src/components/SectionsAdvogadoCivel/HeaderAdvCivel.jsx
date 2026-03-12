@@ -9,11 +9,11 @@ export default function HeaderAdvTrabalhista() {
       <nav id="tpcivel-navbar">
         <Link to="/">
           <i id="tpcivel-nav_logo">
-            <HiScale size="22px" />
+            <HiScale size={30} />
             Adv Thiago F. S.
           </i>
         </Link>
-        
+
         <div
           className="tpcivel-navbar-container"
           aria-label="Links de navegação"

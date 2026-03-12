@@ -17,7 +17,7 @@ export default function Home() {
           <p className="description">
             Advocacia comprometida com seus direitos e sua tranquilidade. Defesa
             estratégica e atendimento humanizado quando você mais precisa.
-            <span> Sua tranquilidade começa com a defesa certa.</span>
+            <span><i> Sua tranquilidade começa com a defesa certa.</i></span>
           </p>
           <div id="cta_buttons">
             <a href="https://wa.me/5561999777736?text=Olá! Gostaria de saber mais sobre os serviços...">

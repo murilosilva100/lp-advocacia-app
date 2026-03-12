@@ -11,7 +11,7 @@
 
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../../assets/imagemContatosDourada.jpg");
+    url("../../assets/imgBannerContacts.webp");
 
   background-repeat: no-repeat;
   background-size: 101%;
@@ -21,7 +21,6 @@
 
 #contacts-contorno {
   border: 2px solid #b38b59;
-  border-radius: 12px;
 }
 
 #contacts-text {
@@ -95,7 +94,6 @@
 
 .contact-icon-box {
   border: 2px solid #f0f4f8;
-  border-radius: 4px;
   width: 80px;
   height: 80px;
   display: flex;

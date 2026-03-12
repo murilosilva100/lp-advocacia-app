@@ -13,7 +13,6 @@
 
 .item-services {
   background: #ffffff;
-  border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   width: 100%;
@@ -90,7 +89,6 @@
   transition: box-shadow 0.3s ease;
   margin-top: auto;
   border: 2px solid #2a3645;
-  border-radius: 10px;
   background: #0b1624;
   box-shadow: 0 2px 4px rgba(11, 26, 61, 0.05);
   transition: all 0.3s ease;

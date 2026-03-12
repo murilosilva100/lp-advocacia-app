@@ -44,8 +44,7 @@
 }
 
 .faq-item {
-  border: 1px solid #ddd;
-  border-radius: 10px;
+  border: 2px solid #ddd;
   background-color: #d7dbe0;
   box-shadow: 0 2px 4px rgba(11, 26, 61, 0.05);
   transition: all 0.3s ease;
