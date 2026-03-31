@@ -1,6 +1,6 @@
 #about-container {
   padding: 20px 10%;
-  background: #0b1624;
+  background: #0b1626;
 }
 
 .about-grid-container {
@@ -14,6 +14,7 @@
 .item-about {
   color: #f1f5f9;
   text-align: justify;
+  border-radius: 4px;
   height: auto;
   font-weight: 400;
   line-height: 160%;
@@ -57,7 +58,7 @@
 .box-imagem-central {
   background-image:
     
-    url("../../assets/imageabout.jpg");
+    url("../../assets/home-about-img.webp");
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -81,9 +82,9 @@
 }
 
 .box-imagem-central .info-adicional {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: transparent;
+  border-radius: 4px;
   color: #f1f5f9;
-  padding: 10px 0;
   width: 100%;
   text-align: center;
   font-size: 1rem;

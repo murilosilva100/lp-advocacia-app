@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
-import CivelImg1 from "../../assets/imgCiveln1.jpg";
-import CivelImg2 from "../../assets/imgCiveln2.jpg";
+import CivelContentImgN1 from "../../assets/civel-content-img-n1.webp";
+import CivelContentImgN2 from "../../assets/civel-content-img-n2.webp";
 import "../../styles/StylesAdvCivel/advcivel.css";
 
 import { FaFileSignature } from "react-icons/fa6";
@@ -150,7 +150,7 @@ export default function ConteudoAdvCivel() {
             </div>
 
             <div id="tpcivel-group-item2">
-              <img src={CivelImg1} alt="" />
+              <img src={CivelContentImgN1} alt="" />
             </div>
           </div>
 
@@ -160,7 +160,7 @@ export default function ConteudoAdvCivel() {
 
           <div className="tpcivel-group-objects bg-civel-2">
             <div id="tpcivel-group-item2">
-              <img src={CivelImg2} alt="" />
+              <img src={CivelContentImgN2} alt="" />
             </div>
 
             <div id="tpcivel-group-item1">

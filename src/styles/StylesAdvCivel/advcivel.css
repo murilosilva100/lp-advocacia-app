@@ -57,7 +57,7 @@
 
   background-image:
     linear-gradient(103deg, #001125e6, #103863e6),
-    url("../../assets/backgroundCivel.jpg");
+    url("../../assets/civel-page-banner.webp");
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -342,7 +342,7 @@
       103deg,
       hsla(0, 0%, 0%, 0.8)
     ),
-      url("../../assets/imgCiveln1.jpg");
+      url("../../assets/civel-content-img-n1.jpg");
   }
 
   .bg-civel-2 #tpcivel-group-item1 {
@@ -351,7 +351,7 @@
       103deg,
       hsla(0, 0%, 0%, 0.8)
     ),
-      url("../../assets/imgCiveln2.jpg");
+      url("../../assets/civel-content-img-n2.jpg");
   }
 
   #sections-texts {
