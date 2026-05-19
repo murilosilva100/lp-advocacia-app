@@ -1,14 +1,18 @@
 /* header da área cível */
 
 #tpcriminalista-header {
-  width: 100%;
-  padding: 20px 12%;
-  max-height: 80px;
-  background: rgba(0, 26, 58, 0.95);
-  box-shadow: 0 4px 8px -2px rgba(9, 30, 66, 0.25);
+  width: 80%;
+  padding: 10px 16px 10px 22px;
+  max-height: none;
+  background: rgba(246, 244, 239, 0.96);
+  border: 1px solid rgba(212, 162, 76, 0.24);
+  border-radius: 999px;
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(16px);
   position: fixed;
-  top: 0;
-  left: 0;
+  top: var(--header-top);
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 10;
 }
 
@@ -21,10 +25,9 @@
 
 #tpcriminalista-navbar a {
   text-decoration: none;
-  color: #1b1111;
   font-size: 1.125rem;
   font-weight: 400;
-  color: #f0f4f8;
+  color: #001a3a;
 }
 
 #tpcriminalista-navbar a:hover {
@@ -36,7 +39,7 @@
   font-weight: 700;
   font-size: 1.1rem;
   display: flex;
-  color: #f0f4f8;
+  color: #001a3a;
   gap: 10px;
 }
 
@@ -48,15 +51,15 @@
 
 #tpcriminalista-home {
   display: flex;
-  padding: 80px 12%;
-  padding-bottom: 0;
+  padding: 118px var(--page-x) var(--section-y-tablet);
+  min-height: 520px;
   height: auto;
   background-color: rgba(0, 26, 58, 0.9);
   justify-content: center;
 
   background-image:
     linear-gradient(103deg, #001125e6, #103863e6),
-    url("../../assets/backgroundCivel.jpg");
+    url("../../assets/civel-page-banner.webp");
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -64,6 +67,7 @@
 }
 
 #tpcriminalista-container-home {
+  width: min(100%, 920px);
   height: auto;
   text-align: center;
   display: flex;
@@ -72,7 +76,7 @@
 }
 
 #tpcriminalista-title {
-  margin-top: 5%;
+  margin-top: 0;
   font-weight: 500;
   color: #f0f4f8;
   font-family: "Playfair Display";
@@ -103,9 +107,31 @@
 /* conteudo da área civel */
 
 #tpcriminalista-conteudo {
-  padding: 20px 12%;
-  background: #1a2636;
+  padding: 20px var(--page-x);
+  background:
+    radial-gradient(circle at 12% 18%, rgba(212, 162, 76, 0.16), transparent 22rem),
+    radial-gradient(circle at 88% 68%, rgba(240, 248, 255, 0.08), transparent 24rem),
+    linear-gradient(145deg, #101b2b 0%, #1a2636 58%, #0b1626 100%);
   padding-bottom: 52px;
+  position: relative;
+  overflow: hidden;
+}
+
+#tpcriminalista-conteudo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(240, 248, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(240, 248, 255, 0.025) 1px, transparent 1px);
+  background-size: 48px 48px;
+  pointer-events: none;
+}
+
+#tpcriminalista-section-title,
+.tpcriminalista-group-objects {
+  position: relative;
+  z-index: 1;
 }
 
 #tpcriminalista-section-title {
@@ -132,8 +158,9 @@
 .tpcriminalista-group-objects {
   display: flex;
   max-height: auto;
-  gap: 30px;
+  gap: 32px;
   padding-bottom: 1.5rem;
+  align-items: stretch;
 }
 
 #tpcriminalista-group-item1 {
@@ -152,6 +179,7 @@
   width: 100%;
   height: 100%;
   max-height: auto;
+  min-height: 360px;
   object-fit: cover;
   object-position: top;
   border-radius: 12px;
@@ -232,7 +260,7 @@
 
 @media (max-width: 480px) {
   #tpcriminalista-conteudo {
-    padding: 0px 5%;
+    padding: 0 var(--page-x-mobile);
     padding-top: 1rem;
     padding-bottom: 2rem;
   }
@@ -242,13 +270,32 @@
   }
 
   #tpcriminalista-home {
-    padding: 60px 5%;
+    padding: 92px var(--page-x-mobile) var(--section-y-mobile);
+    min-height: auto;
+  }
+
+  #tpcriminalista-header {
+    width: calc(100% - 32px);
+    top: var(--header-top-mobile);
+    padding: 10px 14px;
+  }
+
+  #tpcriminalista-title {
+    margin-top: 0;
+  }
+
+  .criminalista-question-button {
+    padding: 18px 16px;
+  }
+
+  .criminalista-answer-container p {
+    text-align: left;
   }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
   #tpcriminalista-conteudo {
-    padding: 0px 10%;
+    padding: 0 var(--page-x-tablet);
     padding-top: 1rem;
     padding-bottom: 2rem;
   }
@@ -258,7 +305,14 @@
   }
 
   #tpcriminalista-home {
-    padding: 60px 10%;
+    padding: 96px var(--page-x-tablet) var(--section-y-mobile);
+    min-height: auto;
+  }
+
+  #tpcriminalista-header {
+    width: 88%;
+    top: var(--header-top-tablet);
+    padding: 10px 16px;
   }
 }
 
@@ -271,7 +325,9 @@
   }
 
   .tpcriminalista-group-objects {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
   }
 
   #tpcriminalista-group-item2 {
@@ -280,7 +336,7 @@
 
   #tpcriminalista-group-item1 {
     width: 100%;
-    padding: 2rem;
+    padding: clamp(20px, 4vw, 32px);
     border-radius: 12px;
     background-size: cover;
     background-position: top;
@@ -290,12 +346,12 @@
   .bg-criminalista-1 #tpcriminalista-group-item1 {
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.85)),
-      url("../../assets/imgcriminalistan1.jpg");
+      url("../../assets/home-contacts-banner.webp");
   }
 
   .bg-criminalista-2 #tpcriminalista-group-item1 {
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.85)),
-      url("../../assets/imgCiveln2.jpg");
+      url("../../assets/civel-content-img-n2.webp");
   }
 }

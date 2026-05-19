@@ -1,4 +1,5 @@
 import { HiScale } from "react-icons/hi2";
+import { FiArrowUpRight } from "react-icons/fi";
 import { Link, useNavigate } from "react-router-dom";
 import "../../styles/StylesAdvCivel/advcivel.css";
 
@@ -19,7 +20,9 @@ export default function HeaderAdvTrabalhista() {
           aria-label="Links de navegação"
         >
           <a href="#contacts">
-            <button className="btn-contatos">Contatos</button>{" "}
+            <button className="btn-contatos">
+              Contatos <FiArrowUpRight className="btn-contatos-icon" />
+            </button>{" "}
           </a>
         </div>
       </nav>

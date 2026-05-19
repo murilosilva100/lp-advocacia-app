@@ -1,20 +1,58 @@
 #services-container {
-  padding: 20px 10%;
-  background: #1a2636;
+  width: 100%;
+  margin: 0;
+  padding: var(--section-y) var(--page-x);
+  background:
+    radial-gradient(circle at 12% 14%, rgba(212, 162, 76, 0.2), transparent 20rem),
+    radial-gradient(circle at 88% 34%, rgba(0, 26, 58, 0.1), transparent 24rem),
+    linear-gradient(180deg, #fbfaf7 0%, #f2efe8 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+#services-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0, 26, 58, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 26, 58, 0.035) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: linear-gradient(180deg, transparent, #000 16%, #000 72%, transparent);
+  pointer-events: none;
+}
+
+#services-text,
+.services-grid-container {
+  position: relative;
+  z-index: 1;
+}
+
+#services-container #sections-title {
+  color: #001a3a;
+}
+
+#services-container #sections-title-span {
+  color: #d4a24c;
+}
+
+#services-container #sections-subtitle {
+  color: #2a3645;
 }
 
 .services-grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
   justify-items: center;
-  padding-bottom: 2rem;
+  padding-bottom: 0;
 }
 
 .item-services {
   background: #ffffff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  box-shadow: 0 22px 60px rgba(7, 19, 33, 0.13);
+  border: 1px solid rgba(0, 26, 58, 0.08);
+  border-radius: 8px;
   overflow: hidden;
   width: 100%;
   cursor: default;
@@ -29,70 +67,76 @@
 }
 
 .card-top {
-  background: #1a2636;
-  border-top: 3px solid #b38b59;
-  height: 90px;
+  background:
+    linear-gradient(135deg, rgba(0, 26, 58, 0.92), rgba(11, 22, 36, 0.96)),
+    url("../../assets/home-contacts-banner.webp");
+  background-size: cover;
+  background-position: center;
+  border-top: 0;
+  height: 128px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .card-icon {
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   color: #d4a24c;
+  filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.28));
 }
 
 .card-body {
-  padding: 16px 24px;
+  padding: 24px;
   text-align: left;
-  background: #d7dbe0;
+  background: #ffffff;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
 
 .card-title {
-  font-family: "Playfair Display", serif;
-  color: #333333;
-  opacity: 0.9;
-  font-size: clamp(1.250rem, 3vw, 1.5rem);
+  font-family: "Cormorant Garamond", "Playfair Display", serif;
+  color: #001a3a;
+  opacity: 1;
+  font-size: clamp(1.7rem, 2.8vw, 2.1rem);
   font-weight: 700;
-  margin-bottom: 1.5rem;
-  text-align: center;
+  line-height: 1;
+  margin-bottom: 1rem;
+  text-align: left;
 }
 
 .card-text {
-  color: #333333;
-  font-weight: 500;
-  opacity: 0.8;
-  font-size: clamp(1rem, 2vw, 1.125rem);
-  line-height: 1.6;
-  text-align: justify;
+  color: #2a3645;
+  font-weight: 450;
+  opacity: 0.86;
+  font-size: clamp(0.95rem, 1.4vw, 1rem);
+  line-height: 1.72;
+  text-align: left;
   margin-bottom: 1.5rem;
 }
 
 .btn-services-card {
-  height: 60px;
+  min-height: 54px;
   display: flex;
-  border-radius: 4px;
+  border-radius: 999px;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   text-align: center;
   padding: 0 10%;
   width: 100%;
-  padding: 0.8rem 1.5rem;
+  padding: 0.8rem 1.2rem;
   outline: none;
   position: relative;
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
-  color: #f0f4f8;
+  color: #001a3a;
   transition: box-shadow 0.3s ease;
   margin-top: auto;
-  border: 2px solid #2a3645;
-  background: #0b1624;
-  box-shadow: 0 2px 4px rgba(11, 26, 61, 0.05);
+  border: 1px solid rgba(212, 162, 76, 0.42);
+  background: #f6f4ef;
+  box-shadow: none;
   transition: all 0.3s ease;
   overflow: hidden;
 }
@@ -100,6 +144,8 @@
 .btn-services-card:hover {
   box-shadow: 0 6px 16px rgba(179, 139, 89, 0.3);
   border-color: #d4a24c;
+  background: #d4a24c;
+  color: #ffffff;
 }
 
 .btn-services-card::after {
@@ -145,7 +191,8 @@
 
 @media (max-width: 480px) {
   #services-container {
-    padding: 0px 16px;
+    width: 100%;
+    padding: var(--section-y-mobile) var(--page-x-mobile);
   }
 
   .services-grid-container {
@@ -161,11 +208,17 @@
   .card-body {
     padding: 16px 20px;
   }
+
+  .btn-services-card {
+    font-size: 0.95rem;
+    min-height: 50px;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
   #services-container {
-    padding: 0px 5%;
+    width: 100%;
+    padding: var(--section-y-small) var(--page-x-tablet);
   }
 
   .services-grid-container {
@@ -185,7 +238,12 @@
 
 @media (min-width: 769px) and (max-width: 1170px) {
   #services-container {
-    padding: 0px 10%;
+    width: 100%;
+    padding: var(--section-y-tablet) var(--page-x);
+  }
+
+  .services-grid-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .card-body {

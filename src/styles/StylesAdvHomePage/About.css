@@ -1,27 +1,51 @@
 #about-container {
-  padding: 20px 10%;
+  width: 100%;
+  margin: 0;
+  padding: var(--section-y) var(--page-x);
   background: #0b1626;
+  border-radius: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+#about-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 18% 20%, rgba(212, 162, 76, 0.16), transparent 20rem),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent 42%);
+  pointer-events: none;
+}
+
+#about-text,
+.about-grid-container {
+  position: relative;
+  z-index: 1;
 }
 
 .about-grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 0.95fr 1.1fr 0.95fr;
   grid-template-rows: auto;
-  padding-bottom: 2rem;
-  gap: 20px;
+  padding-bottom: 0;
+  gap: 24px;
+  align-items: stretch;
 }
 
 .item-about {
   color: #f1f5f9;
-  text-align: justify;
-  border-radius: 4px;
+  text-align: left;
+  border-radius: 8px;
   height: auto;
   font-weight: 400;
   line-height: 160%;
   z-index: 5;
-  border: 2px solid #646464;
-  padding: 16px 24px;
-  opacity: 0.9;
+  border: 1px solid rgba(212, 162, 76, 0.22);
+  padding: 28px;
+  opacity: 0.95;
+  background: rgba(255, 255, 255, 0.045);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.16);
 }
 
 @keyframes fadeInUp {
@@ -48,21 +72,25 @@
 }
 
 .item-about h2 {
-  font-family: "Playfair Display";
+  font-family: "Cormorant Garamond", "Playfair Display", serif;
   color: #d4a24c;
-  font-size: 1.5rem;
+  font-size: clamp(1.85rem, 3vw, 2.35rem);
+  line-height: 1;
   margin-bottom: 1rem;
-  text-align: center;
+  text-align: left;
 }
 
 .box-imagem-central {
   background-image:
-    
+    linear-gradient(180deg, transparent 50%, rgba(0, 26, 58, 0.88)),
     url("../../assets/home-about-img.webp");
 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 10%;
+  min-height: 430px;
+  display: flex;
+  align-items: flex-end;
 }
 
 .box-imagem-central img {
@@ -82,17 +110,22 @@
 }
 
 .box-imagem-central .info-adicional {
-  background-color: transparent;
-  border-radius: 4px;
+  background-color: rgba(246, 244, 239, 0.95);
+  border-radius: 999px;
   color: #f1f5f9;
-  width: 100%;
+  width: fit-content;
   text-align: center;
   font-size: 1rem;
+  color: #001a3a;
+  font-weight: 800;
+  padding: 0.7rem 1.2rem;
+  margin: 0 auto;
 }
 
 @media (max-width: 480px) {
   #about-container {
-    padding: 0px 16px;
+    width: 100%;
+    padding: var(--section-y-mobile) var(--page-x-mobile);
   }
 
   .about-grid-container {
@@ -101,7 +134,7 @@
   }
 
   .item-about {
-    padding: 16px 20px
+    padding: 22px
   }
 
   .item-about h2 {
@@ -127,7 +160,8 @@
 
 @media (min-width: 481px) and (max-width: 768px) {
   #about-container {
-    padding: 0px 5%;
+    width: 100%;
+    padding: var(--section-y-small) var(--page-x-tablet);
   }
 
   .about-grid-container {
@@ -154,7 +188,8 @@
 
 @media (min-width: 769px) and (max-width: 1170px) {
   #about-container {
-    padding: 0px 10%;
+    width: 100%;
+    padding: var(--section-y-tablet) var(--page-x);
   }
 
   .about-grid-container {

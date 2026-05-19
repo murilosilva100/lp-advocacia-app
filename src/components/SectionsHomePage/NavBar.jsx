@@ -1,7 +1,7 @@
 import React from "react";
 import { HiScale } from "react-icons/hi2";
 import { HiOutlineBars3 } from "react-icons/hi2";
-import { RiArrowDownDoubleLine } from "react-icons/ri";
+import { FiArrowUpRight } from "react-icons/fi";
 import Drawer from "@mui/material/Drawer";
 import Box from "@mui/material/Box";
 import List from "@mui/material/List";
@@ -49,7 +49,9 @@ export default function NavBar() {
           <a href="#about">Sobre</a>
           
           <a href="#contacts">
-            <button className="btn-contatos">Contatos</button>{" "}
+            <button className="btn-contatos">
+              Contatos <FiArrowUpRight className="btn-contatos-icon" />
+            </button>{" "}
           </a>
         </div>
 

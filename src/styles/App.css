@@ -1,34 +1,112 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap");
 @import "tailwindcss";
+
+:root {
+  --page-x: 10%;
+  --page-x-tablet: 6%;
+  --page-x-mobile: 16px;
+  --section-y: 88px;
+  --section-y-tablet: 72px;
+  --section-y-small: 64px;
+  --section-y-mobile: 56px;
+  --header-top: 24px;
+  --header-top-tablet: 16px;
+  --header-top-mobile: 12px;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "inter", sans-serif;
+  font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
+}
+
+html {
+  background: #071321;
+}
+
+body {
+  min-width: 320px;
+  width: 100%;
+  overflow-x: hidden;
+  background: #f6f4ef;
+  color: #172033;
+}
+
+a {
+  color: inherit;
 }
 
 .btn-default {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 250px;
-  padding: 1rem 1.5rem;
-  background-color: transparent;
-  box-shadow: inset 0 0 0 2px #d4a24c;
-  border-radius: 4px;
-  display: flex;
+  gap: 0.75rem;
+  min-height: 54px;
+  width: fit-content;
+  min-width: 220px;
+  max-width: 100%;
+  padding: 0.9rem 1.4rem;
+  background-color: #d4a24c;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
+  border-radius: 999px;
   color: #f0f4f8;
   outline: none;
   border: none;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 0.94rem;
+  font-weight: 700;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  letter-spacing: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
   position: relative;
   overflow: hidden;
+}
+
+.btn-default svg {
+  flex-shrink: 0;
+}
+
+.btn-contatos {
+  padding: 0.62rem 0.65rem 0.62rem 1.35rem;
+  background-color: #d4a24c;
+  box-shadow: none;
+  border: 0;
+  border-radius: 999px;
+  outline: none;
+  font-size: 0.88rem;
+  font-weight: 800;
+  cursor: pointer;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-contatos:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(179, 139, 89, 0.32);
+  color: #f0f4f8;
+  background-color: #b38b59;
+}
+
+.btn-contatos-icon {
+  width: 30px;
+  height: 30px;
+  padding: 0.38rem;
+  border-radius: 999px;
+  color: #d4a24c;
+  background: #ffffff;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.btn-contatos:hover .btn-contatos-icon {
+  transform: translate(2px, -2px);
+  color: #b38b59;
 }
 
 .btn-default::after {
@@ -58,50 +136,54 @@
 }
 
 .btn-default:hover {
-  box-shadow: 0 3px 8px rgba(179, 139, 89, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 18px 36px rgba(179, 139, 89, 0.35);
   color: #f0f4f8;
-  background-color: #d4a24c;
+  background-color: #b38b59;
 }
 
 #sections-title {
   color: #d4a24c;
-  font-family: "Playfair Display";
-  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-family: "Cormorant Garamond", "Playfair Display", serif;
+  font-size: clamp(2.2rem, 4.5vw, 4rem);
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   text-align: center;
-  line-height: 130%;
-  padding-bottom: 2rem;
-  padding-top: 1rem;
+  line-height: 0.95;
+  padding-bottom: 1.2rem;
+  padding-top: 0;
 }
 
 #sections-title-span {
   color: #e8f0ff;
-  font-family: "Playfair Display";
-  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-family: "Cormorant Garamond", "Playfair Display", serif;
+  font-size: inherit;
   font-style: normal;
-  font-weight: 500;
-  line-height: 130%;
+  font-weight: 700;
+  line-height: inherit;
 }
 
 #cta-services-buttons {
-  margin-top: 40px;
-  margin-bottom: 80px;
+  margin-top: 32px;
+  margin-bottom: 0;
   display: flex;
   justify-content: center;
-  gap: 28px;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 #sections-subtitle {
   color: #F0F8FF;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: clamp(1rem, 2vw, 1.25rem);
   font-style: normal;
   font-weight: 400;
-  line-height: 180%;
-  padding-bottom: 3rem;
+  line-height: 170%;
+  padding-bottom: 2.5rem;
   text-align: center;
   opacity: 0.9;
+  max-width: 820px;
+  margin: 0 auto;
 }
 
 #sections-texts {
@@ -124,7 +206,7 @@
   background-color: #0f7743;
   color: white;
   border: none;
-  border-radius: 3rem;
+  border-radius: 999px;
   padding: 1rem 1.5rem;
   font-size: clamp(1rem, 1.5vw, 1.25rem);
   cursor: pointer;
@@ -145,6 +227,32 @@
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-default {
+    min-width: 0;
+    width: 100%;
+    padding-inline: 1rem;
+  }
+
+  #cta-services-buttons {
+    width: 100%;
+    margin-top: 24px;
+  }
+
+  #cta-services-buttons a {
+    width: 100%;
+    max-width: 340px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  #cta-services-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
   }
 }
 
