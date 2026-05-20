@@ -1,4 +1,4 @@
-# LP Advocacia App
+# Ste para advogado autônomo
 
 Site institucional premium para advocacia autônoma, desenvolvido em React com foco em apresentação profissional, navegação clara e experiência responsiva.
 
