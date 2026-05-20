@@ -1,7 +1,6 @@
 import useScrollAnimation from "../../hooks/useScrollAnimation";
 import heroSectionBanner from "../../assets/home-cta-img.png";
-import { MdPhoneEnabled } from "react-icons/md";
-import { MdPhoneIphone } from "react-icons/md";
+import { MdPhoneEnabled, MdPhoneIphone } from "react-icons/md";
 import "../../styles/StylesAdvHomePage/Home.css";
 
 export default function Home() {
@@ -11,18 +10,21 @@ export default function Home() {
     <div id="home">
       <section id="home-container">
         <div id="cta" className="cta">
+          <span className="hero-eyebrow">OAB/DF 76.106</span>
           <h1 className="title">
-            Sua integridade e dignidade <span>merecem a melhor defesa</span>
+            Atuação jurídica estratégica <span>com foco em segurança</span>
           </h1>
           <p className="description">
-            Advocacia comprometida com seus direitos e sua tranquilidade. Defesa
-            estratégica e atendimento humanizado quando você mais precisa.
-            <span><i> Sua tranquilidade começa com a defesa certa.</i></span>
+            Orientação clara, atuação técnica e acompanhamento próximo em
+            momentos que exigem responsabilidade, discrição e preparo.
+            <span>
+              <i> Segurança jurídica começa com uma estratégia bem definida.</i>
+            </span>
           </p>
           <div id="cta_buttons">
             <a href="https://wa.me/5561999777736?text=Olá! Gostaria de saber mais sobre os serviços...">
               <button className="btn-default">
-                Entrar em Contato! <MdPhoneIphone size="25px" />
+                Entrar em contato <MdPhoneIphone size="25px" />
               </button>
             </a>
             <a href="tel:+5561996172502" id="phone_button">
@@ -33,7 +35,7 @@ export default function Home() {
           </div>
         </div>
         <div id="banner">
-          <img src={heroSectionBanner} alt="" />
+          <img src={heroSectionBanner} alt="Advogado em traje profissional" />
         </div>
       </section>
     </div>

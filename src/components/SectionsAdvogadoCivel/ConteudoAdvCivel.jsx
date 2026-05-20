@@ -1,25 +1,17 @@
-import React, { useState } from "react";
-import { FaChevronDown } from "react-icons/fa";
+import { useState } from "react";
+import { FaChevronDown, FaHandshake, FaUniversity, FaUserShield } from "react-icons/fa";
+import { FaFileSignature, FaMoneyBillWave } from "react-icons/fa6";
+import { FaExclamationTriangle } from "react-icons/fa";
 import CivelContentImgN1 from "../../assets/civel-content-img-n1.webp";
 import CivelContentImgN2 from "../../assets/civel-content-img-n2.webp";
 import "../../styles/StylesAdvCivel/advcivel.css";
-
-import { FaFileSignature } from "react-icons/fa6";
-import { FaUserShield } from "react-icons/fa";
-import { FaExclamationTriangle } from "react-icons/fa";
-import { FaMoneyBillWave } from "react-icons/fa6";
-import { FaHandshake } from "react-icons/fa";
-import { FaUniversity } from "react-icons/fa";
 
 const CivelItem = ({ title, description }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className={`civel-item ${isOpen ? "open" : ""}`}>
-      <button
-        className="civel-question-button"
-        onClick={() => setIsOpen(!isOpen)}
-      >
+      <button className="civel-question-button" onClick={() => setIsOpen(!isOpen)} aria-expanded={isOpen}>
         <span className="civel-question-text">{title}</span>
         <FaChevronDown className="civel-icon" />
       </button>
@@ -37,65 +29,61 @@ export default function ConteudoAdvCivel() {
       id: 1,
       title: (
         <>
-          <FaFileSignature className="icones-civel" /> Inventário, Partilha e
-          Sucessões
+          <FaFileSignature className="icones-civel" /> Inventário e sucessões
         </>
       ),
       description:
-        "Apoio jurídico na organização, condução e formalização da transmissão de bens, sempre buscando segurança e regularidade no processo sucessório.",
+        "Organização da documentação, definição do caminho adequado e condução da transmissão de bens com segurança jurídica.",
     },
     {
       id: 2,
       title: (
         <>
-          <FaUserShield className="icones-civel" /> Direito de Família:
-          Divórcio, Guarda e Alimentos
+          <FaUserShield className="icones-civel" /> Família, divórcio e alimentos
         </>
       ),
       description:
-        "Atuação em questões familiares envolvendo dissolução do vínculo, definição de guarda, visitas e obrigações alimentares.",
+        "Atuação em divórcio, guarda, convivência, alimentos e partilha, com atenção ao impacto humano e patrimonial da decisão.",
     },
     {
       id: 3,
       title: (
         <>
-          <FaExclamationTriangle className="icones-civel" /> Responsabilidade
-          Civil: Danos Contratuais e Extracontratuais
+          <FaExclamationTriangle className="icones-civel" /> Responsabilidade civil
         </>
       ),
       description:
-        "Assessoria em conflitos decorrentes do descumprimento de contratos ou de danos causados fora de relações contratuais.",
+        "Análise de danos, descumprimentos e prejuízos para avaliar medidas de reparação ou defesa em demandas indenizatórias.",
     },
     {
       id: 4,
       title: (
         <>
-          <FaMoneyBillWave className="icones-civel" /> Ações Indenizatórias
+          <FaMoneyBillWave className="icones-civel" /> Ações indenizatórias
         </>
       ),
       description:
-        "Atuação em demandas relacionadas a dano moral, material ou lucros cessantes, com foco na adequada apuração e defesa dos direitos.",
+        "Atuação em danos morais, materiais e lucros cessantes, com apuração cuidadosa de provas, valores e riscos processuais.",
     },
     {
       id: 5,
       title: (
         <>
-          <FaHandshake className="icones-civel" /> Consultoria e Contratos
+          <FaHandshake className="icones-civel" /> Contratos e consultoria
         </>
       ),
       description:
-        "Elaboração, revisão e orientação jurídica na celebração de contratos, prevenindo riscos e assegurando clareza nas obrigações.",
+        "Elaboração, revisão e negociação de contratos para prevenir conflitos e estabelecer obrigações claras entre as partes.",
     },
     {
       id: 6,
       title: (
         <>
-          <FaUniversity className="icones-civel" /> Responsabilidade Civil do
-          Estado
+          <FaUniversity className="icones-civel" /> Responsabilidade do Estado
         </>
       ),
       description:
-        "Atuação em casos envolvendo danos causados por agentes públicos ou pela Administração, conforme as regras da responsabilidade estatal.",
+        "Demandas envolvendo danos causados por agentes públicos ou falhas de serviço da Administração Pública.",
     },
   ];
 
@@ -103,89 +91,69 @@ export default function ConteudoAdvCivel() {
     <div id="tpcivel-conteudo">
       <section id="tpcivel-container-conteudo">
         <div id="tpcivel-text">
-          <h2 id="tpcivel-section-title">
-            Atuamos nos seguintes segmentos do{" "}
-            <span id="tpcivel-section-title-span">Direito Cível</span>
-          </h2>
-          {civelContent.map((item) => (
-            <CivelItem
-              key={item.id}
-              title={item.title}
-              description={item.description}
-            />
-          ))}
+          <header className="area-content-header">
+            <span className="area-content-kicker">Atuação cível</span>
+            <h2 id="tpcivel-section-title">
+              Soluções para conflitos <span id="tpcivel-section-title-span">patrimoniais e familiares</span>
+            </h2>
+            <p className="area-content-lead">
+              O trabalho começa pela compreensão dos fatos, leitura dos
+              documentos e definição de uma estratégia compatível com o risco,
+              o tempo e o objetivo do cliente.
+            </p>
+          </header>
 
-          <h2 id="tpcivel-section-title">O que faz um advogado cível?</h2>
+          <div className="area-accordion-grid">
+            {civelContent.map((item) => (
+              <CivelItem key={item.id} title={item.title} description={item.description} />
+            ))}
+          </div>
 
-          <div className="tpcivel-group-objects bg-civel-1">
-            <div id="tpcivel-group-item1">
-              <p id="sections-texts">
-                Um advogado cível é o profissional que resolve conflitos do dia
-                a dia entre pessoas, empresas ou instituições, sem envolver
-                questões criminais. Ele atua em situações como cobranças de
-                dívidas, contratos descumpridos, disputas entre vizinhos,
-                problemas condominiais, direito do consumidor, indenizações por
-                danos materiais ou morais, inventários e partilha de bens.
-                <br />
-                <br />
-                Também cuida de questões imobiliárias como despejo e discussões
-                sobre propriedade, além de diversos outros casos onde há
-                desacordos que precisam ser resolvidos. O trabalho começa
-                analisando o caso, reunindo documentos e provas, tentando
-                acordos extrajudiciais quando possível e, se necessário,
-                ingressando com ação judicial.
-                <br />
-                <br />
-                No dia a dia, esse profissional elabora petições, comparece a
-                audiências, negocia acordos e acompanha processos. Diferente do
-                criminalista que lida com crimes e prisões, o advogado cível
-                busca principalmente reparação financeira, cumprimento de
-                obrigações ou reconhecimento de direitos.
-                <br />
-                <br />É o profissional que você procura quando tem problemas
-                relacionados ao seu patrimônio, contratos, relações comerciais
-                ou familiares, ou quando alguém lhe causou prejuízo e você quer
-                ser ressarcido através de uma sentença judicial.
+          <div className="area-insight bg-civel-1">
+            <div className="area-insight-copy">
+              <h3>Quando o Direito Cível se torna necessário</h3>
+              <p>
+                Nem todo conflito precisa começar no Judiciário. Em muitos
+                casos, uma orientação técnica permite organizar documentos,
+                medir riscos e buscar uma solução negociada antes que o problema
+                se torne maior.
               </p>
+              <p>
+                Quando o acordo não é possível, a atuação judicial deve ser
+                construída com precisão: prova adequada, pedido bem delimitado e
+                acompanhamento constante.
+              </p>
+              <ul className="area-insight-list">
+                <li>Contratos descumpridos ou mal redigidos</li>
+                <li>Prejuízos materiais, morais ou patrimoniais</li>
+                <li>Inventário, partilha, divórcio e questões familiares</li>
+              </ul>
             </div>
-
-            <div id="tpcivel-group-item2">
-              <img src={CivelContentImgN1} alt="" />
+            <div className="area-insight-media">
+              <img src={CivelContentImgN1} alt="Atendimento em Direito Cível" />
             </div>
           </div>
 
-          <h2 id="tpcivel-section-title">
-            Quando devo buscar um advogado cível?
-          </h2>
-
-          <div className="tpcivel-group-objects bg-civel-2">
-            <div id="tpcivel-group-item2">
-              <img src={CivelContentImgN2} alt="" />
+          <div className="area-insight reverse bg-civel-2">
+            <div className="area-insight-media">
+              <img src={CivelContentImgN2} alt="Análise de documentos cíveis" />
             </div>
-
-            <div id="tpcivel-group-item1">
-              <p id="sections-texts">
-                Uma pessoa deve buscar um advogado cível quando se sentir lesada
-                em seus direitos ou patrimônio e não conseguir resolver a
-                situação amigavelmente. Isso inclui casos como produtos ou
-                serviços defeituosos não resolvidos pela empresa, acidentes que
-                causaram prejuízos por culpa de terceiros, nome negativado
-                indevidamente, cobranças injustas ou contratos não cumpridos.
-                <br />
-                <br />
-                Questões familiares e patrimoniais também demandam esse
-                profissional. Divórcio com partilha de bens, inventário,
-                disputas de herança, pensão alimentícia, problemas com imóveis,
-                disputas de vizinhança ou cobranças condominiais abusivas são
-                exemplos comuns que requerem assistência jurídica especializada.
-                <br />
-                <br />O ideal é procurar um advogado cível assim que perceber um
-                conflito que pode se agravar ou quando tentativas de resolver
-                sozinho falharam. Quanto mais cedo buscar orientação, maiores as
-                chances de proteger seus direitos, reunir provas adequadas e
-                encontrar a melhor solução, seja por negociação ou ação
-                judicial.
+            <div className="area-insight-copy">
+              <h3>Orientação antes da decisão</h3>
+              <p>
+                Procurar orientação cedo ajuda a preservar provas, evitar
+                acordos prejudiciais e compreender as alternativas disponíveis
+                antes de assumir custos, prazos ou riscos desnecessários.
               </p>
+              <p>
+                A atuação cível busca transformar cenários incertos em decisões
+                mais claras, com previsibilidade e responsabilidade.
+              </p>
+              <ul className="area-insight-list">
+                <li>Análise inicial de documentos e riscos</li>
+                <li>Estratégia para negociação ou ação judicial</li>
+                <li>Acompanhamento próximo durante cada etapa</li>
+              </ul>
             </div>
           </div>
         </div>

@@ -71,6 +71,19 @@
   animation: none;
 }
 
+.hero-eyebrow {
+  width: fit-content;
+  border: 1px solid rgba(212, 162, 76, 0.38);
+  border-radius: 999px;
+  background: rgba(240, 248, 255, 0.08);
+  color: #f0f8ff;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  padding: 0.45rem 0.85rem;
+  text-transform: uppercase;
+}
+
 #cta .title {
   margin-top: 0;
   font-weight: 700;
@@ -174,6 +187,7 @@
     z-index: 2;
     min-height: auto;
     padding-bottom: 0;
+    align-items: center;
   }
 
   #cta .title {
@@ -226,6 +240,7 @@
     z-index: 2;
     min-height: auto;
     padding-bottom: 0;
+    align-items: center;
   }
 
   #cta .title {
@@ -269,6 +284,7 @@
     z-index: 2;
     min-height: auto;
     padding-bottom: 0;
+    align-items: center;
   }
 
   #cta .title {

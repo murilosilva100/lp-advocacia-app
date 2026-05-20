@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
 import CivelContentImgN1 from "../../assets/civel-content-img-n1.webp";
 import CivelContentImgN2 from "../../assets/civel-content-img-n2.webp";
@@ -9,10 +9,7 @@ const TrabalhistaItem = ({ title, description }) => {
 
   return (
     <div className={`trabalhista-item ${isOpen ? "open" : ""}`}>
-      <button
-        className="trabalhista-question-button"
-        onClick={() => setIsOpen(!isOpen)}
-      >
+      <button className="trabalhista-question-button" onClick={() => setIsOpen(!isOpen)} aria-expanded={isOpen}>
         <span className="trabalhista-question-text">{title}</span>
         <FaChevronDown className="trabalhista-icon" />
       </button>
@@ -28,39 +25,39 @@ export default function ConteudoAdvTrabalhista() {
   const trabalhistaContent = [
     {
       id: 1,
-      title: "Inventário, Partilha e Sucessões",
+      title: "Verbas rescisórias",
       description:
-        "Apoio jurídico na organização, condução e formalização da transmissão de bens, sempre buscando segurança e regularidade no processo sucessório.",
+        "Análise de saldo de salário, aviso-prévio, férias, 13º salário, FGTS, multa rescisória e demais parcelas devidas.",
     },
     {
       id: 2,
-      title: "Direito de Família: Divórcio, Guarda e Alimentos",
+      title: "Horas extras e jornada",
       description:
-        "Atuação em questões familiares envolvendo dissolução do vínculo, definição de guarda, visitas e obrigações alimentares.",
+        "Atuação em jornada excessiva, intervalo não concedido, adicional noturno, banco de horas irregular e horas não pagas.",
     },
     {
       id: 3,
-      title: "Responsabilidade Civil: Danos Contratuais e Extracontratuais",
+      title: "Reconhecimento de vínculo",
       description:
-        "Assessoria em conflitos decorrentes do descumprimento de contratos ou de danos causados fora de relações contratuais.",
+        "Orientação em casos de trabalho sem registro, com subordinação, habitualidade, pessoalidade e remuneração.",
     },
     {
       id: 4,
-      title: "Ações Indenizatórias",
+      title: "Assédio e discriminação",
       description:
-        "Atuação em demandas relacionadas a dano moral, material ou lucros cessantes, com foco na adequada apuração e defesa dos direitos.",
+        "Apoio em situações de abuso, perseguição, humilhação, constrangimento ou conduta discriminatória no ambiente laboral.",
     },
     {
       id: 5,
-      title: "Consultoria e Contratos",
+      title: "Acidente de trabalho e estabilidade",
       description:
-        "Elaboração, revisão e orientação jurídica na celebração de contratos, prevenindo riscos e assegurando clareza nas obrigações.",
+        "Atuação em acidente, doença ocupacional, afastamentos, estabilidade provisória e indenizações relacionadas ao trabalho.",
     },
     {
       id: 6,
-      title: "Responsabilidade Civil do Estado",
+      title: "Consultoria preventiva",
       description:
-        "Atuação em casos envolvendo danos causados por agentes públicos ou pela Administração, conforme as regras da responsabilidade estatal.",
+        "Assessoria para empresas em contratos, rotinas internas, políticas trabalhistas e prevenção de riscos judiciais.",
     },
   ];
 
@@ -68,94 +65,69 @@ export default function ConteudoAdvTrabalhista() {
     <div id="tptrabalhista-conteudo">
       <section id="tptrabalhista-container-conteudo">
         <div id="tptrabalhista-text">
-          <h2 id="tptrabalhista-section-title">
-            Atuamos nos seguintes segmentos do{" "}
-            <span id="tptrabalhista-section-title-span">Direito Cível</span>
-          </h2>
-          {trabalhistaContent.map((item) => (
-            <TrabalhistaItem
-              key={item.id}
-              title={item.title}
-              description={item.description}
-            />
-          ))}
+          <header className="area-content-header">
+            <span className="area-content-kicker">Atuação trabalhista</span>
+            <h2 id="tptrabalhista-section-title">
+              Relações de trabalho com <span id="tptrabalhista-section-title-span">clareza e equilíbrio</span>
+            </h2>
+            <p className="area-content-lead">
+              A atuação trabalhista exige leitura cuidadosa de documentos,
+              prazos e provas. O objetivo é orientar decisões com segurança,
+              seja para trabalhadores, seja para empresas.
+            </p>
+          </header>
 
-          <h2 id="tptrabalhista-section-title">
-            O que faz um advogado trabalhista?
-          </h2>
+          <div className="area-accordion-grid">
+            {trabalhistaContent.map((item) => (
+              <TrabalhistaItem key={item.id} title={item.title} description={item.description} />
+            ))}
+          </div>
 
-          <div className="tptrabalhista-group-objects bg-trabalhista-1">
-            <div id="tptrabalhista-group-item1">
-              <p id="sections-texts">
-                Um advogado trabalhista é o profissional especializado em
-                questões entre empregado e empregador, atuando na defesa de
-                trabalhadores ou empresas. Ele cuida de casos como demissões sem
-                justa causa, verbas rescisórias não pagas, horas extras não
-                reconhecidas, acidentes de trabalho, assédio moral ou sexual,
-                desvio de função e FGTS não depositado.
-                <br />
-                <br />
-                Também atua em reconhecimento de vínculo empregatício para quem
-                trabalha sem carteira assinada, questões de estabilidade no
-                emprego como gestantes e acidentados, férias não concedidas e
-                negociações de acordos trabalhistas. No dia a dia, analisa
-                documentos como contracheques e carteira de trabalho, elabora
-                reclamações para a Justiça do Trabalho, representa clientes em
-                audiências e negocia acordos.
-                <br />
-                <br />
-                Pode atuar preventivamente, orientando empresas sobre como
-                cumprir a legislação e evitar processos, ou de forma
-                contenciosa, buscando reparação através de ações judiciais. É o
-                profissional que você procura quando seus direitos como
-                trabalhador foram desrespeitados, quando foi demitido e não
-                recebeu corretamente, quando sofre abuso no trabalho ou precisa
-                regularizar sua situação profissional.
+          <div className="area-insight bg-trabalhista-1">
+            <div className="area-insight-copy">
+              <h3>Proteção e prevenção nas relações de trabalho</h3>
+              <p>
+                Demandas trabalhistas envolvem documentos, prazos e fatos que
+                precisam ser organizados com precisão. Uma análise técnica ajuda
+                a identificar direitos, riscos e caminhos possíveis.
               </p>
+              <p>
+                O atendimento pode ser contencioso, quando já existe conflito,
+                ou preventivo, para evitar passivos e estruturar relações mais
+                seguras.
+              </p>
+              <ul className="area-insight-list">
+                <li>Demissão, verbas rescisórias e FGTS</li>
+                <li>Horas extras, jornada e adicionais</li>
+                <li>Assédio, acidente de trabalho e estabilidade</li>
+              </ul>
             </div>
-
-            <div id="tptrabalhista-group-item2">
-              <img src={CivelContentImgN1} alt="" />
+            <div className="area-insight-media">
+              <img src={CivelContentImgN1} alt="Atendimento em Direito Trabalhista" />
             </div>
           </div>
 
-          <h2 id="tptrabalhista-section-title">
-            Quando devo buscar um advogado trabalhista?
-          </h2>
-
-          <div className="tptrabalhista-group-objects bg-trabalhista-2">
-            <div id="tptrabalhista-group-item2">
-              <img src={CivelContentImgN1} alt="" />
+          <div className="area-insight reverse bg-trabalhista-2">
+            <div className="area-insight-media">
+              <img src={CivelContentImgN2} alt="Análise trabalhista de documentos" />
             </div>
-
-            <div id="tptrabalhista-group-item1">
-              <p id="sections-texts">
-                Uma pessoa deve buscar um advogado trabalhista quando seus
-                direitos como trabalhador forem desrespeitados ou quando tiver
-                dúvidas sobre sua situação profissional. Isso inclui casos de
-                demissão sem receber todas as verbas devidas, trabalho sem
-                carteira assinada por período prolongado, horas extras não
-                pagas, não concessão de férias, FGTS não depositado ou quando
-                sofrer qualquer tipo de desconto indevido no salário.
-                <br />
-                <br />
-                Situações de assédio moral ou sexual, discriminação, acidentes
-                de trabalho sem o devido amparo, desvio de função onde você
-                executa atividades diferentes do seu cargo sem reconhecimento
-                salarial, ou quando a empresa exige jornadas abusivas também
-                demandam assistência jurídica. Se você está em licença médica e
-                sofre pressão para retornar, está grávida e teme demissão, ou
-                foi dispensado durante estabilidade garantida por lei, é
-                fundamental procurar esse profissional.
-                <br />
-                <br />O ideal é buscar um advogado trabalhista assim que
-                identificar irregularidades na relação de trabalho, mesmo antes
-                de ser demitido, pois ele pode orientar sobre como documentar as
-                violações e proteger seus direitos. Após a demissão, é
-                importante procurar orientação rapidamente para não perder
-                prazos, já que ações trabalhistas têm prazo de dois anos após o
-                término do contrato para serem ajuizadas.
+            <div className="area-insight-copy">
+              <h3>Quando procurar orientação trabalhista</h3>
+              <p>
+                Busque orientação ao notar irregularidades no contrato, nos
+                pagamentos, na jornada, no ambiente de trabalho ou quando houver
+                demissão, acordo proposto ou dúvida sobre direitos e deveres.
               </p>
+              <p>
+                Quanto mais cedo a situação é analisada, melhores são as
+                condições para reunir documentos, preservar provas e escolher um
+                caminho juridicamente adequado.
+              </p>
+              <ul className="area-insight-list">
+                <li>Análise de documentos e histórico da relação</li>
+                <li>Definição de estratégia judicial ou extrajudicial</li>
+                <li>Orientação para trabalhadores e empresas</li>
+              </ul>
             </div>
           </div>
         </div>

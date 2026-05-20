@@ -109,6 +109,50 @@ a {
   color: #b38b59;
 }
 
+.tpcivel-navbar-container,
+.tpcriminalista-navbar-container,
+.tptrabalhista-navbar-container {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.75rem, 2vw, 1.5rem);
+}
+
+.service-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.24rem;
+  border: 1px solid rgba(0, 26, 58, 0.1);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.service-nav-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 0.48rem 0.82rem;
+  border-radius: 999px;
+  color: #233045;
+  font-size: 0.84rem !important;
+  font-weight: 750 !important;
+  line-height: 1;
+  white-space: nowrap;
+  transition: color 0.25s ease, background-color 0.25s ease, transform 0.25s ease;
+}
+
+.service-nav-link:hover {
+  color: #001a3a !important;
+  background: rgba(212, 162, 76, 0.13);
+  transform: translateY(-1px);
+}
+
+.service-nav-link.active {
+  color: #ffffff !important;
+  background: #001a3a;
+}
+
 .btn-default::after {
   content: "";
   position: absolute;
@@ -152,6 +196,168 @@ a {
   line-height: 0.95;
   padding-bottom: 1.2rem;
   padding-top: 0;
+}
+
+.section-kicker {
+  display: block;
+  width: fit-content;
+  margin: 0 auto 0.9rem;
+  border: 1px solid rgba(212, 162, 76, 0.34);
+  border-radius: 999px;
+  color: #d4a24c;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  padding: 0.42rem 0.82rem;
+  text-transform: uppercase;
+}
+
+.area-hero-eyebrow {
+  width: fit-content;
+  margin: 0 auto;
+  border: 1px solid rgba(212, 162, 76, 0.38);
+  border-radius: 999px;
+  background: rgba(240, 248, 255, 0.08);
+  color: #f0f8ff;
+  display: inline-flex;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  padding: 0.45rem 0.85rem;
+  text-transform: uppercase;
+}
+
+.area-hero-highlights {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 0.45rem;
+}
+
+.area-hero-highlights span {
+  border: 1px solid rgba(240, 248, 255, 0.22);
+  border-radius: 999px;
+  color: rgba(240, 248, 255, 0.86);
+  font-size: 0.86rem;
+  font-weight: 700;
+  padding: 0.52rem 0.85rem;
+}
+
+.area-content-header {
+  max-width: 900px;
+  margin: 0 auto 32px;
+  text-align: center;
+}
+
+.area-content-header h2 {
+  padding-top: 0 !important;
+  padding-bottom: 1.15rem !important;
+}
+
+.area-content-kicker {
+  display: block;
+  color: #d4a24c;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.9rem;
+  text-transform: uppercase;
+}
+
+.area-content-lead {
+  color: rgba(240, 248, 255, 0.82);
+  font-size: clamp(1rem, 1.6vw, 1.12rem);
+  line-height: 1.75;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.area-accordion-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 52px;
+}
+
+.area-accordion-grid > * {
+  margin-bottom: 0 !important;
+}
+
+.area-insight {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.78fr);
+  gap: 32px;
+  align-items: stretch;
+  margin-top: 24px;
+}
+
+.area-insight.reverse {
+  grid-template-columns: minmax(320px, 0.78fr) minmax(0, 1fr);
+}
+
+.area-insight-copy {
+  border: 1px solid rgba(212, 162, 76, 0.2);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.045);
+  padding: clamp(24px, 3vw, 34px);
+  color: #f1f5f9;
+}
+
+.area-insight-copy h3 {
+  color: #d4a24c;
+  font-family: "Cormorant Garamond", "Playfair Display", serif;
+  font-size: clamp(1.9rem, 3vw, 2.65rem);
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.area-insight-copy p {
+  color: rgba(241, 245, 249, 0.84);
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+.area-insight-list {
+  list-style: none;
+  margin-top: 1.2rem;
+}
+
+.area-insight-list li {
+  border-top: 1px solid rgba(240, 248, 255, 0.12);
+  color: rgba(241, 245, 249, 0.86);
+  padding: 0.86rem 0;
+}
+
+.area-insight-media {
+  min-height: 100%;
+  overflow: hidden;
+  border: 1px solid rgba(212, 162, 76, 0.28);
+  border-radius: 8px;
+}
+
+.area-insight-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 360px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .area-accordion-grid,
+  .area-insight,
+  .area-insight.reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .area-insight.reverse .area-insight-media {
+    order: 2;
+  }
+
+  .area-insight.reverse .area-insight-copy {
+    order: 1;
+  }
 }
 
 #sections-title-span {
@@ -200,23 +406,69 @@ a {
 
 .floating-btn {
   position: fixed;
-  display: flex;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
   bottom: 1rem;
   right: 1rem;
   background-color: #0f7743;
   color: white;
   border: none;
   border-radius: 999px;
-  padding: 1rem 1.5rem;
-  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  width: 156px;
+  height: 56px;
+  padding: 0 1.1rem;
+  font-size: 1rem;
+  font-weight: 800;
+  text-decoration: none;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.22);
   z-index: 1000;
-  transition: background-color 0.3s ease;
+  overflow: hidden;
+  white-space: nowrap;
+  transition:
+    width 0.45s ease,
+    padding 0.45s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
 }
 
 .floating-btn:hover {
   background-color: #056641;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.26);
+  transform: translateY(-2px);
+}
+
+.floating-btn.compact {
+  width: 56px;
+  padding: 0;
+  gap: 0;
+}
+
+.floating-btn-text {
+  opacity: 1;
+  max-width: 86px;
+  transition:
+    opacity 0.25s ease,
+    max-width 0.35s ease;
+}
+
+.floating-btn.compact .floating-btn-text {
+  opacity: 0;
+  max-width: 0;
+}
+
+.floating-btn-icon {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+.floating-btn.compact .floating-btn-icon {
+  width: 32px;
+  height: 32px;
 }
 
 @keyframes fadeInRight {
@@ -261,7 +513,11 @@ a {
   transform: translateX(-20px);
   transition:
     opacity 0.6s,
-    transform 0.6s;
+    transform 0.6s,
+    width 0.45s ease,
+    padding 0.45s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .floating-btn.animate {

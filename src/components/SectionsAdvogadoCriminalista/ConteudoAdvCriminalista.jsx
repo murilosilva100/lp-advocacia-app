@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
 import CivelContentImgN1 from "../../assets/civel-content-img-n1.webp";
 import CivelContentImgN2 from "../../assets/civel-content-img-n2.webp";
@@ -9,10 +9,7 @@ const CriminalistaItem = ({ title, description }) => {
 
   return (
     <div className={`criminalista-item ${isOpen ? "open" : ""}`}>
-      <button
-        className="criminalista-question-button"
-        onClick={() => setIsOpen(!isOpen)}
-      >
+      <button className="criminalista-question-button" onClick={() => setIsOpen(!isOpen)} aria-expanded={isOpen}>
         <span className="criminalista-question-text">{title}</span>
         <FaChevronDown className="criminalista-icon" />
       </button>
@@ -28,39 +25,39 @@ export default function ConteudoAdvCriminalista() {
   const criminalistaContent = [
     {
       id: 1,
-      title: "Inventário, Partilha e Sucessões",
+      title: "Audiência de custódia e flagrante",
       description:
-        "Apoio jurídico na organização, condução e formalização da transmissão de bens, sempre buscando segurança e regularidade no processo sucessório.",
+        "Atuação rápida em prisões em flagrante, análise da legalidade da prisão, pedidos de liberdade e medidas cautelares.",
     },
     {
       id: 2,
-      title: "Direito de Família: Divórcio, Guarda e Alimentos",
+      title: "Inquérito policial e investigação",
       description:
-        "Atuação em questões familiares envolvendo dissolução do vínculo, definição de guarda, visitas e obrigações alimentares.",
+        "Acompanhamento da fase investigativa, orientação antes de depoimentos e proteção das garantias do investigado.",
     },
     {
       id: 3,
-      title: "Responsabilidade Civil: Danos Contratuais e Extracontratuais",
+      title: "Defesa em ação penal",
       description:
-        "Assessoria em conflitos decorrentes do descumprimento de contratos ou de danos causados fora de relações contratuais.",
+        "Estratégia defensiva, resposta à acusação, acompanhamento de audiências, memoriais, recursos e demais atos processuais.",
     },
     {
       id: 4,
-      title: "Ações Indenizatórias",
+      title: "Crimes contra o patrimônio",
       description:
-        "Atuação em demandas relacionadas a dano moral, material ou lucros cessantes, com foco na adequada apuração e defesa dos direitos.",
+        "Defesa em casos de furto, roubo, estelionato, receptação, apropriação indébita e outras acusações patrimoniais.",
     },
     {
       id: 5,
-      title: "Consultoria e Contratos",
+      title: "Violência doméstica e medidas protetivas",
       description:
-        "Elaboração, revisão e orientação jurídica na celebração de contratos, prevenindo riscos e assegurando clareza nas obrigações.",
+        "Atuação em procedimentos da Lei Maria da Penha, medidas protetivas, audiências e acompanhamento processual.",
     },
     {
       id: 6,
-      title: "Responsabilidade Civil do Estado",
+      title: "Execução penal",
       description:
-        "Atuação em casos envolvendo danos causados por agentes públicos ou pela Administração, conforme as regras da responsabilidade estatal.",
+        "Pedidos de progressão de regime, livramento condicional, remição de pena e acompanhamento do cumprimento da pena.",
     },
   ];
 
@@ -68,91 +65,70 @@ export default function ConteudoAdvCriminalista() {
     <div id="tpcriminalista-conteudo">
       <section id="tpcriminalista-container-conteudo">
         <div id="tpcriminalista-text">
-          <h2 id="tpcriminalista-section-title">
-            Atuamos nos seguintes segmentos do{" "}
-            <span id="tpcriminalista-section-title-span">Direito Cível</span>
-          </h2>
-          {criminalistaContent.map((item) => (
-            <CriminalistaItem
-              key={item.id}
-              title={item.title}
-              description={item.description}
-            />
-          ))}
+          <header className="area-content-header">
+            <span className="area-content-kicker">Atuação criminal</span>
+            <h2 id="tpcriminalista-section-title">
+              Defesa técnica com <span id="tpcriminalista-section-title-span">urgência e discrição</span>
+            </h2>
+            <p className="area-content-lead">
+              Em matéria criminal, as primeiras decisões importam. A atuação
+              busca preservar direitos, orientar cada passo e construir uma
+              defesa compatível com a realidade do caso.
+            </p>
+          </header>
 
-          <h2 id="tpcriminalista-section-title">
-            O que faz um advogado cível?
-          </h2>
+          <div className="area-accordion-grid">
+            {criminalistaContent.map((item) => (
+              <CriminalistaItem key={item.id} title={item.title} description={item.description} />
+            ))}
+          </div>
 
-          <div className="tpcriminalista-group-objects bg-criminalista-1">
-            <div id="tpcriminalista-group-item1">
-              <p id="sections-texts">
-                Um advogado cível é o profissional que resolve conflitos do dia
-                a dia entre pessoas, empresas ou instituições, sem envolver
-                questões criminais. Ele atua em situações como cobranças de
-                dívidas, contratos descumpridos, disputas entre vizinhos,
-                problemas condominiais, direito do consumidor, indenizações por
-                danos materiais ou morais, inventários e partilha de bens.
-                <br />
-                <br />
-                Também cuida de questões imobiliárias como despejo e discussões
-                sobre propriedade, além de diversos outros casos onde há
-                desacordos que precisam ser resolvidos. O trabalho começa
-                analisando o caso, reunindo documentos e provas, tentando
-                acordos extrajudiciais quando possível e, se necessário,
-                ingressando com ação judicial.
-                <br />
-                <br />
-                No dia a dia, esse profissional elabora petições, comparece a
-                audiências, negocia acordos e acompanha processos. Diferente do
-                criminalista que lida com crimes e prisões, o advogado cível
-                busca principalmente reparação financeira, cumprimento de
-                obrigações ou reconhecimento de direitos.
-                <br />
-                <br />É o profissional que você procura quando tem problemas
-                relacionados ao seu patrimônio, contratos, relações comerciais
-                ou familiares, ou quando alguém lhe causou prejuízo e você quer
-                ser ressarcido através de uma sentença judicial.
+          <div className="area-insight bg-criminalista-1">
+            <div className="area-insight-copy">
+              <h3>Atuação desde o primeiro ato</h3>
+              <p>
+                A orientação antes de depoimentos, audiências ou cumprimento de
+                mandados evita decisões precipitadas e reduz riscos processuais.
+                Cada detalhe da fase inicial pode influenciar o restante do
+                procedimento.
               </p>
+              <p>
+                A defesa criminal exige presença técnica, leitura cuidadosa dos
+                elementos de prova e comunicação objetiva com o cliente e sua
+                família.
+              </p>
+              <ul className="area-insight-list">
+                <li>Prisões, flagrantes e audiência de custódia</li>
+                <li>Investigações, intimações e depoimentos</li>
+                <li>Ações penais, recursos e execução penal</li>
+              </ul>
             </div>
-
-            <div id="tpcriminalista-group-item2">
-              <img src={CivelContentImgN1} alt="" />
+            <div className="area-insight-media">
+              <img src={CivelContentImgN1} alt="Defesa criminal técnica" />
             </div>
           </div>
 
-          <h2 id="tpcriminalista-section-title">
-            Quando devo buscar um advogado cível?
-          </h2>
-
-          <div className="tpcriminalista-group-objects bg-criminalista-2">
-            <div id="tpcriminalista-group-item2">
-              <img src={CivelContentImgN1} alt="" />
+          <div className="area-insight reverse bg-criminalista-2">
+            <div className="area-insight-media">
+              <img src={CivelContentImgN2} alt="Orientação jurídica criminal" />
             </div>
-
-            <div id="tpcriminalista-group-item1">
-              <p id="sections-texts">
-                Uma pessoa deve buscar um advogado cível quando se sentir lesada
-                em seus direitos ou patrimônio e não conseguir resolver a
-                situação amigavelmente. Isso inclui casos como produtos ou
-                serviços defeituosos não resolvidos pela empresa, acidentes que
-                causaram prejuízos por culpa de terceiros, nome negativado
-                indevidamente, cobranças injustas ou contratos não cumpridos.
-                <br />
-                <br />
-                Questões familiares e patrimoniais também demandam esse
-                profissional. Divórcio com partilha de bens, inventário,
-                disputas de herança, pensão alimentícia, problemas com imóveis,
-                disputas de vizinhança ou cobranças condominiais abusivas são
-                exemplos comuns que requerem assistência jurídica especializada.
-                <br />
-                <br />O ideal é procurar um advogado cível assim que perceber um
-                conflito que pode se agravar ou quando tentativas de resolver
-                sozinho falharam. Quanto mais cedo buscar orientação, maiores as
-                chances de proteger seus direitos, reunir provas adequadas e
-                encontrar a melhor solução, seja por negociação ou ação
-                judicial.
+            <div className="area-insight-copy">
+              <h3>Quando buscar defesa criminal</h3>
+              <p>
+                Procure orientação ao receber intimação, ser citado em processo,
+                enfrentar investigação, prisão, busca e apreensão ou qualquer
+                situação que possa gerar responsabilização penal.
               </p>
+              <p>
+                A atuação antecipada permite compreender o cenário, preservar
+                direitos e definir uma estratégia antes que o caso avance sem
+                preparação adequada.
+              </p>
+              <ul className="area-insight-list">
+                <li>Atendimento discreto e objetivo</li>
+                <li>Análise de riscos e medidas cabíveis</li>
+                <li>Acompanhamento em cada fase do procedimento</li>
+              </ul>
             </div>
           </div>
         </div>

@@ -51,19 +51,23 @@
 }
 
 #contacts-grid-container {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 18px;
   padding-bottom: 2rem;
 }
 
-.contact-item a {
+.contact-info {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  min-width: 150px;
+  min-width: 0;
+  height: 100%;
+  border: 1px solid rgba(240, 248, 255, 0.18);
+  border-radius: 8px;
+  padding: 20px 16px;
+  background: rgba(255, 255, 255, 0.04);
 }
 
 @keyframes fadeInUp {
@@ -91,7 +95,7 @@
 
 .contact-item p {
   font-family: "Playfair Display";
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: 600;
 }
 
@@ -133,6 +137,13 @@
   opacity: 0.9;
 }
 
+.contact-info span {
+  color: rgba(240, 248, 255, 0.72);
+  font-size: 0.86rem;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
 @media (max-width: 480px) {
   #contacts-container {
     width: 100%;
@@ -150,8 +161,7 @@
   }
 
   #contacts-grid-container {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 1fr;
     gap: 20px;
   }
 }
@@ -164,8 +174,7 @@
   }
 
   #contacts-grid-container {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 1fr;
     gap: 30px;
   }
 }
@@ -178,10 +187,8 @@
   }
 
   #contacts-grid-container {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
     padding-bottom: 2rem;
   }
 }

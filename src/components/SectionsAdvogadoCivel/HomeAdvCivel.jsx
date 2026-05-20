@@ -1,22 +1,28 @@
-import { MdPhoneEnabled } from "react-icons/md";
-import { MdPhoneIphone } from "react-icons/md";
+import { MdPhoneEnabled, MdPhoneIphone } from "react-icons/md";
 import "../../styles/StylesAdvCivel/advcivel.css";
 
-export default function HomeAdvTrabalhista() {
+export default function HomeAdvCivel() {
   return (
     <div id="tpcivel-home">
       <section id="tpcivel-container-home">
+        <span className="area-hero-eyebrow">Direito Cível</span>
         <h1 id="tpcivel-title">
-          Advogado <span>Cível</span>
+          Segurança jurídica para <span>patrimônio, contratos e família</span>
         </h1>
         <p id="tpcivel-description">
-          Quando seus interesses estão em jogo, você precisa de orientação
-          segura. Estamos ao seu lado em cada etapa do processo.
+          Atuação técnica em conflitos civis, relações familiares, contratos,
+          indenizações e questões patrimoniais, com orientação clara desde a
+          análise inicial.
         </p>
+        <div className="area-hero-highlights">
+          <span>Contratos</span>
+          <span>Família e sucessões</span>
+          <span>Indenizações</span>
+        </div>
         <div id="cta-services-buttons">
-          <a href="https://wa.me/5561999777736?text=Olá! Gostaria de saber mais sobre os serviços...">
+          <a href="https://wa.me/5561999777736?text=Olá! Gostaria de orientação em Direito Cível.">
             <button className="btn-default">
-              Entrar em Contato! <MdPhoneIphone size="25px" />
+              Solicitar orientação <MdPhoneIphone size="25px" />
             </button>
           </a>
           <a href="tel:+5561996172502" id="phone_button">

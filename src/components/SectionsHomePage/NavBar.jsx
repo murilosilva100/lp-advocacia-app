@@ -44,6 +44,8 @@ export default function NavBar() {
             Serviços 
           </Link>
 
+          <a href="#process">Atendimento</a>
+
           <a href="#questions">Perguntas</a>
 
           <a href="#about">Sobre</a>

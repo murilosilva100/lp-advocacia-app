@@ -31,7 +31,7 @@
 }
 
 #tpcriminalista-navbar a:hover {
-  color: #b38b59;
+  color: #d4a24c;
 }
 
 #tpcriminalista-nav_logo {
@@ -44,7 +44,7 @@
 }
 
 #tpcriminalista-nav_logo:hover {
-  color: #b38b59;
+  color: #d4a24c;
 }
 
 /* home da área civel */
@@ -79,20 +79,24 @@
   margin-top: 0;
   font-weight: 500;
   color: #f0f4f8;
-  font-family: "Playfair Display";
-  font-size: clamp(2rem, 4.5vw, 3.5rem);
+  font-family: "Cormorant Garamond", "Playfair Display", serif;
+  font-size: clamp(2.75rem, 5vw, 5rem);
+  line-height: 0.92;
+  text-wrap: balance;
 }
 
 #tpcriminalista-title span {
-  color: #b38b59;
+  color: #d4a24c;
   font-family: "Playfair Display";
 }
 
 #tpcriminalista-description {
   font-size: clamp(1rem, 2vw, 1.25rem);
   font-weight: 400;
-  line-height: 160%;
+  line-height: 1.75;
   color: #f0f4f8;
+  max-width: 760px;
+  margin: 0 auto;
 }
 
 #tpcriminalista-subtitle {
@@ -186,23 +190,24 @@
 }
 
 .criminalista-item {
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  background-color: #d7dbe0;
-  box-shadow: 0 2px 4px rgba(11, 26, 61, 0.05);
-  transition: all 0.3s ease;
+  border: 1px solid rgba(212, 162, 76, 0.2);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.045);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+  transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
   margin-bottom: 5px;
 }
 
 .criminalista-item:hover {
-  box-shadow: 0 6px 16px rgba(179, 139, 89, 0.3);
-  border-color: #d4a24c;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.16);
+  border-color: rgba(212, 162, 76, 0.46);
+  transform: translateY(-1px);
 }
 
 .criminalista-question-button {
   width: 100%;
-  padding: 18px 24px;
+  padding: 20px 22px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -210,8 +215,8 @@
   justify-content: space-between;
   align-items: center;
   font-family: "Inter", sans-serif;
-  font-weight: 500;
-  color: #333333;
+  font-weight: 750;
+  color: #f1f5f9;
   gap: 10px;
   opacity: 0.9;
   text-align: left;
@@ -220,13 +225,14 @@
 
 .criminalista-question-text {
   font-size: clamp(1rem, 2vw, 1.125rem);
+  line-height: 1.35;
 }
 
 .criminalista-answer-container {
-  padding: 0 24px;
+  padding: 0 22px;
   max-height: 0;
   overflow: hidden;
-  background-color: #ccd0d4;
+  background: rgba(11, 22, 38, 0.92);
   transition:
     max-height 0.4s ease,
     padding 0.4s ease;
@@ -235,16 +241,16 @@
 .criminalista-answer-container p {
   margin: 0;
   font-size: 1rem;
-  color: #333;
+  color: #f1f5f9;
   font-weight: 450;
-  opacity: 0.8;
-  line-height: 160%;
-  text-align: justify;
+  opacity: 0.86;
+  line-height: 1.72;
+  text-align: left;
 }
 
 .criminalista-item.open .criminalista-answer-container {
-  max-height: 400px;
-  padding: 20px 24px;
+  max-height: 420px;
+  padding: 18px 22px 22px;
 }
 
 .criminalista-icon {

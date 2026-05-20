@@ -1,22 +1,28 @@
-import { MdPhoneEnabled } from "react-icons/md";
-import { MdPhoneIphone } from "react-icons/md";
+import { MdPhoneEnabled, MdPhoneIphone } from "react-icons/md";
 import "../../styles/StylesAdvCriminalista/advcriminalista.css";
 
-export default function HomeAdvTrabalhista() {
+export default function HomeAdvCriminalista() {
   return (
     <div id="tpcriminalista-home">
       <section id="tpcriminalista-container-home">
+        <span className="area-hero-eyebrow">Direito Criminal</span>
         <h1 id="tpcriminalista-title">
-          Advogado <span>Cível</span>
+          Defesa técnica para situações <span>urgentes e sensíveis</span>
         </h1>
         <p id="tpcriminalista-description">
-          Quando seus interesses estão em jogo, você precisa de orientação
-          segura. Estamos ao seu lado em cada etapa do processo.
+          Atuação estratégica em investigações, prisões, audiências e ações
+          penais, com discrição, preparo e orientação objetiva desde o primeiro
+          contato.
         </p>
+        <div className="area-hero-highlights">
+          <span>Flagrante e custódia</span>
+          <span>Investigação</span>
+          <span>Ação penal</span>
+        </div>
         <div id="cta-services-buttons">
-          <a href="https://wa.me/5561999777736?text=Olá! Gostaria de saber mais sobre os serviços...">
+          <a href="https://wa.me/5561999777736?text=Olá! Preciso de orientação em Direito Criminal.">
             <button className="btn-default">
-              Entrar em Contato! <MdPhoneIphone size="25px" />
+              Solicitar orientação <MdPhoneIphone size="25px" />
             </button>
           </a>
           <a href="tel:+5561996172502" id="phone_button">

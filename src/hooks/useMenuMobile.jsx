@@ -4,6 +4,7 @@ import InfoIcon from "@mui/icons-material/Info";
 import AssignmentIcon from "@mui/icons-material/Assignment";
 import QuestionAnswerIcon from "@mui/icons-material/QuestionAnswer";
 import ContactsIcon from "@mui/icons-material/Contacts";
+import ManageSearchIcon from "@mui/icons-material/ManageSearch";
 
 export function useMenuMobile() {
   const [openMenu, setOpenMenu] = useState(false);
@@ -13,10 +14,11 @@ export function useMenuMobile() {
 
   const menuOptions = [
     { text: "Início", icon: <HomeWorkIcon />, path: "#home" },
-    { text: "Serviços", icon: <AssignmentIcon />, path: "#services"},
-    { text: "Perguntas", icon: <QuestionAnswerIcon />, path: "#questions"},
+    { text: "Serviços", icon: <AssignmentIcon />, path: "#services" },
+    { text: "Atendimento", icon: <ManageSearchIcon />, path: "#process" },
+    { text: "Perguntas", icon: <QuestionAnswerIcon />, path: "#questions" },
     { text: "Sobre", icon: <InfoIcon />, path: "#about" },
-    { text: "Contatos", icon: <ContactsIcon />, path: "#contacts"},
+    { text: "Contatos", icon: <ContactsIcon />, path: "#contacts" },
   ];
 
   return {

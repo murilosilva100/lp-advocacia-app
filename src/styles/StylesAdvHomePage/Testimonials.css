@@ -1,0 +1,95 @@
+#testimonials-container {
+  width: 100%;
+  padding: var(--section-y) var(--page-x);
+  background:
+    radial-gradient(circle at 18% 18%, rgba(212, 162, 76, 0.18), transparent 22rem),
+    radial-gradient(circle at 86% 42%, rgba(0, 26, 58, 0.08), transparent 24rem),
+    linear-gradient(180deg, #f7f4ec 0%, #fbfaf7 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+#testimonials-container #sections-title {
+  color: #001a3a;
+}
+
+#testimonials-container #sections-title-span {
+  color: #d4a24c;
+}
+
+#testimonials-container #sections-subtitle {
+  color: #2a3645;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.testimonial-card {
+  border: 1px solid rgba(0, 26, 58, 0.08);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.82);
+  padding: 28px;
+  box-shadow: 0 18px 48px rgba(7, 19, 33, 0.09);
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s ease, transform 0.6s ease, border-color 0.3s ease;
+}
+
+.testimonial-card.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.testimonial-card:hover {
+  border-color: rgba(212, 162, 76, 0.38);
+}
+
+.testimonial-card p {
+  color: #223047;
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+}
+
+.testimonial-card span {
+  color: #001a3a;
+  font-weight: 800;
+  font-size: 0.92rem;
+}
+
+@media (max-width: 480px) {
+  #testimonials-container {
+    padding: var(--section-y-mobile) var(--page-x-mobile);
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-card {
+    padding: 22px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  #testimonials-container {
+    padding: var(--section-y-small) var(--page-x-tablet);
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1170px) {
+  #testimonials-container {
+    padding: var(--section-y-tablet) var(--page-x);
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
