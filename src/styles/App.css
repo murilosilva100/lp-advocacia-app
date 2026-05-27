@@ -4,9 +4,34 @@
 @import "tailwindcss";
 
 :root {
+  --font-body: "Inter", sans-serif;
+  --font-heading: "Cormorant Garamond", "Playfair Display", serif;
+  --font-display: "Playfair Display", serif;
+
+  --color-primary: #001a3a;
+  --color-primary-dark: #071321;
+  --color-primary-deep: #0b1626;
+  --color-surface: #f6f4ef;
+  --color-surface-light: #ffffff;
+  --color-text: #172033;
+  --color-text-muted: #2a3645;
+  --color-text-inverse: #f1f5f9;
+  --color-gold: #d4a24c;
+  --color-gold-dark: #b38b59;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-pill: 999px;
+
+  --shadow-soft: 0 14px 30px rgba(0, 0, 0, 0.18);
+  --shadow-panel: 0 22px 60px rgba(0, 0, 0, 0.18);
+  --shadow-gold: 0 12px 24px rgba(179, 139, 89, 0.32);
+
   --page-x: 10%;
   --page-x-tablet: 6%;
   --page-x-mobile: 16px;
+  --section-padding: 88px var(--page-x);
   --section-y: 88px;
   --section-y-tablet: 72px;
   --section-y-small: 64px;
@@ -20,20 +45,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body);
   scroll-behavior: smooth;
 }
 
 html {
-  background: #071321;
+  background: var(--color-primary-dark);
+  scroll-padding-top: 92px;
 }
 
 body {
   min-width: 320px;
   width: 100%;
   overflow-x: hidden;
-  background: #f6f4ef;
-  color: #172033;
+  background: var(--color-surface);
+  color: var(--color-text);
 }
 
 a {
@@ -50,9 +76,9 @@ a {
   min-width: 220px;
   max-width: 100%;
   padding: 0.9rem 1.4rem;
-  background-color: #d4a24c;
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
-  border-radius: 999px;
+  background-color: var(--color-gold);
+  box-shadow: var(--shadow-soft);
+  border-radius: var(--radius-pill);
   color: #f0f4f8;
   outline: none;
   border: none;
@@ -71,10 +97,10 @@ a {
 
 .btn-contatos {
   padding: 0.62rem 0.65rem 0.62rem 1.35rem;
-  background-color: #d4a24c;
+  background-color: var(--color-gold);
   box-shadow: none;
   border: 0;
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   outline: none;
   font-size: 0.88rem;
   font-weight: 800;
@@ -88,30 +114,30 @@ a {
 
 .btn-contatos:hover {
   transform: translateY(-1px);
-  box-shadow: 0 12px 24px rgba(179, 139, 89, 0.32);
+  box-shadow: var(--shadow-gold);
   color: #f0f4f8;
-  background-color: #b38b59;
+  background-color: var(--color-gold-dark);
 }
 
 .btn-contatos-icon {
   width: 30px;
   height: 30px;
   padding: 0.38rem;
-  border-radius: 999px;
-  color: #d4a24c;
-  background: #ffffff;
+  border-radius: var(--radius-pill);
+  color: var(--color-gold);
+  background: var(--color-surface-light);
   flex-shrink: 0;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .btn-contatos:hover .btn-contatos-icon {
   transform: translate(2px, -2px);
-  color: #b38b59;
+  color: var(--color-gold-dark);
 }
 
-.tpcivel-navbar-container,
-.tpcriminalista-navbar-container,
-.tptrabalhista-navbar-container {
+.civil-navbar-container,
+.criminal-navbar-container,
+.labor-navbar-container {
   display: flex;
   align-items: center;
   gap: clamp(0.75rem, 2vw, 1.5rem);
@@ -174,28 +200,6 @@ a {
 
 .service-header-menu-button:hover {
   background: rgba(212, 162, 76, 0.16);
-  transform: translateY(-1px);
-}
-
-.service-header-contact {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.55rem;
-  min-height: 38px;
-  padding: 0.55rem 0.95rem;
-  border-radius: 999px;
-  color: #ffffff !important;
-  background: #d4a24c;
-  font-size: 0.84rem !important;
-  font-weight: 850 !important;
-  text-decoration: none;
-  white-space: nowrap;
-  transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.service-header-contact:hover {
-  background: #b38b59;
-  box-shadow: 0 12px 24px rgba(179, 139, 89, 0.28);
   transform: translateY(-1px);
 }
 
@@ -299,7 +303,7 @@ a {
     display: inline-flex;
   }
 
-  .service-header-contact {
+  .service-page-navbar .btn-contatos {
     display: none;
   }
 }
@@ -673,4 +677,120 @@ a {
 
 .floating-btn.animate {
   animation: fadeInRight 0.8s ease forwards;
+}
+
+@keyframes premiumHeaderEnter {
+  from {
+    opacity: 0;
+    transform: translateY(-14px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes premiumRevealUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+    filter: blur(3px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes premiumImageEnter {
+  from {
+    opacity: 0;
+    transform: translateX(3%) scale(1.02);
+    filter: contrast(1.04) saturate(1) drop-shadow(0 22px 38px rgba(0, 0, 0, 0.35));
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(3%) scale(1.06);
+    filter: contrast(1.1) saturate(1.05) drop-shadow(0 32px 52px rgba(0, 0, 0, 0.55));
+  }
+}
+
+#header,
+#civil-header,
+#criminal-header,
+#labor-header {
+  animation: premiumHeaderEnter 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.hero-sequence,
+.service-hero-sequence {
+  opacity: 0;
+  animation: premiumRevealUp 0.72s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.hero-sequence:nth-child(1),
+.service-hero-sequence:nth-child(1) {
+  animation-delay: 0.08s;
+}
+
+.hero-sequence:nth-child(2),
+.service-hero-sequence:nth-child(2) {
+  animation-delay: 0.16s;
+}
+
+.hero-sequence:nth-child(3),
+.service-hero-sequence:nth-child(3) {
+  animation-delay: 0.24s;
+}
+
+.hero-sequence:nth-child(4),
+.service-hero-sequence:nth-child(4) {
+  animation-delay: 0.32s;
+}
+
+.hero-sequence:nth-child(5),
+.service-hero-sequence:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+#banner img {
+  opacity: 0;
+  animation: premiumImageEnter 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.24s forwards;
+}
+
+.area-content-header,
+.area-accordion-grid,
+.area-insight {
+  opacity: 0;
+  transform: translateY(18px);
+}
+
+.area-content-header.animate,
+.area-accordion-grid.animate,
+.area-insight.animate {
+  animation: premiumRevealUp 0.72s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.item-services.animate,
+.process-card.animate,
+.testimonial-card.animate,
+.faq-category-section.animate,
+.contact-item.animate,
+.item-about.animate {
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }

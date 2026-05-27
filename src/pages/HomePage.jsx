@@ -1,26 +1,26 @@
-import NavBar from "../components/SectionsHomePage/NavBar";
-import ButtonFloatingContato from "../components/SectionsHomePage/ButtonFloatingContato";
-import Home from "../components/SectionsHomePage/Home";
-import About from "../components/SectionsHomePage/About";
-import Services from "../components/SectionsHomePage/Services";
-import Process from "../components/SectionsHomePage/Process";
-import Testimonials from "../components/SectionsHomePage/Testimonials";
-import Questions from "../components/SectionsHomePage/Questions";
-import Footer from "../components/SectionsHomePage/Footer";
-import Contacts from "../components/SectionsHomePage/Contacts";
+import About from "../components/sections/home/About";
+import Contact from "../components/sections/home/Contact";
+import Faq from "../components/sections/home/Faq";
+import FloatingContactButton from "../components/sections/home/FloatingContactButton";
+import Footer from "../components/sections/home/Footer";
+import Header from "../components/sections/home/Header";
+import Hero from "../components/sections/home/Hero";
+import Process from "../components/sections/home/Process";
+import Services from "../components/sections/home/Services";
+import Testimonials from "../components/sections/home/Testimonials";
 
 function HomePage() {
   return (
     <>
-      <NavBar />
-      <ButtonFloatingContato />
-      <Home />
+      <Header />
+      <FloatingContactButton />
+      <Hero />
       <About />
       <Services />
       <Process />
       <Testimonials />
-      <Questions />
-      <Contacts />
+      <Faq />
+      <Contact />
       <Footer />
     </>
   );

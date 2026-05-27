@@ -8,8 +8,13 @@ export function useServicesMenu() {
     if (showServices) {
       handleCloseServices();
     } else {
-      setShowServices(true);
+      handleOpenServices();
     }
+  };
+
+  const handleOpenServices = () => {
+    setIsClosing(false);
+    setShowServices(true);
   };
 
   const handleCloseServices = () => {
@@ -24,6 +29,7 @@ export function useServicesMenu() {
     showServices,
     isClosing,
     handleToggleServices,
+    handleOpenServices,
     handleCloseServices,
   };
 }

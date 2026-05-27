@@ -1,18 +1,20 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import HomePage from "../src/pages/HomePage";
-import AdvogadoTrabalhista from "./pages/AdvogadoTrabalhista";
-import AdvogadoCriminalista from "./pages/AdvogadoCriminalista";
-import AdvogadoCivel from "./pages/AdvogadoCivel";
-import "../src/styles/App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import CivilLawPage from "./pages/CivilLawPage";
+import CriminalLawPage from "./pages/CriminalLawPage";
+import ScrollToTop from "./components/navigation/ScrollToTop";
+import HomePage from "./pages/HomePage";
+import LaborLawPage from "./pages/LaborLawPage";
+import "./styles/App.css";
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/advogadotrabalhista" element={<AdvogadoTrabalhista />} />
-        <Route path="/advogadocriminalista" element={<AdvogadoCriminalista />} />
-        <Route path="/advogadocivel" element={<AdvogadoCivel/>} />
+        <Route path="/advogadotrabalhista" element={<LaborLawPage />} />
+        <Route path="/advogadocriminalista" element={<CriminalLawPage />} />
+        <Route path="/advogadocivel" element={<CivilLawPage />} />
       </Routes>
     </BrowserRouter>
   );
